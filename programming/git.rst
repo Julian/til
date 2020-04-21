@@ -1,0 +1,36 @@
+===
+Git
+===
+
+*git you magnificent beast...*
+
+
+``git name-rev``
+---------------
+
+``name-rev`` can append info about the position of a commit relative to tags.
+
+It can do this even interspersed in other prose text.
+
+E.g., given say a comment saying:
+
+    I think this bug was caused by dc9061e8ffb5002e33688ae97d0d953818e89bae
+    and fixed in d099d7e84d1ce3cf9737e9785be339c917f4a3e3.
+
+piping that to ``git name-rev --stdin`` will output:
+
+    I think this bug was caused by dc9061e8ffb5002e33688ae97d0d953818e89bae
+    (v1.0.0~2) and fixed in d099d7e84d1ce3cf9737e9785be339c917f4a3e3 (v1.0.1).
+
+See its man page for more stuff.
+
+
+Tags Matching a Pattern
+-----------------------
+
+``git tag -l`` doesn't just list all tags, it can take a pattern and show only
+matching ones, e.g.::
+
+    $ g tag -l v*
+
+for showing version tags.
