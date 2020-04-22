@@ -27,6 +27,13 @@ It accepts a regex.
 Specifically, ``git show :^Merge`` should generally find the last merge commit.
 
 
+Showing Various Parts of a Merge Conflict
+-----------------------------------------
+
+``git show :N:foo.txt`` will show foo.txt from "stage" number N, which is
+useful during conflict resoluton.
+
+
 ``git name-rev``
 ---------------
 
@@ -56,3 +63,25 @@ matching ones, e.g.::
     $ g tag -l v*
 
 for showing version tags.
+
+
+``git shortlog``
+----------------
+
+``shortlog`` gives a nice summarized version of the log, e.g. for release
+notes.
+
+
+Listing or Looping Over Revisions
+---------------------------------
+
+``git for-each-ref`` will loop over given revisions.
+
+``git rev-list`` will simply list them (in reverse order).
+
+
+Sending Patches Over Email
+--------------------------
+
+``format-patch`` turns commits into patches as a file, and formatted for
+sending via email or applying with ``git am``.
