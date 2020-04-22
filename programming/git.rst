@@ -5,6 +5,28 @@ Git
 *git you magnificent beast...*
 
 
+Finding the History of a Function or Object
+-------------------------------------------
+
+``log -L :foo`` will show you the history of the function/object called
+``foo``. This is a smarter version of normal ``log -L`` which just knows about
+lines.
+
+But because I'm lazy to even type this out, I made `git pylog
+<https://github.com/Julian/dotfiles/blob/master/bin/git-pylog>`_ to just
+be able to type ``g pylog foo.bar.baz`` and find the history of the FQON
+there.
+
+
+Finding Commits by Message
+--------------------------
+
+``git show :/foo`` will find the last commit whose message contains ``foo``.
+It accepts a regex.
+
+Specifically, ``git show :^Merge`` should generally find the last merge commit.
+
+
 ``git name-rev``
 ---------------
 
