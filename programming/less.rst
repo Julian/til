@@ -26,8 +26,6 @@ Doing so will even then highlight the search pattern in the future text.
 Passing ``+command`` will run the given command each time a new file is opened
 by ``less``.
 
-``
-
 
 Filtering Lines
 ---------------
