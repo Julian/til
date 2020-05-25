@@ -35,7 +35,7 @@ useful during conflict resoluton.
 
 
 ``git name-rev``
----------------
+----------------
 
 ``name-rev`` can append info about the position of a commit relative to tags.
 
