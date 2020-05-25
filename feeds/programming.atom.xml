@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog - programming</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/programming.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-05-25T13:55:10-04:00</updated><entry><title>BPF</title><link href="https://til.grayvines.com/bpf.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/bpf.html</id><summary type="html">&lt;div class="section" id="jit"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog - programming</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/programming.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-05-25T13:58:09-04:00</updated><entry><title>BPF</title><link href="https://til.grayvines.com/bpf.html" rel="alternate"></link><published>2020-05-25T13:58:09-04:00</published><updated>2020-05-25T13:58:09-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/bpf.html</id><summary type="html">&lt;div class="section" id="jit"&gt;
 &lt;h2&gt;JIT&lt;/h2&gt;
 &lt;p&gt;A restricted subset of C is compiled via &lt;tt class="docutils literal"&gt;clang&lt;/tt&gt; to eBPF bytecode, and the
 Linux kernel contains a JIT (and of course a VM) to execute it.&lt;/p&gt;
@@ -44,15 +44,15 @@ tools, and which part of the stack they trace.&lt;/p&gt;
 &lt;p&gt;Julia Evans's &lt;a class="reference external" href="https://jvns.ca/blog/2017/07/05/linux-tracing-systems/"&gt;Linux tracing systems &amp;amp; how they fit together&lt;/a&gt; is pretty great
 reading &amp;amp; reference for context beyond just BPF.&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="programming"></category></entry><entry><title>coreutils</title><link href="https://til.grayvines.com/coreutils.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/coreutils.html</id><content type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;mkdir &lt;span class="pre"&gt;-p&lt;/span&gt;&lt;/tt&gt; will create a directory with its parents. But &lt;tt class="docutils literal"&gt;cp&lt;/tt&gt; takes a
+</content><category term="programming"></category></entry><entry><title>coreutils</title><link href="https://til.grayvines.com/coreutils.html" rel="alternate"></link><published>2020-05-25T13:58:09-04:00</published><updated>2020-05-25T13:58:09-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/coreutils.html</id><content type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;mkdir &lt;span class="pre"&gt;-p&lt;/span&gt;&lt;/tt&gt; will create a directory with its parents. But &lt;tt class="docutils literal"&gt;cp&lt;/tt&gt; takes a
 parents option as well.&lt;/p&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;cp &lt;span class="pre"&gt;--parents&lt;/span&gt; foo/bar/baz/quux.txt some/directory&lt;/tt&gt; will create
 &lt;tt class="docutils literal"&gt;some/directory/foo/bar/baz/quux.txt&lt;/tt&gt; without any of the other
 directory structure from the original location.&lt;/p&gt;
-</content><category term="programming"></category></entry><entry><title>dstat</title><link href="https://til.grayvines.com/dstat.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/dstat.html</id><content type="html">&lt;p&gt;&lt;a class="reference external" href="http://dag.wiee.rs/home-made/dstat/"&gt;dstat&lt;/a&gt; can replace a bunch of other
+</content><category term="programming"></category></entry><entry><title>dstat</title><link href="https://til.grayvines.com/dstat.html" rel="alternate"></link><published>2020-05-25T13:58:09-04:00</published><updated>2020-05-25T13:58:09-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/dstat.html</id><content type="html">&lt;p&gt;&lt;a class="reference external" href="http://dag.wiee.rs/home-made/dstat/"&gt;dstat&lt;/a&gt; can replace a bunch of other
 statistical performance counting things (I/O, CPU, Disk, Network, Syscalls,
 etc.).&lt;/p&gt;
-</content><category term="programming"></category></entry><entry><title>Firefox</title><link href="https://til.grayvines.com/firefox.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/firefox.html</id><summary type="html">&lt;p&gt;The Firefox Dev Tools console defines a &lt;tt class="docutils literal"&gt;copy()&lt;/tt&gt; function which will copy
+</content><category term="programming"></category></entry><entry><title>Firefox</title><link href="https://til.grayvines.com/firefox.html" rel="alternate"></link><published>2020-05-25T13:58:09-04:00</published><updated>2020-05-25T13:58:09-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/firefox.html</id><summary type="html">&lt;p&gt;The Firefox Dev Tools console defines a &lt;tt class="docutils literal"&gt;copy()&lt;/tt&gt; function which will copy
 text to the clipboard.&lt;/p&gt;
 &lt;p&gt;For some reason, using &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;navigator.clipboard.writeText(&amp;quot;asdf&amp;quot;)&lt;/span&gt;&lt;/tt&gt;, which &lt;a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText"&gt;seems
 to be the normal way to do this&lt;/a&gt; fires
@@ -63,7 +63,7 @@ text to the clipboard.&lt;/p&gt;
 to be the normal way to do this&lt;/a&gt; fires
 a rejected promise. Probably something to do with the console environment being
 different and weird, or me not understanding the &lt;a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Permissions_API/Using_the_Permissions_API"&gt;permissions API&lt;/a&gt;.&lt;/p&gt;
-</content><category term="programming"></category></entry><entry><title>Git</title><link href="https://til.grayvines.com/git.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/git.html</id><summary type="html">&lt;p&gt;&lt;em&gt;git you magnificent beast...&lt;/em&gt;&lt;/p&gt;
+</content><category term="programming"></category></entry><entry><title>Git</title><link href="https://til.grayvines.com/git.html" rel="alternate"></link><published>2020-05-25T13:58:09-04:00</published><updated>2020-05-25T13:58:09-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/git.html</id><summary type="html">&lt;p&gt;&lt;em&gt;git you magnificent beast...&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="finding-the-history-of-a-function-or-object"&gt;
 &lt;h2&gt;Finding the History of a Function or Object&lt;/h2&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;log &lt;span class="pre"&gt;-L&lt;/span&gt; :foo&lt;/tt&gt; will show you the history of the function/object called
@@ -128,7 +128,7 @@ notes.&lt;/p&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;format-patch&lt;/span&gt;&lt;/tt&gt; turns commits into patches as a file, and formatted for
 sending via email or applying with &lt;tt class="docutils literal"&gt;git am&lt;/tt&gt;.&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="programming"></category></entry><entry><title>less</title><link href="https://til.grayvines.com/less.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/less.html</id><summary type="html">&lt;div class="section" id="less-s"&gt;
+</content><category term="programming"></category></entry><entry><title>less</title><link href="https://til.grayvines.com/less.html" rel="alternate"></link><published>2020-05-25T13:58:09-04:00</published><updated>2020-05-25T13:58:09-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/less.html</id><summary type="html">&lt;div class="section" id="less-s"&gt;
 &lt;h2&gt;&lt;tt class="docutils literal"&gt;less &lt;span class="pre"&gt;-S&lt;/span&gt;&lt;/tt&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;-S&lt;/span&gt;&lt;/tt&gt; will disable soft line breaks within &lt;tt class="docutils literal"&gt;less&lt;/tt&gt;, allowing horizontal
 scrolling.&lt;/p&gt;
@@ -163,7 +163,7 @@ by &lt;tt class="docutils literal"&gt;less&lt;/tt&gt;.&lt;/p&gt;
 &lt;h2&gt;Opening EDITOR&lt;/h2&gt;
 &lt;p&gt;Hitting &lt;tt class="docutils literal"&gt;v&lt;/tt&gt; will open the file in an editor.&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="programming"></category></entry><entry><title>namei</title><link href="https://til.grayvines.com/namei.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/namei.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;namei(1)&lt;/tt&gt; (provided by &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;util-linux&lt;/span&gt;&lt;/tt&gt; on macOS) is a nifty utility for fully
+</content><category term="programming"></category></entry><entry><title>namei</title><link href="https://til.grayvines.com/namei.html" rel="alternate"></link><published>2020-05-25T13:58:09-04:00</published><updated>2020-05-25T13:58:09-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/namei.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;namei(1)&lt;/tt&gt; (provided by &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;util-linux&lt;/span&gt;&lt;/tt&gt; on macOS) is a nifty utility for fully
 resolving symbolic links.&lt;/p&gt;
 &lt;p&gt;Given a chain of links, it will show e.g.:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="go"&gt;⊙  namei =python                                                                                                                                                                                julian@Air ●&lt;/span&gt;
@@ -206,16 +206,16 @@ resolving symbolic links.&lt;/p&gt;
 &lt;span class="go"&gt;    - pypy&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;which fully walks the chain and shows its nodes.&lt;/p&gt;
-</content><category term="programming"></category></entry><entry><title>pv</title><link href="https://til.grayvines.com/pv.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/pv.html</id><content type="html">&lt;p&gt;&lt;a class="reference external" href="http://ivarch.com/programs/pv.shtml"&gt;pv&lt;/a&gt; is a useful utility to insert in
+</content><category term="programming"></category></entry><entry><title>pv</title><link href="https://til.grayvines.com/pv.html" rel="alternate"></link><published>2020-05-25T13:58:09-04:00</published><updated>2020-05-25T13:58:09-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/pv.html</id><content type="html">&lt;p&gt;&lt;a class="reference external" href="http://ivarch.com/programs/pv.shtml"&gt;pv&lt;/a&gt; is a useful utility to insert in
 shell pipelines for watching how much data passes through the pipe.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://www.cyberciti.biz/open-source/command-line-hacks/pv-command-examples/"&gt;This page&lt;/a&gt;
 has a few simple examples, and there are more I'm sure with some googling
 around.&lt;/p&gt;
-</content><category term="programming"></category></entry><entry><title>socat</title><link href="https://til.grayvines.com/socat.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/socat.html</id><content type="html">&lt;p&gt;Use &lt;tt class="docutils literal"&gt;socat&lt;/tt&gt; instead of &lt;tt class="docutils literal"&gt;netcat&lt;/tt&gt;. It takes something more like endpoint
+</content><category term="programming"></category></entry><entry><title>socat</title><link href="https://til.grayvines.com/socat.html" rel="alternate"></link><published>2020-05-25T13:58:09-04:00</published><updated>2020-05-25T13:58:09-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/socat.html</id><content type="html">&lt;p&gt;Use &lt;tt class="docutils literal"&gt;socat&lt;/tt&gt; instead of &lt;tt class="docutils literal"&gt;netcat&lt;/tt&gt;. It takes something more like endpoint
 syntax (and does many more kinds of ports and configurable connectivity that
 come with them).&lt;/p&gt;
 &lt;p&gt;Tons of examples &lt;a class="reference external" href="http://www.dest-unreach.org/socat/doc/socat.html#EXAMPLES"&gt;here&lt;/a&gt;.&lt;/p&gt;
-</content><category term="programming"></category></entry><entry><title>U2F and OpenSSH</title><link href="https://til.grayvines.com/u2f-and-openssh.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/u2f-and-openssh.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://www.openssh.com/txt/release-8.2"&gt;As of OpenSSH 8.2&lt;/a&gt;, OpenSSH
+</content><category term="programming"></category></entry><entry><title>U2F and OpenSSH</title><link href="https://til.grayvines.com/u2f-and-openssh.html" rel="alternate"></link><published>2020-05-25T13:58:09-04:00</published><updated>2020-05-25T13:58:09-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/u2f-and-openssh.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://www.openssh.com/txt/release-8.2"&gt;As of OpenSSH 8.2&lt;/a&gt;, OpenSSH
 now supports U2F for authentication.&lt;/p&gt;
 &lt;p&gt;This is a totally separate authentication mechanism entirely from say,
 ED25519 host keys with a second factor; here, the U2F (e.g. Yubikey)
@@ -227,7 +227,7 @@ ED25519 host keys with a second factor; here, the U2F (e.g. Yubikey)
 &lt;em&gt;is&lt;/em&gt; / &lt;em&gt;has&lt;/em&gt; the key on it.&lt;/p&gt;
 &lt;p&gt;To use it though, both sides (server and client) have to be recent
 enough to support this form of login.&lt;/p&gt;
-</content><category term="programming"></category></entry><entry><title>zsh</title><link href="https://til.grayvines.com/zsh.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/zsh.html</id><summary type="html">&lt;div class="section" id="id1"&gt;
+</content><category term="programming"></category></entry><entry><title>zsh</title><link href="https://til.grayvines.com/zsh.html" rel="alternate"></link><published>2020-05-25T13:58:09-04:00</published><updated>2020-05-25T13:58:09-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/zsh.html</id><summary type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;&lt;tt class="docutils literal"&gt;&amp;amp;|&lt;/tt&gt;&lt;/h2&gt;
 &lt;p&gt;Piping using &lt;tt class="docutils literal"&gt;foo &amp;amp;| bar&lt;/tt&gt; will pipe both stdout &lt;em&gt;and&lt;/em&gt; stderr to &lt;tt class="docutils literal"&gt;bar&lt;/tt&gt;.&lt;/p&gt;
 &lt;/div&gt;
