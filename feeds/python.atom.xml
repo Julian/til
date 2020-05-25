@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL - python</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/python.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-05-25T14:04:34-04:00</updated><entry><title>Symlinking Python (3) Interpreters</title><link href="https://til.grayvines.com/posts/2020/05/25/symlinking-python-3-interpreters/" rel="alternate"></link><published>2020-05-25T14:04:34-04:00</published><updated>2020-05-25T14:04:34-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-25:/posts/2020/05/25/symlinking-python-3-interpreters/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.python.org/dev/peps/pep-0405/#id17"&gt;PEP 405&lt;/a&gt; introduced
+<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL - python</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/python.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-05-25T14:06:14-04:00</updated><entry><title>Symlinking Python (3) Interpreters</title><link href="https://til.grayvines.com/posts/2020/05/25/symlinking-python-3-interpreters/" rel="alternate"></link><published>2020-05-25T14:06:14-04:00</published><updated>2020-05-25T14:06:14-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-25:/posts/2020/05/25/symlinking-python-3-interpreters/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.python.org/dev/peps/pep-0405/#id17"&gt;&lt;span class="caps"&gt;PEP&lt;/span&gt; 405&lt;/a&gt; introduced
 a &lt;tt class="docutils literal"&gt;pyvenv.cfg&lt;/tt&gt; file, useful for creating lightweight virtual
 environments without the hacks done by &lt;tt class="docutils literal"&gt;virtualenv&lt;/tt&gt; historically.
 Doing so is much, much faster as well, since now creation of a virtual
-environment is essentially just creating 2 files (one file and a symlink).&lt;/p&gt;
-&lt;p&gt;It also though changed …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.python.org/dev/peps/pep-0405/#id17"&gt;PEP 405&lt;/a&gt; introduced
+environment is essentially just creating 2 files (one file and a&amp;nbsp;symlink).&lt;/p&gt;
+&lt;p&gt;It also though changed …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.python.org/dev/peps/pep-0405/#id17"&gt;&lt;span class="caps"&gt;PEP&lt;/span&gt; 405&lt;/a&gt; introduced
 a &lt;tt class="docutils literal"&gt;pyvenv.cfg&lt;/tt&gt; file, useful for creating lightweight virtual
 environments without the hacks done by &lt;tt class="docutils literal"&gt;virtualenv&lt;/tt&gt; historically.
 Doing so is much, much faster as well, since now creation of a virtual
-environment is essentially just creating 2 files (one file and a symlink).&lt;/p&gt;
+environment is essentially just creating 2 files (one file and a&amp;nbsp;symlink).&lt;/p&gt;
 &lt;p&gt;It also though changed the behavior of symlinking a Python interpreter binary.
-Specifically, if you do:&lt;/p&gt;
+Specifically, if you&amp;nbsp;do:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 ln -s /a/python3 /some/other/directory/
 &lt;/pre&gt;
 &lt;p&gt;then &lt;tt class="docutils literal"&gt;/some/other/directory/python&lt;/tt&gt; is seen as an entirely different virtual
 environment. It will have entirely different &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;site-packages&lt;/span&gt;&lt;/tt&gt; (i.e. will not
-see packages installed to the original interpreter).&lt;/p&gt;
-&lt;p&gt;Full reproducer:&lt;/p&gt;
+see packages installed to the original&amp;nbsp;interpreter).&lt;/p&gt;
+&lt;p&gt;Full&amp;nbsp;reproducer:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ python3.8 -m venv venv &amp;amp;&amp;amp; \
   venv/bin/python -m pip install --quiet attrs &amp;amp;&amp;amp; \
@@ -28,26 +28,25 @@ $ python3.8 -m venv venv &amp;amp;&amp;amp; \
   echo 'symlink:' &amp;amp;&amp;amp; \
   ./symlink -c 'import attr'; rm -rf venv symlink
 &lt;/pre&gt;
-&lt;p&gt;It's unclear to me why this behavior is desireable -- to me, it seems a
+&lt;p&gt;It&amp;#8217;s unclear to me why this behavior is desireable &amp;#8212; to me, it seems a
 lot more reasonable for the presence of a &lt;tt class="docutils literal"&gt;pyvenv.cfg&lt;/tt&gt; file to
 trigger the virtual environment behavior, not merely creating a symlink.
-I.e., the behavior I would have expected is:&lt;/p&gt;
+I.e., the behavior I would have expected&amp;nbsp;is:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;on startup of a Python interpreter, look for a &lt;tt class="docutils literal"&gt;pyvenv.cfg&lt;/tt&gt; next
 to the absolute path of &lt;tt class="docutils literal"&gt;sys.argv[0]&lt;/tt&gt;&lt;/li&gt;
-&lt;li&gt;if you find it, this is a virtual environment, read and process it&lt;/li&gt;
+&lt;li&gt;if you find it, this is a virtual environment, read and process&amp;nbsp;it&lt;/li&gt;
 &lt;li&gt;otherwise, if &lt;tt class="docutils literal"&gt;sys.argv[0]&lt;/tt&gt; is a symlink, &lt;tt class="docutils literal"&gt;readlink&lt;/tt&gt; it and re-check
 for a &lt;tt class="docutils literal"&gt;pyvenv.cfg&lt;/tt&gt; (following the behavior above) or otherwise
 terminating once a non-symlink is reached. But &lt;tt class="docutils literal"&gt;sys.argv[0]&lt;/tt&gt; alone
-being a symlink does not change the isolation or behavior of the linked
-interpreter.&lt;/li&gt;
+being a symlink does not change the isolation or behavior of the linked&amp;nbsp;interpreter.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;I'm not sure I have enough energy to investigate whether the above was
-considered and/or has some critical issue I don't see, but the current
+&lt;p&gt;I&amp;#8217;m not sure I have enough energy to investigate whether the above was
+considered and/or has some critical issue I don&amp;#8217;t see, but the current
 behavior is quite surprising (something I only notice now given that
 &lt;tt class="docutils literal"&gt;virtualenv&lt;/tt&gt; just adopted it as of &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;virtualenv&amp;gt;=20&lt;/span&gt;&lt;/tt&gt;).&lt;/p&gt;
-&lt;p&gt;If you know why the above was chosen, or want to argue it's better, let
-me know :)&lt;/p&gt;
+&lt;p&gt;If you know why the above was chosen, or want to argue it&amp;#8217;s better, let
+me know&amp;nbsp;:)&lt;/p&gt;
 </content><category term="python"></category></entry></feed>

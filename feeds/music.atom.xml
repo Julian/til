@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL - music</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/music.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-05-25T14:04:34-04:00</updated><entry><title>Spreadsheets Are Cool</title><link href="https://til.grayvines.com/posts/2020/05/25/spreadsheets-are-cool/" rel="alternate"></link><published>2020-05-25T14:04:34-04:00</published><updated>2020-05-25T14:04:34-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-25:/posts/2020/05/25/spreadsheets-are-cool/</id><summary type="html">&lt;p&gt;Using a spreadsheet is an oddly good low-tech way to write out the layers of a
-song (for e.g. covering it / reproducing it).&lt;/p&gt;
-&lt;p&gt;As an example, for Jai Paul's &lt;a class="reference external" href="https://open.spotify.com/track/4fo6QymiAvIc2T7SNDWNZq"&gt;All Night&lt;/a&gt;, writing out
-something like:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL - music</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/music.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-05-25T14:06:14-04:00</updated><entry><title>Spreadsheets Are Cool</title><link href="https://til.grayvines.com/posts/2020/05/25/spreadsheets-are-cool/" rel="alternate"></link><published>2020-05-25T14:06:14-04:00</published><updated>2020-05-25T14:06:14-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-25:/posts/2020/05/25/spreadsheets-are-cool/</id><summary type="html">&lt;p&gt;Using a spreadsheet is an oddly good low-tech way to write out the layers of a
+song (for e.g. covering it / reproducing&amp;nbsp;it).&lt;/p&gt;
+&lt;p&gt;As an example, for Jai Paul&amp;#8217;s &lt;a class="reference external" href="https://open.spotify.com/track/4fo6QymiAvIc2T7SNDWNZq"&gt;All Night&lt;/a&gt;, writing out
+something&amp;nbsp;like:&lt;/p&gt;
 &lt;table border="1" class="docutils"&gt;
 &lt;colgroup&gt;
 &lt;col width="8%" /&gt;
@@ -35,11 +35,10 @@ something like:&lt;/p&gt;
 &lt;tr&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;
 &lt;td&gt;&amp;nbsp;&lt;/td&gt;
 &lt;td&gt;&amp;nbsp;&lt;/td&gt;
-&lt;td&gt;x&lt;/td&gt;
 &lt;td&gt;x …&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</summary><content type="html">&lt;p&gt;Using a spreadsheet is an oddly good low-tech way to write out the layers of a
-song (for e.g. covering it / reproducing it).&lt;/p&gt;
-&lt;p&gt;As an example, for Jai Paul's &lt;a class="reference external" href="https://open.spotify.com/track/4fo6QymiAvIc2T7SNDWNZq"&gt;All Night&lt;/a&gt;, writing out
-something like:&lt;/p&gt;
+song (for e.g. covering it / reproducing&amp;nbsp;it).&lt;/p&gt;
+&lt;p&gt;As an example, for Jai Paul&amp;#8217;s &lt;a class="reference external" href="https://open.spotify.com/track/4fo6QymiAvIc2T7SNDWNZq"&gt;All Night&lt;/a&gt;, writing out
+something&amp;nbsp;like:&lt;/p&gt;
 &lt;table border="1" class="docutils"&gt;
 &lt;colgroup&gt;
 &lt;col width="8%" /&gt;
@@ -79,7 +78,7 @@ something like:&lt;/p&gt;
 &lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;Verse&lt;/td&gt;
 &lt;td&gt;0:37&lt;/td&gt;
-&lt;td&gt;If it's got to be one night&lt;/td&gt;
+&lt;td&gt;If it&amp;#8217;s got to be one night&lt;/td&gt;
 &lt;td&gt;&amp;nbsp;&lt;/td&gt;
 &lt;td&gt;x&lt;/td&gt;
 &lt;td&gt;&amp;nbsp;&lt;/td&gt;
@@ -87,7 +86,7 @@ something like:&lt;/p&gt;
 &lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;
 &lt;td&gt;0:40&lt;/td&gt;
-&lt;td&gt;Then, girl, it's got to be all night&lt;/td&gt;
+&lt;td&gt;Then, girl, it&amp;#8217;s got to be all night&lt;/td&gt;
 &lt;td&gt;&amp;nbsp;&lt;/td&gt;
 &lt;td&gt;x&lt;/td&gt;
 &lt;td&gt;&amp;nbsp;&lt;/td&gt;
@@ -95,7 +94,7 @@ something like:&lt;/p&gt;
 &lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;
 &lt;td&gt;0:43&lt;/td&gt;
-&lt;td&gt;Let's meet up in the moonlight&lt;/td&gt;
+&lt;td&gt;Let&amp;#8217;s meet up in the moonlight&lt;/td&gt;
 &lt;td&gt;&amp;nbsp;&lt;/td&gt;
 &lt;td&gt;x&lt;/td&gt;
 &lt;td&gt;&amp;nbsp;&lt;/td&gt;
@@ -103,7 +102,7 @@ something like:&lt;/p&gt;
 &lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;
 &lt;td&gt;0:46&lt;/td&gt;
-&lt;td&gt;Cause, girl, it's got to be all night&lt;/td&gt;
+&lt;td&gt;Cause, girl, it&amp;#8217;s got to be all night&lt;/td&gt;
 &lt;td&gt;&amp;nbsp;&lt;/td&gt;
 &lt;td&gt;x&lt;/td&gt;
 &lt;td&gt;&amp;nbsp;&lt;/td&gt;
@@ -143,6 +142,6 @@ something like:&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;et cetera... forces listening to the song carefully, and helps write out where
-each of the layers should come in and out.&lt;/p&gt;
+&lt;p&gt;et cetera&amp;#8230; forces listening to the song carefully, and helps write out where
+each of the layers should come in and&amp;nbsp;out.&lt;/p&gt;
 </content><category term="music"></category></entry></feed>

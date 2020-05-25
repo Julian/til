@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL - math</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/math.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-05-25T14:04:34-04:00</updated><entry><title>Forecasting S-Curves</title><link href="https://til.grayvines.com/posts/2020/05/25/forecasting-s-curves/" rel="alternate"></link><published>2020-05-25T14:04:34-04:00</published><updated>2020-05-25T14:04:34-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-25:/posts/2020/05/25/forecasting-s-curves/</id><content type="html">&lt;p&gt;Forecasting s-curves (sigmoid, logistic, etc.) is hard.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL - math</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/math.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-05-25T14:06:14-04:00</updated><entry><title>Forecasting S-Curves</title><link href="https://til.grayvines.com/posts/2020/05/25/forecasting-s-curves/" rel="alternate"></link><published>2020-05-25T14:06:14-04:00</published><updated>2020-05-25T14:06:14-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-25:/posts/2020/05/25/forecasting-s-curves/</id><content type="html">&lt;p&gt;Forecasting s-curves (sigmoid, logistic, etc.) is&amp;nbsp;hard.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://constancecrozier.com/2020/04/16/forecasting-s-curves-is-hard/"&gt;This article&lt;/a&gt;
 has an easy explanation of why, and a conclusion that often predicting
 the specific s-curve given data is hard even up until one is already at
-the &amp;quot;flattening&amp;quot; portion of the curve.&lt;/p&gt;
-</content><category term="math"></category></entry><entry><title>"New" Objects in Problems</title><link href="https://til.grayvines.com/posts/2020/05/25/new-objects-in-problems/" rel="alternate"></link><published>2020-05-25T14:04:34-04:00</published><updated>2020-05-25T14:04:34-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-25:/posts/2020/05/25/new-objects-in-problems/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=OkmNXy7er84"&gt;This 3b1b video&lt;/a&gt; points out a
-nice heuristic for how to find solutions to a general problem.&lt;/p&gt;
-&lt;p&gt;The &amp;quot;source&amp;quot; problem there is about randomly choosing points on a sphere and
+the &amp;#8220;flattening&amp;#8221; portion of the&amp;nbsp;curve.&lt;/p&gt;
+</content><category term="math"></category></entry><entry><title>“New” Objects in Problems</title><link href="https://til.grayvines.com/posts/2020/05/25/new-objects-in-problems/" rel="alternate"></link><published>2020-05-25T14:06:14-04:00</published><updated>2020-05-25T14:06:14-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-25:/posts/2020/05/25/new-objects-in-problems/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=OkmNXy7er84"&gt;This 3b1b video&lt;/a&gt; points out a
+nice heuristic for how to find solutions to a general&amp;nbsp;problem.&lt;/p&gt;
+&lt;p&gt;The &amp;#8220;source&amp;#8221; problem there is about randomly choosing points on a sphere and
 asking what the probability is that the induced tetrahedron contains the center
-of the sphere.&lt;/p&gt;
-&lt;p&gt;But the &amp;quot;algorithm&amp;quot; to find …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=OkmNXy7er84"&gt;This 3b1b video&lt;/a&gt; points out a
-nice heuristic for how to find solutions to a general problem.&lt;/p&gt;
-&lt;p&gt;The &amp;quot;source&amp;quot; problem there is about randomly choosing points on a sphere and
+of the&amp;nbsp;sphere.&lt;/p&gt;
+&lt;p&gt;But the &amp;#8220;algorithm&amp;#8221; to find …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=OkmNXy7er84"&gt;This 3b1b video&lt;/a&gt; points out a
+nice heuristic for how to find solutions to a general&amp;nbsp;problem.&lt;/p&gt;
+&lt;p&gt;The &amp;#8220;source&amp;#8221; problem there is about randomly choosing points on a sphere and
 asking what the probability is that the induced tetrahedron contains the center
-of the sphere.&lt;/p&gt;
-&lt;p&gt;But the &amp;quot;algorithm&amp;quot; to find a solution is nice:&lt;/p&gt;
+of the&amp;nbsp;sphere.&lt;/p&gt;
+&lt;p&gt;But the &amp;#8220;algorithm&amp;#8221; to find a solution is&amp;nbsp;nice:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Simplify the problem to a simpler environment (2D circles and triangles
-in this case)&lt;/li&gt;
+in this&amp;nbsp;case)&lt;/li&gt;
 &lt;li&gt;In that environment, notice that a new object simplifies the way to view
 the problem (in this case, noticing that instead of considering 3 random
 points, consider 2 random &lt;em&gt;lines&lt;/em&gt; being drawn through the circle, and
 then an assignment of 2 base points from the 4 possible intersection
-points, and therefore to the answer of 1/4 probability)&lt;/li&gt;
-&lt;li&gt;Regeneralize to the initial environment&lt;/li&gt;
+points, and therefore to the answer of 1/4&amp;nbsp;probability)&lt;/li&gt;
+&lt;li&gt;Regeneralize to the initial&amp;nbsp;environment&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;In short: simplify, then notice whether a new object is used, then recast the
-problem in terms of the new object, then re-generalize the recasted problem.&lt;/p&gt;
-&lt;p&gt;Also -- combinatorics is great.&lt;/p&gt;
-</content><category term="math"></category></entry><entry><title>SIR Models</title><link href="https://til.grayvines.com/posts/2020/05/25/sir-models/" rel="alternate"></link><published>2020-05-25T14:04:34-04:00</published><updated>2020-05-25T14:04:34-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-25:/posts/2020/05/25/sir-models/</id><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://threadreaderapp.com/thread/1236324650315059200.html"&gt;This rolled up Twitter thread&lt;/a&gt; has a
-nice explanation of SIR (&amp;quot;suceptible&amp;quot;, &amp;quot;infected&amp;quot;, &amp;quot;recovered&amp;quot;) models
-of disease / processes.&lt;/p&gt;
-</content><category term="math"></category></entry><entry><title>Winning the Olympics</title><link href="https://til.grayvines.com/posts/2020/05/25/winning-the-olympics/" rel="alternate"></link><published>2020-05-25T14:04:34-04:00</published><updated>2020-05-25T14:04:34-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-25:/posts/2020/05/25/winning-the-olympics/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=5fR__LXDkRg"&gt;This video&lt;/a&gt; has an interesting
-showerthought about how to define who wins the olympics.&lt;/p&gt;
+problem in terms of the new object, then re-generalize the recasted&amp;nbsp;problem.&lt;/p&gt;
+&lt;p&gt;Also &amp;#8212; combinatorics is&amp;nbsp;great.&lt;/p&gt;
+</content><category term="math"></category></entry><entry><title>SIR Models</title><link href="https://til.grayvines.com/posts/2020/05/25/sir-models/" rel="alternate"></link><published>2020-05-25T14:06:14-04:00</published><updated>2020-05-25T14:06:14-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-25:/posts/2020/05/25/sir-models/</id><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://threadreaderapp.com/thread/1236324650315059200.html"&gt;This rolled up Twitter thread&lt;/a&gt; has a
+nice explanation of &lt;span class="caps"&gt;SIR&lt;/span&gt; (&amp;#8220;suceptible&amp;#8221;, &amp;#8220;infected&amp;#8221;, &amp;#8220;recovered&amp;#8221;) models
+of disease /&amp;nbsp;processes.&lt;/p&gt;
+</content><category term="math"></category></entry><entry><title>Winning the Olympics</title><link href="https://til.grayvines.com/posts/2020/05/25/winning-the-olympics/" rel="alternate"></link><published>2020-05-25T14:06:14-04:00</published><updated>2020-05-25T14:06:14-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-25:/posts/2020/05/25/winning-the-olympics/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=5fR__LXDkRg"&gt;This video&lt;/a&gt; has an interesting
+showerthought about how to define who wins the&amp;nbsp;olympics.&lt;/p&gt;
 &lt;p&gt;In short, rather than absolute number of medals (which favors large
 nations) or medals per capita (which favors small nations), a
-probabilistic-y combination of them is proposed (that's obviously the
-technical term for it. Essentially it's …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=5fR__LXDkRg"&gt;This video&lt;/a&gt; has an interesting
-showerthought about how to define who wins the olympics.&lt;/p&gt;
+probabilistic-y combination of them is proposed (that&amp;#8217;s obviously the
+technical term for it. Essentially …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=5fR__LXDkRg"&gt;This video&lt;/a&gt; has an interesting
+showerthought about how to define who wins the&amp;nbsp;olympics.&lt;/p&gt;
 &lt;p&gt;In short, rather than absolute number of medals (which favors large
 nations) or medals per capita (which favors small nations), a
-probabilistic-y combination of them is proposed (that's obviously the
-technical term for it. Essentially it's calculating which nations did
-better than expected probabilistically given their size).&lt;/p&gt;
-&lt;p&gt;Absolutely imperfect, but fun to think about.&lt;/p&gt;
+probabilistic-y combination of them is proposed (that&amp;#8217;s obviously the
+technical term for it. Essentially it&amp;#8217;s calculating which nations did
+better than expected probabilistically given their&amp;nbsp;size).&lt;/p&gt;
+&lt;p&gt;Absolutely imperfect, but fun to think&amp;nbsp;about.&lt;/p&gt;
 </content><category term="math"></category></entry></feed>

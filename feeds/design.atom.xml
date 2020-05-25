@@ -1,40 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL - design</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/design.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-05-25T14:04:34-04:00</updated><entry><title>11 Foot 8</title><link href="https://til.grayvines.com/posts/2020/05/25/11-foot-8/" rel="alternate"></link><published>2020-05-25T14:04:34-04:00</published><updated>2020-05-25T14:04:34-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-25:/posts/2020/05/25/11-foot-8/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://en.wikipedia.org/wiki/Norfolk_Southern%E2%80%93Gregson_Street_Overpass"&gt;11 Foot 8&lt;/a&gt;
-is the nickname of a bridge in North Carolina that everyone essentially crashes
-into.&lt;/p&gt;
-&lt;p&gt;There are a ton of videos on YouTube of various &amp;quot;can opening&amp;quot; crashes despite
-numerous warning signs.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL - design</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/design.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-05-25T14:06:14-04:00</updated><entry><title>11 Foot 8</title><link href="https://til.grayvines.com/posts/2020/05/25/11-foot-8/" rel="alternate"></link><published>2020-05-25T14:06:14-04:00</published><updated>2020-05-25T14:06:14-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-25:/posts/2020/05/25/11-foot-8/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://en.wikipedia.org/wiki/Norfolk_Southern%E2%80%93Gregson_Street_Overpass"&gt;11 Foot 8&lt;/a&gt;
+is the nickname of a bridge in North Carolina that everyone essentially crashes&amp;nbsp;into.&lt;/p&gt;
+&lt;p&gt;There are a ton of videos on YouTube of various &amp;#8220;can opening&amp;#8221; crashes despite
+numerous warning&amp;nbsp;signs.&lt;/p&gt;
 &lt;div class="section" id="blame-the-user"&gt;
-&lt;h2&gt;Blame the User&lt;/h2&gt;
-&lt;p&gt;Sometimes it's worth pondering this bridge in the context of &amp;quot;blame the user …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://en.wikipedia.org/wiki/Norfolk_Southern%E2%80%93Gregson_Street_Overpass"&gt;11 Foot 8&lt;/a&gt;
-is the nickname of a bridge in North Carolina that everyone essentially crashes
-into.&lt;/p&gt;
-&lt;p&gt;There are a ton of videos on YouTube of various &amp;quot;can opening&amp;quot; crashes despite
-numerous warning signs.&lt;/p&gt;
+&lt;h2&gt;Blame the&amp;nbsp;User&lt;/h2&gt;
+&lt;p&gt;Sometimes it&amp;#8217;s worth pondering this bridge in the context of &amp;#8220;blame the …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://en.wikipedia.org/wiki/Norfolk_Southern%E2%80%93Gregson_Street_Overpass"&gt;11 Foot 8&lt;/a&gt;
+is the nickname of a bridge in North Carolina that everyone essentially crashes&amp;nbsp;into.&lt;/p&gt;
+&lt;p&gt;There are a ton of videos on YouTube of various &amp;#8220;can opening&amp;#8221; crashes despite
+numerous warning&amp;nbsp;signs.&lt;/p&gt;
 &lt;div class="section" id="blame-the-user"&gt;
-&lt;h2&gt;Blame the User&lt;/h2&gt;
-&lt;p&gt;Sometimes it's worth pondering this bridge in the context of &amp;quot;blame the user&amp;quot;
-kinds of engineering philosophies -- specifically, how does the current system
+&lt;h2&gt;Blame the&amp;nbsp;User&lt;/h2&gt;
+&lt;p&gt;Sometimes it&amp;#8217;s worth pondering this bridge in the context of &amp;#8220;blame the user&amp;#8221;
+kinds of engineering philosophies &amp;#8212; specifically, how does the current system
 of (physical) guidelines and warning signs and everything relate to whose
-&amp;quot;fault&amp;quot; it is that this bridge is an outlier when it comes to crashes.&lt;/p&gt;
-&lt;p&gt;Its clearance is abnormal for modern underpasses, which very clearly
-contributes.&lt;/p&gt;
+&amp;#8220;fault&amp;#8221; it is that this bridge is an outlier when it comes to&amp;nbsp;crashes.&lt;/p&gt;
+&lt;p&gt;Its clearance is abnormal for modern underpasses, which very clearly&amp;nbsp;contributes.&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="design"></category></entry><entry><title>Poka-Yoke</title><link href="https://til.grayvines.com/posts/2020/05/25/poka-yoke/" rel="alternate"></link><published>2020-05-25T14:04:34-04:00</published><updated>2020-05-25T14:04:34-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-25:/posts/2020/05/25/poka-yoke/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://en.wikipedia.org/wiki/Poka-yoke"&gt;Poka-Yoke&lt;/a&gt; is a methodology
-in which a system is designed to methodologically discourage incorrect
-operation.&lt;/p&gt;
-&lt;p&gt;E.g. (from the above Wikipedia page):&lt;/p&gt;
+</content><category term="design"></category></entry><entry><title>Poka-Yoke</title><link href="https://til.grayvines.com/posts/2020/05/25/poka-yoke/" rel="alternate"></link><published>2020-05-25T14:06:14-04:00</published><updated>2020-05-25T14:06:14-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-25:/posts/2020/05/25/poka-yoke/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://en.wikipedia.org/wiki/Poka-yoke"&gt;Poka-Yoke&lt;/a&gt; is a methodology
+in which a system is designed to methodologically discourage incorrect&amp;nbsp;operation.&lt;/p&gt;
+&lt;p&gt;E.g. (from the above Wikipedia&amp;nbsp;page):&lt;/p&gt;
 &lt;blockquote&gt;
 a fixture that holds pieces for processing might be modified to only
 allow pieces to be held in the correct orientation, or a digital
 counter might track the …&lt;/blockquote&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://en.wikipedia.org/wiki/Poka-yoke"&gt;Poka-Yoke&lt;/a&gt; is a methodology
-in which a system is designed to methodologically discourage incorrect
-operation.&lt;/p&gt;
-&lt;p&gt;E.g. (from the above Wikipedia page):&lt;/p&gt;
+in which a system is designed to methodologically discourage incorrect&amp;nbsp;operation.&lt;/p&gt;
+&lt;p&gt;E.g. (from the above Wikipedia&amp;nbsp;page):&lt;/p&gt;
 &lt;blockquote&gt;
 a fixture that holds pieces for processing might be modified to only
 allow pieces to be held in the correct orientation, or a digital
 counter might track the number of spot welds on each piece to ensure
 that the worker executes the correct number of welds.&lt;/blockquote&gt;
-&lt;p&gt;(It was coined/canonicalized by Japanese automobile manufacturing at Toyota)&lt;/p&gt;
+&lt;p&gt;(It was coined/canonicalized by Japanese automobile manufacturing at&amp;nbsp;Toyota)&lt;/p&gt;
 </content><category term="design"></category></entry></feed>
