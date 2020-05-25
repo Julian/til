@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/all.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-05-25T13:55:10-04:00</updated><entry><title>11 Foot 8</title><link href="https://til.grayvines.com/11-foot-8.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/11-foot-8.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://en.wikipedia.org/wiki/Norfolk_Southern%E2%80%93Gregson_Street_Overpass"&gt;11 Foot 8&lt;/a&gt;
+is the nickname of a bridge in North Carolina that everyone essentially crashes
+into.&lt;/p&gt;
+&lt;p&gt;There are a ton of videos on YouTube of various &amp;quot;can opening&amp;quot; crashes despite
+numerous warning signs.&lt;/p&gt;
+&lt;div class="section" id="blame-the-user"&gt;
+&lt;h2&gt;Blame the User&lt;/h2&gt;
+&lt;p&gt;Sometimes it's worth pondering this bridge in the context of &amp;quot;blame the user …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://en.wikipedia.org/wiki/Norfolk_Southern%E2%80%93Gregson_Street_Overpass"&gt;11 Foot 8&lt;/a&gt;
+is the nickname of a bridge in North Carolina that everyone essentially crashes
+into.&lt;/p&gt;
+&lt;p&gt;There are a ton of videos on YouTube of various &amp;quot;can opening&amp;quot; crashes despite
+numerous warning signs.&lt;/p&gt;
+&lt;div class="section" id="blame-the-user"&gt;
+&lt;h2&gt;Blame the User&lt;/h2&gt;
+&lt;p&gt;Sometimes it's worth pondering this bridge in the context of &amp;quot;blame the user&amp;quot;
+kinds of engineering philosophies -- specifically, how does the current system
+of (physical) guidelines and warning signs and everything relate to whose
+&amp;quot;fault&amp;quot; it is that this bridge is an outlier when it comes to crashes.&lt;/p&gt;
+&lt;p&gt;Its clearance is abnormal for modern underpasses, which very clearly
+contributes.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="design"></category></entry><entry><title>Bee Stings</title><link href="https://til.grayvines.com/bee-stings.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/bee-stings.html</id><content type="html">&lt;p&gt;There is &lt;a class="reference external" href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(96)01367-0/fulltext"&gt;no evidence that scraping a bee sting is better than pulling it out&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The two are equivalent, and what matters is more how long the stinger is
+left inside; the quicker the removal, the better.&lt;/p&gt;
+</content><category term="health"></category></entry><entry><title>Bitcoin Lost</title><link href="https://til.grayvines.com/bitcoin-lost.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/bitcoin-lost.html</id><content type="html">&lt;p&gt;An &lt;a class="reference external" href="https://letstalkbitcoin.com/blog/post/rise-of-the-zombie-bitcoins"&gt;analysis&lt;/a&gt;
+&lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt; calculates that the fraction of bitcoin &amp;quot;permanently&amp;quot; lost (due
+to e.g. wallets without keys, etc.) is around &lt;strong&gt;25%&lt;/strong&gt; of current
+circulation.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;found via &lt;a class="reference external" href="https://seekingalpha.com/article/4082979-how-much-bitcoin-lost-forever"&gt;this article&lt;/a&gt;
+(and originally I believe in a podcast I was listening to... forget which)&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content><category term="misc"></category></entry><entry><title>BPF</title><link href="https://til.grayvines.com/bpf.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/bpf.html</id><summary type="html">&lt;div class="section" id="jit"&gt;
+&lt;h2&gt;JIT&lt;/h2&gt;
+&lt;p&gt;A restricted subset of C is compiled via &lt;tt class="docutils literal"&gt;clang&lt;/tt&gt; to eBPF bytecode, and the
+Linux kernel contains a JIT (and of course a VM) to execute it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bcc"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;bcc&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/iovisor/bcc"&gt;bcc&lt;/a&gt; is a higher level toolkit for
+interacting with eBPF (including via Python). For example:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;bcc&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;BPF&lt;/span&gt;
+
+&lt;span class="n"&gt;BPF&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+    &lt;span class="n"&gt;text …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="jit"&gt;
+&lt;h2&gt;JIT&lt;/h2&gt;
+&lt;p&gt;A restricted subset of C is compiled via &lt;tt class="docutils literal"&gt;clang&lt;/tt&gt; to eBPF bytecode, and the
+Linux kernel contains a JIT (and of course a VM) to execute it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bcc"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;bcc&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/iovisor/bcc"&gt;bcc&lt;/a&gt; is a higher level toolkit for
+interacting with eBPF (including via Python). For example:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;bcc&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;BPF&lt;/span&gt;
+
+&lt;span class="n"&gt;BPF&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+    &lt;span class="n"&gt;text&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class="s2"&gt;        int kprobe__sys_clone(void *ctx) {&lt;/span&gt;
+&lt;span class="s2"&gt;            bpf_trace_printk(&amp;quot;Hello, World!&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s2"&gt;n&amp;quot;);&lt;/span&gt;
+&lt;span class="s2"&gt;            return 0;&lt;/span&gt;
+&lt;span class="s2"&gt;        }&lt;/span&gt;
+&lt;span class="s2"&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;trace_print&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;will attach a simple print callback whenever a new process is spawned (via
+&lt;tt class="docutils literal"&gt;clone(2)&lt;/tt&gt;).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bpf-based-tools"&gt;
+&lt;h2&gt;BPF-based tools&lt;/h2&gt;
+&lt;p&gt;Brendan Gregg has a great &lt;a class="reference external" href="http://www.brendangregg.com/ebpf.html"&gt;diagram and post&lt;/a&gt; of the various BPF-using
+tools, and which part of the stack they trace.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="more-tracing"&gt;
+&lt;h2&gt;More Tracing&lt;/h2&gt;
+&lt;p&gt;Julia Evans's &lt;a class="reference external" href="https://jvns.ca/blog/2017/07/05/linux-tracing-systems/"&gt;Linux tracing systems &amp;amp; how they fit together&lt;/a&gt; is pretty great
+reading &amp;amp; reference for context beyond just BPF.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="programming"></category></entry><entry><title>coreutils</title><link href="https://til.grayvines.com/coreutils.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/coreutils.html</id><content type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;mkdir &lt;span class="pre"&gt;-p&lt;/span&gt;&lt;/tt&gt; will create a directory with its parents. But &lt;tt class="docutils literal"&gt;cp&lt;/tt&gt; takes a
+parents option as well.&lt;/p&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;cp &lt;span class="pre"&gt;--parents&lt;/span&gt; foo/bar/baz/quux.txt some/directory&lt;/tt&gt; will create
+&lt;tt class="docutils literal"&gt;some/directory/foo/bar/baz/quux.txt&lt;/tt&gt; without any of the other
+directory structure from the original location.&lt;/p&gt;
+</content><category term="programming"></category></entry><entry><title>dstat</title><link href="https://til.grayvines.com/dstat.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/dstat.html</id><content type="html">&lt;p&gt;&lt;a class="reference external" href="http://dag.wiee.rs/home-made/dstat/"&gt;dstat&lt;/a&gt; can replace a bunch of other
+statistical performance counting things (I/O, CPU, Disk, Network, Syscalls,
+etc.).&lt;/p&gt;
+</content><category term="programming"></category></entry><entry><title>Firefox</title><link href="https://til.grayvines.com/firefox.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/firefox.html</id><summary type="html">&lt;p&gt;The Firefox Dev Tools console defines a &lt;tt class="docutils literal"&gt;copy()&lt;/tt&gt; function which will copy
+text to the clipboard.&lt;/p&gt;
+&lt;p&gt;For some reason, using &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;navigator.clipboard.writeText(&amp;quot;asdf&amp;quot;)&lt;/span&gt;&lt;/tt&gt;, which &lt;a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText"&gt;seems
+to be the normal way to do this&lt;/a&gt; fires
+a rejected promise. Probably something to do with the console environment being
+different and weird …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The Firefox Dev Tools console defines a &lt;tt class="docutils literal"&gt;copy()&lt;/tt&gt; function which will copy
+text to the clipboard.&lt;/p&gt;
+&lt;p&gt;For some reason, using &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;navigator.clipboard.writeText(&amp;quot;asdf&amp;quot;)&lt;/span&gt;&lt;/tt&gt;, which &lt;a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText"&gt;seems
+to be the normal way to do this&lt;/a&gt; fires
+a rejected promise. Probably something to do with the console environment being
+different and weird, or me not understanding the &lt;a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Permissions_API/Using_the_Permissions_API"&gt;permissions API&lt;/a&gt;.&lt;/p&gt;
+</content><category term="programming"></category></entry><entry><title>Forecasting S-Curves</title><link href="https://til.grayvines.com/forecasting-s-curves.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/forecasting-s-curves.html</id><content type="html">&lt;p&gt;Forecasting s-curves (sigmoid, logistic, etc.) is hard.&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;This article
+&amp;lt;https://constancecrozier.com/2020/04/16/forecasting-s-curves-is-hard/&amp;gt;&lt;/cite&gt;
+_ has an easy explanation of why, and a conclusion that often predicting
+the specific s-curve given data is hard even up until one is already at
+the &amp;quot;flattening&amp;quot; portion of the curve.&lt;/p&gt;
+</content><category term="math"></category></entry><entry><title>Gauss-Lucas Theorem</title><link href="https://til.grayvines.com/gauss-lucas-theorem.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/gauss-lucas-theorem.html</id><content type="html">&lt;p&gt;The &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Gauss%E2%80%93Lucas_theorem"&gt;Gauss-Lucas Theorem&lt;/a&gt; is an interesting
+theorem relating the roots of a polynomial P to the roots of its derivative P'.&lt;/p&gt;
+&lt;p&gt;Specifically, it states that the roots of P' all lie within the convex hull of
+the roots of P.&lt;/p&gt;
+</content><category term="theorems"></category></entry><entry><title>Git</title><link href="https://til.grayvines.com/git.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/git.html</id><summary type="html">&lt;p&gt;&lt;em&gt;git you magnificent beast...&lt;/em&gt;&lt;/p&gt;
+&lt;div class="section" id="finding-the-history-of-a-function-or-object"&gt;
+&lt;h2&gt;Finding the History of a Function or Object&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;log &lt;span class="pre"&gt;-L&lt;/span&gt; :foo&lt;/tt&gt; will show you the history of the function/object called
+&lt;tt class="docutils literal"&gt;foo&lt;/tt&gt;. This is a smarter version of normal &lt;tt class="docutils literal"&gt;log &lt;span class="pre"&gt;-L&lt;/span&gt;&lt;/tt&gt; which just knows about
+lines.&lt;/p&gt;
+&lt;p&gt;But because I'm lazy to even type this out, I …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;git you magnificent beast...&lt;/em&gt;&lt;/p&gt;
+&lt;div class="section" id="finding-the-history-of-a-function-or-object"&gt;
+&lt;h2&gt;Finding the History of a Function or Object&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;log &lt;span class="pre"&gt;-L&lt;/span&gt; :foo&lt;/tt&gt; will show you the history of the function/object called
+&lt;tt class="docutils literal"&gt;foo&lt;/tt&gt;. This is a smarter version of normal &lt;tt class="docutils literal"&gt;log &lt;span class="pre"&gt;-L&lt;/span&gt;&lt;/tt&gt; which just knows about
+lines.&lt;/p&gt;
+&lt;p&gt;But because I'm lazy to even type this out, I made &lt;a class="reference external" href="https://github.com/Julian/dotfiles/blob/master/bin/git-pylog"&gt;git pylog&lt;/a&gt; to just
+be able to type &lt;tt class="docutils literal"&gt;g pylog foo.bar.baz&lt;/tt&gt; and find the history of the FQON
+there.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="finding-commits-by-message"&gt;
+&lt;h2&gt;Finding Commits by Message&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;git show :/foo&lt;/tt&gt; will find the last commit whose message contains &lt;tt class="docutils literal"&gt;foo&lt;/tt&gt;.
+It accepts a regex.&lt;/p&gt;
+&lt;p&gt;Specifically, &lt;tt class="docutils literal"&gt;git show :^Merge&lt;/tt&gt; should generally find the last merge commit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="showing-various-parts-of-a-merge-conflict"&gt;
+&lt;h2&gt;Showing Various Parts of a Merge Conflict&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;git show :N:foo.txt&lt;/tt&gt; will show foo.txt from &amp;quot;stage&amp;quot; number N, which is
+useful during conflict resoluton.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="git-name-rev"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;git &lt;span class="pre"&gt;name-rev&lt;/span&gt;&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;name-rev&lt;/span&gt;&lt;/tt&gt; can append info about the position of a commit relative to tags.&lt;/p&gt;
+&lt;p&gt;It can do this even interspersed in other prose text.&lt;/p&gt;
+&lt;p&gt;E.g., given say a comment saying:&lt;/p&gt;
+&lt;blockquote&gt;
+I think this bug was caused by dc9061e8ffb5002e33688ae97d0d953818e89bae
+and fixed in d099d7e84d1ce3cf9737e9785be339c917f4a3e3.&lt;/blockquote&gt;
+&lt;p&gt;piping that to &lt;tt class="docutils literal"&gt;git &lt;span class="pre"&gt;name-rev&lt;/span&gt; &lt;span class="pre"&gt;--stdin&lt;/span&gt;&lt;/tt&gt; will output:&lt;/p&gt;
+&lt;blockquote&gt;
+I think this bug was caused by dc9061e8ffb5002e33688ae97d0d953818e89bae
+(v1.0.0~2) and fixed in d099d7e84d1ce3cf9737e9785be339c917f4a3e3 (v1.0.1).&lt;/blockquote&gt;
+&lt;p&gt;See its man page for more stuff.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tags-matching-a-pattern"&gt;
+&lt;h2&gt;Tags Matching a Pattern&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;git tag &lt;span class="pre"&gt;-l&lt;/span&gt;&lt;/tt&gt; doesn't just list all tags, it can take a pattern and show only
+matching ones, e.g.:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ g tag -l v*
+&lt;/pre&gt;
+&lt;p&gt;for showing version tags.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="git-shortlog"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;git shortlog&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;shortlog&lt;/tt&gt; gives a nice summarized version of the log, e.g. for release
+notes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="listing-or-looping-over-revisions"&gt;
+&lt;h2&gt;Listing or Looping Over Revisions&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;git &lt;span class="pre"&gt;for-each-ref&lt;/span&gt;&lt;/tt&gt; will loop over given revisions.&lt;/p&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;git &lt;span class="pre"&gt;rev-list&lt;/span&gt;&lt;/tt&gt; will simply list them (in reverse order).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="sending-patches-over-email"&gt;
+&lt;h2&gt;Sending Patches Over Email&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;format-patch&lt;/span&gt;&lt;/tt&gt; turns commits into patches as a file, and formatted for
+sending via email or applying with &lt;tt class="docutils literal"&gt;git am&lt;/tt&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="programming"></category></entry><entry><title>Hitler's Rise to Power</title><link href="https://til.grayvines.com/hitlers-rise-to-power.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/hitlers-rise-to-power.html</id><content type="html">&lt;p&gt;Hitler was &lt;cite&gt;not elected in democratically. He only got 36.8% of the vote, and
+ultimately ascended to power by becoming chancellor
+&amp;lt;https://en.wikipedia.org/wiki/Adolf_Hitler%27s_rise_to_power#Seizure_of_control_(1931%E2%80%931933)&amp;gt;`_&lt;/cite&gt;.&lt;/p&gt;
+</content><category term="history"></category></entry><entry><title>less</title><link href="https://til.grayvines.com/less.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/less.html</id><summary type="html">&lt;div class="section" id="less-s"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;less &lt;span class="pre"&gt;-S&lt;/span&gt;&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;-S&lt;/span&gt;&lt;/tt&gt; will disable soft line breaks within &lt;tt class="docutils literal"&gt;less&lt;/tt&gt;, allowing horizontal
+scrolling.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tailing-files"&gt;
+&lt;h2&gt;Tailing Files&lt;/h2&gt;
+&lt;p&gt;Use &lt;tt class="docutils literal"&gt;less +F&lt;/tt&gt; instead of &lt;tt class="docutils literal"&gt;tail &lt;span class="pre"&gt;-f&lt;/span&gt;&lt;/tt&gt;. It works the same, but supports
+interrupting the stream with &lt;tt class="docutils literal"&gt;SIGINT&lt;/tt&gt; to e.g. search around, and then can
+resume tailing by hitting &lt;tt class="docutils literal"&gt;F&lt;/tt&gt; again.&lt;/p&gt;
+&lt;p&gt;Doing so will …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="less-s"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;less &lt;span class="pre"&gt;-S&lt;/span&gt;&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;-S&lt;/span&gt;&lt;/tt&gt; will disable soft line breaks within &lt;tt class="docutils literal"&gt;less&lt;/tt&gt;, allowing horizontal
+scrolling.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tailing-files"&gt;
+&lt;h2&gt;Tailing Files&lt;/h2&gt;
+&lt;p&gt;Use &lt;tt class="docutils literal"&gt;less +F&lt;/tt&gt; instead of &lt;tt class="docutils literal"&gt;tail &lt;span class="pre"&gt;-f&lt;/span&gt;&lt;/tt&gt;. It works the same, but supports
+interrupting the stream with &lt;tt class="docutils literal"&gt;SIGINT&lt;/tt&gt; to e.g. search around, and then can
+resume tailing by hitting &lt;tt class="docutils literal"&gt;F&lt;/tt&gt; again.&lt;/p&gt;
+&lt;p&gt;Doing so will even then highlight the search pattern in the future text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="less-command"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;less +command&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;Passing &lt;tt class="docutils literal"&gt;+command&lt;/tt&gt; will run the given command each time a new file is opened
+by &lt;tt class="docutils literal"&gt;less&lt;/tt&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="filtering-lines"&gt;
+&lt;h2&gt;Filtering Lines&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;&amp;amp;pattern&lt;/tt&gt; will filter lines only matching the given pattern.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="opening-editor"&gt;
+&lt;h2&gt;Opening EDITOR&lt;/h2&gt;
+&lt;p&gt;Hitting &lt;tt class="docutils literal"&gt;v&lt;/tt&gt; will open the file in an editor.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="programming"></category></entry><entry><title>L'Etuvee</title><link href="https://til.grayvines.com/letuvee.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/letuvee.html</id><summary type="html">&lt;p&gt;Try cooking vegetables &amp;quot;a l'etuvee.&amp;quot;&lt;/p&gt;
+&lt;p&gt;It retains tons of flavor. Any non-green vegetable is a good candidate
+-- turnips, carrots, parsnips, cauliflower, squash, etc.&lt;/p&gt;
+&lt;p&gt;Cut them into pieces, put them flat in a pot. Fill the pot with enough
+water to cover 1/4 of the vegetables. Add a hunk of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Try cooking vegetables &amp;quot;a l'etuvee.&amp;quot;&lt;/p&gt;
+&lt;p&gt;It retains tons of flavor. Any non-green vegetable is a good candidate
+-- turnips, carrots, parsnips, cauliflower, squash, etc.&lt;/p&gt;
+&lt;p&gt;Cut them into pieces, put them flat in a pot. Fill the pot with enough
+water to cover 1/4 of the vegetables. Add a hunk of butter and salt and
+pepper. Cook on medium heat until the water is evaporated. Optionally,
+after the water is evaporated, turn the flame up to high for a minute.
+Let the bottom of the pan start to brown well. Once it's a nice dark
+brown, but not black, add a tablespoon of water, and swirl everything
+around the pan. The water will deglaze all the browned sugars, and make
+a nice sauce that will coat your vegetables.&lt;/p&gt;
+</content><category term="food"></category></entry><entry><title>Liquid Magnets</title><link href="https://til.grayvines.com/liquid-magnets.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/liquid-magnets.html</id><content type="html">&lt;p&gt;There aren't really any liquid magnets.&lt;/p&gt;
+&lt;p&gt;The &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Curie_temperature"&gt;Curie temperature&lt;/a&gt; of a material is the
+temperature above which it loses its magnetic properties.&lt;/p&gt;
+&lt;p&gt;Even &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Ferrofluid"&gt;ferrofluids&lt;/a&gt; are not
+actually liquid magnets, they're small solid magnets suspended in a
+liquid (oil).&lt;/p&gt;
+</content><category term="physics"></category></entry><entry><title>namei</title><link href="https://til.grayvines.com/namei.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/namei.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;namei(1)&lt;/tt&gt; (provided by &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;util-linux&lt;/span&gt;&lt;/tt&gt; on macOS) is a nifty utility for fully
+resolving symbolic links.&lt;/p&gt;
+&lt;p&gt;Given a chain of links, it will show e.g.:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="go"&gt;⊙  namei =python                                                                                                                                                                                julian@Air ●&lt;/span&gt;
+&lt;span class="go"&gt;f: /Users/julian/.local/bin/python&lt;/span&gt;
+&lt;span class="go"&gt;d /&lt;/span&gt;
+&lt;span class="go"&gt;d Users&lt;/span&gt;
+&lt;span class="go"&gt;d julian&lt;/span&gt;
+&lt;span class="go"&gt;l .local -&amp;gt; /Users/julian/.dotfiles/.local&lt;/span&gt;
+&lt;span class="go"&gt;d /&lt;/span&gt;
+&lt;span class="go"&gt;d Users …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;namei(1)&lt;/tt&gt; (provided by &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;util-linux&lt;/span&gt;&lt;/tt&gt; on macOS) is a nifty utility for fully
+resolving symbolic links.&lt;/p&gt;
+&lt;p&gt;Given a chain of links, it will show e.g.:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="go"&gt;⊙  namei =python                                                                                                                                                                                julian@Air ●&lt;/span&gt;
+&lt;span class="go"&gt;f: /Users/julian/.local/bin/python&lt;/span&gt;
+&lt;span class="go"&gt;d /&lt;/span&gt;
+&lt;span class="go"&gt;d Users&lt;/span&gt;
+&lt;span class="go"&gt;d julian&lt;/span&gt;
+&lt;span class="go"&gt;l .local -&amp;gt; /Users/julian/.dotfiles/.local&lt;/span&gt;
+&lt;span class="go"&gt;d /&lt;/span&gt;
+&lt;span class="go"&gt;d Users&lt;/span&gt;
+&lt;span class="go"&gt;d julian&lt;/span&gt;
+&lt;span class="go"&gt;d .dotfiles&lt;/span&gt;
+&lt;span class="go"&gt;d .local&lt;/span&gt;
+&lt;span class="go"&gt;d bin&lt;/span&gt;
+&lt;span class="go"&gt;l python -&amp;gt; /Users/julian/.local/share/virtualenvs/dev/bin/python&lt;/span&gt;
+&lt;span class="go"&gt;d /&lt;/span&gt;
+&lt;span class="go"&gt;d Users&lt;/span&gt;
+&lt;span class="go"&gt;d julian&lt;/span&gt;
+&lt;span class="go"&gt;l .local -&amp;gt; /Users/julian/.dotfiles/.local&lt;/span&gt;
+&lt;span class="go"&gt;    d /&lt;/span&gt;
+&lt;span class="go"&gt;    d Users&lt;/span&gt;
+&lt;span class="go"&gt;    d julian&lt;/span&gt;
+&lt;span class="go"&gt;    d .dotfiles&lt;/span&gt;
+&lt;span class="go"&gt;    d .local&lt;/span&gt;
+&lt;span class="go"&gt;d share&lt;/span&gt;
+&lt;span class="go"&gt;d virtualenvs&lt;/span&gt;
+&lt;span class="go"&gt;d dev&lt;/span&gt;
+&lt;span class="go"&gt;d bin&lt;/span&gt;
+&lt;span class="go"&gt;l python -&amp;gt; pypy&lt;/span&gt;
+&lt;span class="go"&gt;    - pypy&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;which fully walks the chain and shows its nodes.&lt;/p&gt;
+</content><category term="programming"></category></entry><entry><title>"New" Objects in Problems</title><link href="https://til.grayvines.com/new-objects-in-problems.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/new-objects-in-problems.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=OkmNXy7er84"&gt;This 3b1b video&lt;/a&gt; points out a
+nice heuristic for how to find solutions to a general problem.&lt;/p&gt;
+&lt;p&gt;The &amp;quot;source&amp;quot; problem there is about randomly choosing points on a sphere and
+asking what the probability is that the induced tetrahedron contains the center
+of the sphere.&lt;/p&gt;
+&lt;p&gt;But the &amp;quot;algorithm&amp;quot; to find …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=OkmNXy7er84"&gt;This 3b1b video&lt;/a&gt; points out a
+nice heuristic for how to find solutions to a general problem.&lt;/p&gt;
+&lt;p&gt;The &amp;quot;source&amp;quot; problem there is about randomly choosing points on a sphere and
+asking what the probability is that the induced tetrahedron contains the center
+of the sphere.&lt;/p&gt;
+&lt;p&gt;But the &amp;quot;algorithm&amp;quot; to find a solution is nice:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Simplify the problem to a simpler environment (2D circles and triangles
+in this case)&lt;/li&gt;
+&lt;li&gt;In that environment, notice that a new object simplifies the way to view
+the problem (in this case, noticing that instead of considering 3 random
+points, consider 2 random &lt;em&gt;lines&lt;/em&gt; being drawn through the circle, and
+then an assignment of 2 base points from the 4 possible intersection
+points, and therefore to the answer of 1/4 probability)&lt;/li&gt;
+&lt;li&gt;Regeneralize to the initial environment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In short: simplify, then notice whether a new object is used, then recast the
+problem in terms of the new object, then re-generalize the recasted problem.&lt;/p&gt;
+&lt;p&gt;Also -- combinatorics is great.&lt;/p&gt;
+</content><category term="math"></category></entry><entry><title>NYC Subway Signs</title><link href="https://til.grayvines.com/nyc-subway-signs.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/nyc-subway-signs.html</id><content type="html">&lt;p&gt;Every subway platform in NYC has a black and white striped board on it.&lt;/p&gt;
+&lt;p&gt;Conductors must point at the board at each station, to prove that they're
+paying attention.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=i9jIsxQNz0M"&gt;Watch this video and smile&lt;/a&gt;.&lt;/p&gt;
+</content><category term="travel"></category></entry><entry><title>Poka-Yoke</title><link href="https://til.grayvines.com/poka-yoke.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/poka-yoke.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://en.wikipedia.org/wiki/Poka-yoke"&gt;Poka-Yoke&lt;/a&gt; is a methodology
+in which a system is designed to methodologically discourage incorrect
+operation.&lt;/p&gt;
+&lt;p&gt;E.g. (from the above Wikipedia page):&lt;/p&gt;
+&lt;blockquote&gt;
+a fixture that holds pieces for processing might be modified to only
+allow pieces to be held in the correct orientation, or a digital
+counter might track the …&lt;/blockquote&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://en.wikipedia.org/wiki/Poka-yoke"&gt;Poka-Yoke&lt;/a&gt; is a methodology
+in which a system is designed to methodologically discourage incorrect
+operation.&lt;/p&gt;
+&lt;p&gt;E.g. (from the above Wikipedia page):&lt;/p&gt;
+&lt;blockquote&gt;
+a fixture that holds pieces for processing might be modified to only
+allow pieces to be held in the correct orientation, or a digital
+counter might track the number of spot welds on each piece to ensure
+that the worker executes the correct number of welds.&lt;/blockquote&gt;
+&lt;p&gt;(It was coined/canonicalized by Japanese automobile manufacturing at Toyota)&lt;/p&gt;
+</content><category term="design"></category></entry><entry><title>pv</title><link href="https://til.grayvines.com/pv.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/pv.html</id><content type="html">&lt;p&gt;&lt;a class="reference external" href="http://ivarch.com/programs/pv.shtml"&gt;pv&lt;/a&gt; is a useful utility to insert in
+shell pipelines for watching how much data passes through the pipe.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.cyberciti.biz/open-source/command-line-hacks/pv-command-examples/"&gt;This page&lt;/a&gt;
+has a few simple examples, and there are more I'm sure with some googling
+around.&lt;/p&gt;
+</content><category term="programming"></category></entry><entry><title>SIR Models</title><link href="https://til.grayvines.com/sir-models.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/sir-models.html</id><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://threadreaderapp.com/thread/1236324650315059200.html"&gt;This rolled up Twitter thread&lt;/a&gt; has a
+nice explanation of SIR (&amp;quot;suceptible&amp;quot;, &amp;quot;infected&amp;quot;, &amp;quot;recovered&amp;quot;) models
+of disease / processes.&lt;/p&gt;
+</content><category term="math"></category></entry><entry><title>socat</title><link href="https://til.grayvines.com/socat.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/socat.html</id><content type="html">&lt;p&gt;Use &lt;tt class="docutils literal"&gt;socat&lt;/tt&gt; instead of &lt;tt class="docutils literal"&gt;netcat&lt;/tt&gt;. It takes something more like endpoint
+syntax (and does many more kinds of ports and configurable connectivity that
+come with them).&lt;/p&gt;
+&lt;p&gt;Tons of examples &lt;a class="reference external" href="http://www.dest-unreach.org/socat/doc/socat.html#EXAMPLES"&gt;here&lt;/a&gt;.&lt;/p&gt;
+</content><category term="programming"></category></entry><entry><title>Spreadsheets Are Cool</title><link href="https://til.grayvines.com/spreadsheets-are-cool.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/spreadsheets-are-cool.html</id><summary type="html">&lt;p&gt;Using a spreadsheet is an oddly good low-tech way to write out the layers of a
+song (for e.g. covering it / reproducing it).&lt;/p&gt;
+&lt;p&gt;As an example, for Jai Paul's &lt;a class="reference external" href="https://open.spotify.com/track/4fo6QymiAvIc2T7SNDWNZq"&gt;All Night&lt;/a&gt;, writing out
+something like:&lt;/p&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="8%" /&gt;
+&lt;col width="5%" /&gt;
+&lt;col width="34%" /&gt;
+&lt;col width="18%" /&gt;
+&lt;col width="12%" /&gt;
+&lt;col width="11%" /&gt;
+&lt;col width="13%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead valign="bottom"&gt;
+&lt;tr&gt;&lt;th class="head"&gt;Section&lt;/th&gt;
+&lt;th class="head"&gt;Time&lt;/th&gt;
+&lt;th class="head"&gt;Lyric&lt;/th&gt;
+&lt;th class="head"&gt;Slow Attack Chords&lt;/th&gt;
+&lt;th class="head"&gt;Doop Chords&lt;/th&gt;
+&lt;th class="head"&gt;Wah Melody&lt;/th&gt;
+&lt;th class="head"&gt;Drums&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;x&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;x&lt;/td&gt;
+&lt;td&gt;x …&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</summary><content type="html">&lt;p&gt;Using a spreadsheet is an oddly good low-tech way to write out the layers of a
+song (for e.g. covering it / reproducing it).&lt;/p&gt;
+&lt;p&gt;As an example, for Jai Paul's &lt;a class="reference external" href="https://open.spotify.com/track/4fo6QymiAvIc2T7SNDWNZq"&gt;All Night&lt;/a&gt;, writing out
+something like:&lt;/p&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="8%" /&gt;
+&lt;col width="5%" /&gt;
+&lt;col width="34%" /&gt;
+&lt;col width="18%" /&gt;
+&lt;col width="12%" /&gt;
+&lt;col width="11%" /&gt;
+&lt;col width="13%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead valign="bottom"&gt;
+&lt;tr&gt;&lt;th class="head"&gt;Section&lt;/th&gt;
+&lt;th class="head"&gt;Time&lt;/th&gt;
+&lt;th class="head"&gt;Lyric&lt;/th&gt;
+&lt;th class="head"&gt;Slow Attack Chords&lt;/th&gt;
+&lt;th class="head"&gt;Doop Chords&lt;/th&gt;
+&lt;th class="head"&gt;Wah Melody&lt;/th&gt;
+&lt;th class="head"&gt;Drums&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;x&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;x&lt;/td&gt;
+&lt;td&gt;x&lt;/td&gt;
+&lt;td&gt;x&lt;/td&gt;
+&lt;td&gt;Tahs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Verse&lt;/td&gt;
+&lt;td&gt;0:37&lt;/td&gt;
+&lt;td&gt;If it's got to be one night&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;x&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;Tahs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;0:40&lt;/td&gt;
+&lt;td&gt;Then, girl, it's got to be all night&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;x&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;Tahs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;0:43&lt;/td&gt;
+&lt;td&gt;Let's meet up in the moonlight&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;x&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;Tahs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;0:46&lt;/td&gt;
+&lt;td&gt;Cause, girl, it's got to be all night&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;x&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;Tahs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Chorus&lt;/td&gt;
+&lt;td&gt;0:49&lt;/td&gt;
+&lt;td&gt;All night, baby, yeah&lt;/td&gt;
+&lt;td&gt;x&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;x&lt;/td&gt;
+&lt;td&gt;Tahs + Claps&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;0:53&lt;/td&gt;
+&lt;td&gt;All night and day&lt;/td&gt;
+&lt;td&gt;x&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;x&lt;/td&gt;
+&lt;td&gt;Tahs + Claps&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;0:55&lt;/td&gt;
+&lt;td&gt;All night&lt;/td&gt;
+&lt;td&gt;x&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;x&lt;/td&gt;
+&lt;td&gt;Tahs + Claps&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;0:58&lt;/td&gt;
+&lt;td&gt;All night and day&lt;/td&gt;
+&lt;td&gt;x&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;x&lt;/td&gt;
+&lt;td&gt;Tahs + Claps&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;et cetera... forces listening to the song carefully, and helps write out where
+each of the layers should come in and out.&lt;/p&gt;
+</content><category term="music"></category></entry><entry><title>Symlinking Python (3) Interpreters</title><link href="https://til.grayvines.com/symlinking-python-3-interpreters.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/symlinking-python-3-interpreters.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.python.org/dev/peps/pep-0405/#id17"&gt;PEP 405&lt;/a&gt; introduced
+a &lt;tt class="docutils literal"&gt;pyvenv.cfg&lt;/tt&gt; file, useful for creating lightweight virtual
+environments without the hacks done by &lt;tt class="docutils literal"&gt;virtualenv&lt;/tt&gt; historically.
+Doing so is much, much faster as well, since now creation of a virtual
+environment is essentially just creating 2 files (one file and a symlink).&lt;/p&gt;
+&lt;p&gt;It also though changed …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.python.org/dev/peps/pep-0405/#id17"&gt;PEP 405&lt;/a&gt; introduced
+a &lt;tt class="docutils literal"&gt;pyvenv.cfg&lt;/tt&gt; file, useful for creating lightweight virtual
+environments without the hacks done by &lt;tt class="docutils literal"&gt;virtualenv&lt;/tt&gt; historically.
+Doing so is much, much faster as well, since now creation of a virtual
+environment is essentially just creating 2 files (one file and a symlink).&lt;/p&gt;
+&lt;p&gt;It also though changed the behavior of symlinking a Python interpreter binary.
+Specifically, if you do:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+ln -s /a/python3 /some/other/directory/
+&lt;/pre&gt;
+&lt;p&gt;then &lt;tt class="docutils literal"&gt;/some/other/directory/python&lt;/tt&gt; is seen as an entirely different virtual
+environment. It will have entirely different &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;site-packages&lt;/span&gt;&lt;/tt&gt; (i.e. will not
+see packages installed to the original interpreter).&lt;/p&gt;
+&lt;p&gt;Full reproducer:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ python3.8 -m venv venv &amp;amp;&amp;amp; \
+  venv/bin/python -m pip install --quiet attrs &amp;amp;&amp;amp; \
+  echo 'in-place' &amp;amp;&amp;amp; \
+  venv/bin/python -c 'import attr' &amp;amp;&amp;amp; \
+  echo 'succeeded' &amp;amp;&amp;amp; \
+  ln -s venv/bin/python ./symlink &amp;amp;&amp;amp; \
+  echo 'symlink:' &amp;amp;&amp;amp; \
+  ./symlink -c 'import attr'; rm -rf venv symlink
+&lt;/pre&gt;
+&lt;p&gt;It's unclear to me why this behavior is desireable -- to me, it seems a
+lot more reasonable for the presence of a &lt;tt class="docutils literal"&gt;pyvenv.cfg&lt;/tt&gt; file to
+trigger the virtual environment behavior, not merely creating a symlink.
+I.e., the behavior I would have expected is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;on startup of a Python interpreter, look for a &lt;tt class="docutils literal"&gt;pyvenv.cfg&lt;/tt&gt; next
+to the absolute path of &lt;tt class="docutils literal"&gt;sys.argv[0]&lt;/tt&gt;&lt;/li&gt;
+&lt;li&gt;if you find it, this is a virtual environment, read and process it&lt;/li&gt;
+&lt;li&gt;otherwise, if &lt;tt class="docutils literal"&gt;sys.argv[0]&lt;/tt&gt; is a symlink, &lt;tt class="docutils literal"&gt;readlink&lt;/tt&gt; it and re-check
+for a &lt;tt class="docutils literal"&gt;pyvenv.cfg&lt;/tt&gt; (following the behavior above) or otherwise
+terminating once a non-symlink is reached. But &lt;tt class="docutils literal"&gt;sys.argv[0]&lt;/tt&gt; alone
+being a symlink does not change the isolation or behavior of the linked
+interpreter.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I'm not sure I have enough energy to investigate whether the above was
+considered and/or has some critical issue I don't see, but the current
+behavior is quite surprising (something I only notice now given that
+&lt;tt class="docutils literal"&gt;virtualenv&lt;/tt&gt; just adopted it as of &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;virtualenv&amp;gt;=20&lt;/span&gt;&lt;/tt&gt;).&lt;/p&gt;
+&lt;p&gt;If you know why the above was chosen, or want to argue it's better, let
+me know :)&lt;/p&gt;
+</content><category term="python"></category></entry><entry><title>The Borsuk-Ulam Theorem and Stolen Necklaces</title><link href="https://til.grayvines.com/the-borsuk-ulam-theorem-and-stolen-necklaces.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/the-borsuk-ulam-theorem-and-stolen-necklaces.html</id><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=yuVqxCSsE7c"&gt;This 3b1b video&lt;/a&gt; overviews the
+Borsuk-Ulam Theorem, and its applications for the &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Necklace_splitting_problem"&gt;Necklace Splitting problem&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It's a super nice connection between topology and combinatorics.&lt;/p&gt;
+</content><category term="theorems"></category></entry><entry><title>TIL</title><link href="https://til.grayvines.com/til.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/til.html</id><summary type="html">&lt;p&gt;Small tidbits I've learned, with only a touch of order and cleanliness.&lt;/p&gt;
+&lt;p&gt;Inspired by &lt;a class="reference external" href="https://github.com/jbranchaud/til"&gt;https://github.com/jbranchaud/til&lt;/a&gt; and its post on Orange Site.&lt;/p&gt;
+&lt;p&gt;If you notice something I've learned that's still wrong, correcting me
+would be amazingly appreciated!&lt;/p&gt;
+&lt;p&gt;(And of course, a usual disclaimer -- I am not a …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Small tidbits I've learned, with only a touch of order and cleanliness.&lt;/p&gt;
+&lt;p&gt;Inspired by &lt;a class="reference external" href="https://github.com/jbranchaud/til"&gt;https://github.com/jbranchaud/til&lt;/a&gt; and its post on Orange Site.&lt;/p&gt;
+&lt;p&gt;If you notice something I've learned that's still wrong, correcting me
+would be amazingly appreciated!&lt;/p&gt;
+&lt;p&gt;(And of course, a usual disclaimer -- I am not a doctor, a medical
+researcher or a lawyer, so despite anything that may seem relevant to
+those fields, do not take my advice on medicine or law!)&lt;/p&gt;
+</content><category term="misc"></category></entry><entry><title>Time Traveler's Dictionary</title><link href="https://til.grayvines.com/time-travelers-dictionary.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/time-travelers-dictionary.html</id><content type="html">&lt;p&gt;Webster's has a dictionary where words are sorted not alphabetically, but by
+when they're known to have entered the English language -- older words earlier
+on.&lt;/p&gt;
+</content><category term="language"></category></entry><entry><title>Toy Story 2</title><link href="https://til.grayvines.com/toy-story-2.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/toy-story-2.html</id><content type="html">&lt;p&gt;Toy Story 2 was nearly accidentally completely deleted due to an &lt;tt class="docutils literal"&gt;rm &lt;span class="pre"&gt;-rf&lt;/span&gt; /&lt;/tt&gt;,
+except an &lt;a class="reference external" href="https://thenextweb.com/media/2012/05/21/how-pixars-toy-story-2-was-deleted-twice-once-by-technology-and-again-for-its-own-good/"&gt;employee was working from home and happened to have a backup of the
+film on their laptop&lt;/a&gt;.&lt;/p&gt;
+</content><category term="misc"></category></entry><entry><title>U2F and OpenSSH</title><link href="https://til.grayvines.com/u2f-and-openssh.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/u2f-and-openssh.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://www.openssh.com/txt/release-8.2"&gt;As of OpenSSH 8.2&lt;/a&gt;, OpenSSH
+now supports U2F for authentication.&lt;/p&gt;
+&lt;p&gt;This is a totally separate authentication mechanism entirely from say,
+ED25519 host keys with a second factor; here, the U2F (e.g. Yubikey)
+&lt;em&gt;is&lt;/em&gt; / &lt;em&gt;has&lt;/em&gt; the key on it.&lt;/p&gt;
+&lt;p&gt;To use it though, both sides (server and client) have …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="http://www.openssh.com/txt/release-8.2"&gt;As of OpenSSH 8.2&lt;/a&gt;, OpenSSH
+now supports U2F for authentication.&lt;/p&gt;
+&lt;p&gt;This is a totally separate authentication mechanism entirely from say,
+ED25519 host keys with a second factor; here, the U2F (e.g. Yubikey)
+&lt;em&gt;is&lt;/em&gt; / &lt;em&gt;has&lt;/em&gt; the key on it.&lt;/p&gt;
+&lt;p&gt;To use it though, both sides (server and client) have to be recent
+enough to support this form of login.&lt;/p&gt;
+</content><category term="programming"></category></entry><entry><title>Winning the Olympics</title><link href="https://til.grayvines.com/winning-the-olympics.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/winning-the-olympics.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=5fR__LXDkRg"&gt;This video&lt;/a&gt; has an interesting
+showerthought about how to define who wins the olympics.&lt;/p&gt;
+&lt;p&gt;In short, rather than absolute number of medals (which favors large
+nations) or medals per capita (which favors small nations), a
+probabilistic-y combination of them is proposed (that's obviously the
+technical term for it. Essentially it's …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=5fR__LXDkRg"&gt;This video&lt;/a&gt; has an interesting
+showerthought about how to define who wins the olympics.&lt;/p&gt;
+&lt;p&gt;In short, rather than absolute number of medals (which favors large
+nations) or medals per capita (which favors small nations), a
+probabilistic-y combination of them is proposed (that's obviously the
+technical term for it. Essentially it's calculating which nations did
+better than expected probabilistically given their size).&lt;/p&gt;
+&lt;p&gt;Absolutely imperfect, but fun to think about.&lt;/p&gt;
+</content><category term="math"></category></entry><entry><title>Worthwhile Expensive Ingredients</title><link href="https://til.grayvines.com/worthwhile-expensive-ingredients.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/worthwhile-expensive-ingredients.html</id><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.reddit.com/r/Cooking/comments/3abyz1/which_pricey_foodsingredients_are_worth_it/"&gt;Interesting thread&lt;/a&gt;
+with some opinions on which ingredients it's worth splurging on.&lt;/p&gt;
+</content><category term="food"></category></entry><entry><title>zsh</title><link href="https://til.grayvines.com/zsh.html" rel="alternate"></link><published>2020-05-25T13:55:10-04:00</published><updated>2020-05-25T13:55:10-04:00</updated><author><name></name></author><id>tag:til.grayvines.com,2020-05-25:/zsh.html</id><summary type="html">&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;&amp;amp;|&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;Piping using &lt;tt class="docutils literal"&gt;foo &amp;amp;| bar&lt;/tt&gt; will pipe both stdout &lt;em&gt;and&lt;/em&gt; stderr to &lt;tt class="docutils literal"&gt;bar&lt;/tt&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="multios"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;MULTIOS&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;With &lt;tt class="docutils literal"&gt;MULTIOS&lt;/tt&gt; enabled, multiple outputs to the same file descriptor can be
+provided, similar to using &lt;tt class="docutils literal"&gt;tee&lt;/tt&gt;.&lt;/p&gt;
+&lt;p&gt;In other words:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ date &amp;gt;foo &amp;gt;bar
+&lt;/pre&gt;
+&lt;p&gt;will output &lt;tt class="docutils literal"&gt;date&lt;/tt&gt; to both &lt;tt class="docutils literal"&gt;foo&lt;/tt&gt; and &lt;tt class="docutils literal"&gt;bar&lt;/tt&gt;. (Piping it will also work
+since …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;&amp;amp;|&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;Piping using &lt;tt class="docutils literal"&gt;foo &amp;amp;| bar&lt;/tt&gt; will pipe both stdout &lt;em&gt;and&lt;/em&gt; stderr to &lt;tt class="docutils literal"&gt;bar&lt;/tt&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="multios"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;MULTIOS&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;With &lt;tt class="docutils literal"&gt;MULTIOS&lt;/tt&gt; enabled, multiple outputs to the same file descriptor can be
+provided, similar to using &lt;tt class="docutils literal"&gt;tee&lt;/tt&gt;.&lt;/p&gt;
+&lt;p&gt;In other words:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ date &amp;gt;foo &amp;gt;bar
+&lt;/pre&gt;
+&lt;p&gt;will output &lt;tt class="docutils literal"&gt;date&lt;/tt&gt; to both &lt;tt class="docutils literal"&gt;foo&lt;/tt&gt; and &lt;tt class="docutils literal"&gt;bar&lt;/tt&gt;. (Piping it will also work
+since it implicitly is like redirecting).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="cd-old-new"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;cd old new&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;cd old new&lt;/tt&gt; will substitute &lt;tt class="docutils literal"&gt;new&lt;/tt&gt; into &lt;tt class="docutils literal"&gt;old&lt;/tt&gt;.&lt;/p&gt;
+&lt;p&gt;I.e. &lt;tt class="docutils literal"&gt;cd foo bar&lt;/tt&gt; in a working directory like &lt;tt class="docutils literal"&gt;/a/b/foo/c&lt;/tt&gt; will change to
+&lt;tt class="docutils literal"&gt;/a/b/bar/c&lt;/tt&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="vared"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;vared&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;vared SOME_ENVIRONMENT_VARIABLE&lt;/tt&gt; will load the environment variable into a
+line editor, with the output saved back to the environment variable.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="mailpath"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;mailpath&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;mailpath&lt;/tt&gt; specifies the set of paths to look at for new mail.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="programming"></category></entry></feed>
