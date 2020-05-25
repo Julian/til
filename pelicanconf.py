@@ -33,3 +33,5 @@ PAGE_SAVE_AS = "{slug}/index.html"
 TAG_URL = "tags/{slug}/"
 TAG_SAVE_AS = "tags/{slug}/index.html"
 TAGS_SAVE_AS = "tags/index.html"
+
+TYPOGRIFY = True
