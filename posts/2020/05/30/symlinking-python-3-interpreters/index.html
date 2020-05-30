@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Symlinking Python (3) Interpreters</title>
+        <link rel="stylesheet" href="https://til.grayvines.com/theme/css/main.css" />
+        <link href="https://til.grayvines.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="TIL Atom Feed" />
+</head>
+
+<body id="index" class="home">
+<a href="https://github.com/Julian">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
+</a>
+        <header id="banner" class="body">
+                <h1><a href="https://til.grayvines.com/">TIL <strong>Today I Learned</strong></a></h1>
+                <nav><ul>
+                    <li><a href="https://til.grayvines.com/categories/design/">design</a></li>
+                    <li><a href="https://til.grayvines.com/categories/food/">food</a></li>
+                    <li><a href="https://til.grayvines.com/categories/health/">health</a></li>
+                    <li><a href="https://til.grayvines.com/categories/history/">history</a></li>
+                    <li><a href="https://til.grayvines.com/categories/language/">language</a></li>
+                    <li><a href="https://til.grayvines.com/categories/math/">math</a></li>
+                    <li><a href="https://til.grayvines.com/categories/misc/">misc</a></li>
+                    <li><a href="https://til.grayvines.com/categories/music/">music</a></li>
+                    <li><a href="https://til.grayvines.com/categories/physics/">physics</a></li>
+                    <li><a href="https://til.grayvines.com/categories/programming/">programming</a></li>
+                    <li class="active"><a href="https://til.grayvines.com/categories/python/">python</a></li>
+                    <li><a href="https://til.grayvines.com/categories/theorems/">theorems</a></li>
+                    <li><a href="https://til.grayvines.com/categories/travel/">travel</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="https://til.grayvines.com/posts/2020/05/30/symlinking-python-3-interpreters/" rel="bookmark"
+           title="Permalink to Symlinking Python (3) Interpreters">Symlinking Python (3)&nbsp;Interpreters</a></h1>
+<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="JulianWasTaken">Tweet</a><script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2020-05-30T13:09:39.996166-04:00">
+                Published: Sat 30 May 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://til.grayvines.com/authors/julian-berman/">Julian Berman</a>
+        </address>
+<p>In <a href="https://til.grayvines.com/categories/python/">python</a>.</p>
+
+</footer><!-- /.post-info -->      <p><a class="reference external" href="https://www.python.org/dev/peps/pep-0405/#id17"><span class="caps">PEP</span> 405</a> introduced
+a <tt class="docutils literal">pyvenv.cfg</tt> file, useful for creating lightweight virtual
+environments without the hacks done by <tt class="docutils literal">virtualenv</tt> historically.
+Doing so is much, much faster as well, since now creation of a virtual
+environment is essentially just creating 2 files (one file and a&nbsp;symlink).</p>
+<p>It also though changed the behavior of symlinking a Python interpreter binary.
+Specifically, if you&nbsp;do:</p>
+<pre class="literal-block">
+ln -s /a/python3 /some/other/directory/
+</pre>
+<p>then <tt class="docutils literal">/some/other/directory/python</tt> is seen as an entirely different virtual
+environment. It will have entirely different <tt class="docutils literal"><span class="pre">site-packages</span></tt> (i.e. will not
+see packages installed to the original&nbsp;interpreter).</p>
+<p>Full&nbsp;reproducer:</p>
+<pre class="literal-block">
+$ python3.8 -m venv venv &amp;&amp; \
+  venv/bin/python -m pip install --quiet attrs &amp;&amp; \
+  echo 'in-place' &amp;&amp; \
+  venv/bin/python -c 'import attr' &amp;&amp; \
+  echo 'succeeded' &amp;&amp; \
+  ln -s venv/bin/python ./symlink &amp;&amp; \
+  echo 'symlink:' &amp;&amp; \
+  ./symlink -c 'import attr'; rm -rf venv symlink
+</pre>
+<p>It&#8217;s unclear to me why this behavior is desireable &#8212; to me, it seems a
+lot more reasonable for the presence of a <tt class="docutils literal">pyvenv.cfg</tt> file to
+trigger the virtual environment behavior, not merely creating a symlink.
+I.e., the behavior I would have expected&nbsp;is:</p>
+<blockquote>
+<ul class="simple">
+<li>on startup of a Python interpreter, look for a <tt class="docutils literal">pyvenv.cfg</tt> next
+to the absolute path of <tt class="docutils literal">sys.argv[0]</tt></li>
+<li>if you find it, this is a virtual environment, read and process&nbsp;it</li>
+<li>otherwise, if <tt class="docutils literal">sys.argv[0]</tt> is a symlink, <tt class="docutils literal">readlink</tt> it and re-check
+for a <tt class="docutils literal">pyvenv.cfg</tt> (following the behavior above) or otherwise
+terminating once a non-symlink is reached. But <tt class="docutils literal">sys.argv[0]</tt> alone
+being a symlink does not change the isolation or behavior of the linked&nbsp;interpreter.</li>
+</ul>
+</blockquote>
+<p>I&#8217;m not sure I have enough energy to investigate whether the above was
+considered and/or has some critical issue I don&#8217;t see, but the current
+behavior is quite surprising (something I only notice now given that
+<tt class="docutils literal">virtualenv</tt> just adopted it as of <tt class="docutils literal"><span class="pre">virtualenv&gt;=20</span></tt>).</p>
+<p>If you know why the above was chosen, or want to argue it&#8217;s better, let
+me know&nbsp;:)</p>
+
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="https://til.grayvines.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="https://twitter.com/JulianWasTaken">@JulianWasTaken</a></li>
+                            <li><a href="https://instagram.com/julianberman">@julianberman</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

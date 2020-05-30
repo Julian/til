@@ -12,7 +12,7 @@
 <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
 </a>
         <header id="banner" class="body">
-                <h1><a href="https://til.grayvines.com/">TIL </a></h1>
+                <h1><a href="https://til.grayvines.com/">TIL <strong>Today I Learned</strong></a></h1>
                 <nav><ul>
                     <li><a href="https://til.grayvines.com/categories/design/">design</a></li>
                     <li><a href="https://til.grayvines.com/categories/food/">food</a></li>
@@ -32,10 +32,10 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="https://til.grayvines.com/posts/2020/05/28/bpf/"><span class="caps">BPF</span></a></h1>
+                    <h1 class="entry-title"><a href="https://til.grayvines.com/posts/2020/05/30/firefox/">Firefox</a></h1>
 <footer class="post-info">
-        <abbr class="published" title="2020-05-28T02:47:29.340957-04:00">
-                Published: Thu 28 May 2020
+        <abbr class="published" title="2020-05-30T13:09:39.996166-04:00">
+                Published: Sat 30 May 2020
         </abbr>
 
         <address class="vcard author">
@@ -43,39 +43,12 @@
         </address>
 <p>In <a href="https://til.grayvines.com/categories/programming/">programming</a>.</p>
 
-</footer><!-- /.post-info --><div class="section" id="jit">
-<h2><span class="caps">JIT</span></h2>
-<p>A restricted subset of C is compiled via <tt class="docutils literal">clang</tt> to eBPF bytecode, and the
-Linux kernel contains a <span class="caps">JIT</span> (and of course a <span class="caps">VM</span>) to execute&nbsp;it.</p>
-</div>
-<div class="section" id="bcc">
-<h2><tt class="docutils literal">bcc</tt></h2>
-<p><a class="reference external" href="https://github.com/iovisor/bcc">bcc</a> is a higher level toolkit for
-interacting with eBPF (including via Python). For&nbsp;example:</p>
-<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bcc</span> <span class="kn">import</span> <span class="n">BPF</span>
-
-<span class="n">BPF</span><span class="p">(</span>
-    <span class="n">text</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">        int kprobe__sys_clone(void *ctx) {</span>
-<span class="s2">            bpf_trace_printk(&quot;Hello, World!</span><span class="se">\\</span><span class="s2">n&quot;);</span>
-<span class="s2">            return 0;</span>
-<span class="s2">        }</span>
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">,</span>
-<span class="p">)</span><span class="o">.</span><span class="n">trace_print</span><span class="p">()</span>
-</pre></div>
-<p>will attach a simple print callback whenever a new process is spawned (via
-<tt class="docutils literal">clone(2)</tt>).</p>
-</div>
-<div class="section" id="bpf-based-tools">
-<h2><span class="caps">BPF</span>-based&nbsp;tools</h2>
-<p>Brendan Gregg has a great <a class="reference external" href="http://www.brendangregg.com/ebpf.html">diagram and post</a> of the various <span class="caps">BPF</span>-using
-tools, and which part of the stack they&nbsp;trace.</p>
-</div>
-<div class="section" id="more-tracing">
-<h2>More&nbsp;Tracing</h2>
-<p>Julia Evans&#8217;s <a class="reference external" href="https://jvns.ca/blog/2017/07/05/linux-tracing-systems/">Linux tracing systems <span class="amp">&amp;</span> how they fit together</a> is pretty great
-reading <span class="amp">&amp;</span> reference for context beyond just <span class="caps">BPF</span>.</p>
-</div>
+</footer><!-- /.post-info --><p>The Firefox Dev Tools console defines a <tt class="docutils literal">copy()</tt> function which will copy
+text to the&nbsp;clipboard.</p>
+<p>For some reason, using <tt class="docutils literal"><span class="pre">navigator.clipboard.writeText(&quot;asdf&quot;)</span></tt>, which <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText">seems
+to be the normal way to do this</a> fires
+a rejected promise. Probably something to do with the console environment being
+different and weird, or me not understanding the <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Permissions_API/Using_the_Permissions_API">permissions <span class="caps">API</span></a>.</p>
                 </article>
             </aside><!-- /#featured -->
                 <section id="content" class="body">
@@ -85,92 +58,14 @@ reading <span class="amp">&amp;</span> reference for context beyond just <span c
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="https://til.grayvines.com/posts/2020/05/28/coreutils/" rel="bookmark"
-                           title="Permalink to coreutils">coreutils</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2020-05-28T02:47:29.340957-04:00">
-                Published: Thu 28 May 2020
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://til.grayvines.com/authors/julian-berman/">Julian Berman</a>
-        </address>
-<p>In <a href="https://til.grayvines.com/categories/programming/">programming</a>.</p>
-
-</footer><!-- /.post-info -->                <p><tt class="docutils literal">mkdir <span class="pre">-p</span></tt> will create a directory with its parents. But <tt class="docutils literal">cp</tt> takes a
-parents option as&nbsp;well.</p>
-<p><tt class="docutils literal">cp <span class="pre">--parents</span> foo/bar/baz/quux.txt some/directory</tt> will create
-<tt class="docutils literal">some/directory/foo/bar/baz/quux.txt</tt> without any of the other
-directory structure from the original&nbsp;location.</p>
-
-                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/28/coreutils/">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://til.grayvines.com/posts/2020/05/28/dstat/" rel="bookmark"
-                           title="Permalink to dstat">dstat</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2020-05-28T02:47:29.340957-04:00">
-                Published: Thu 28 May 2020
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://til.grayvines.com/authors/julian-berman/">Julian Berman</a>
-        </address>
-<p>In <a href="https://til.grayvines.com/categories/programming/">programming</a>.</p>
-
-</footer><!-- /.post-info -->                <p><a class="reference external" href="http://dag.wiee.rs/home-made/dstat/">dstat</a> can replace a bunch of other
-statistical performance counting things (I/O, <span class="caps">CPU</span>, Disk, Network, Syscalls,&nbsp;etc.).</p>
-
-                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/28/dstat/">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://til.grayvines.com/posts/2020/05/28/firefox/" rel="bookmark"
-                           title="Permalink to Firefox">Firefox</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2020-05-28T02:47:29.340957-04:00">
-                Published: Thu 28 May 2020
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://til.grayvines.com/authors/julian-berman/">Julian Berman</a>
-        </address>
-<p>In <a href="https://til.grayvines.com/categories/programming/">programming</a>.</p>
-
-</footer><!-- /.post-info -->                <p>The Firefox Dev Tools console defines a <tt class="docutils literal">copy()</tt> function which will copy
-text to the&nbsp;clipboard.</p>
-<p>For some reason, using <tt class="docutils literal"><span class="pre">navigator.clipboard.writeText(&quot;asdf&quot;)</span></tt>, which <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText">seems
-to be the normal way to do this</a> fires
-a rejected promise. Probably something to do with the console environment being
-different and weird …</p>
-                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/28/firefox/">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://til.grayvines.com/posts/2020/05/28/git/" rel="bookmark"
+                    <h1><a href="https://til.grayvines.com/posts/2020/05/30/git/" rel="bookmark"
                            title="Permalink to Git">Git</a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2020-05-28T02:47:29.340957-04:00">
-                Published: Thu 28 May 2020
+        <abbr class="published" title="2020-05-30T13:09:39.996166-04:00">
+                Published: Sat 30 May 2020
         </abbr>
 
         <address class="vcard author">
@@ -184,20 +79,20 @@ different and weird …</p>
 <p><tt class="docutils literal">log <span class="pre">-L</span> :foo</tt> will show you the history of the function/object called
 <tt class="docutils literal">foo</tt>. This is a smarter version of normal <tt class="docutils literal">log <span class="pre">-L</span></tt> which just knows about&nbsp;lines.</p>
 <p>But because I&#8217;m lazy to even type this out …</p></div>
-                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/28/git/">read more</a>
+                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/30/git/">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="https://til.grayvines.com/posts/2020/05/28/less/" rel="bookmark"
+                    <h1><a href="https://til.grayvines.com/posts/2020/05/30/less/" rel="bookmark"
                            title="Permalink to less">less</a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2020-05-28T02:47:29.340957-04:00">
-                Published: Thu 28 May 2020
+        <abbr class="published" title="2020-05-30T13:09:39.996166-04:00">
+                Published: Sat 30 May 2020
         </abbr>
 
         <address class="vcard author">
@@ -215,20 +110,20 @@ different and weird …</p>
 interrupting the stream with <tt class="docutils literal"><span class="caps">SIGINT</span></tt> to e.g. search around, and then can
 resume tailing by hitting <tt class="docutils literal">F</tt> again.</p>
 <p>Doing so will …</p></div>
-                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/28/less/">read more</a>
+                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/30/less/">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="https://til.grayvines.com/posts/2020/05/28/namei/" rel="bookmark"
+                    <h1><a href="https://til.grayvines.com/posts/2020/05/30/namei/" rel="bookmark"
                            title="Permalink to namei">namei</a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2020-05-28T02:47:29.340957-04:00">
-                Published: Thu 28 May 2020
+        <abbr class="published" title="2020-05-30T13:09:39.996166-04:00">
+                Published: Sat 30 May 2020
         </abbr>
 
         <address class="vcard author">
@@ -247,20 +142,20 @@ resolving symbolic&nbsp;links.</p>
 <span class="go">l .local -&gt; /Users/julian/.dotfiles/.local</span>
 <span class="go">d /</span>
 <span class="go">d Users …</span></pre></div>
-                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/28/namei/">read more</a>
+                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/30/namei/">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="https://til.grayvines.com/posts/2020/05/28/pv/" rel="bookmark"
+                    <h1><a href="https://til.grayvines.com/posts/2020/05/30/pv/" rel="bookmark"
                            title="Permalink to pv">pv</a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2020-05-28T02:47:29.340957-04:00">
-                Published: Thu 28 May 2020
+        <abbr class="published" title="2020-05-30T13:09:39.996166-04:00">
+                Published: Sat 30 May 2020
         </abbr>
 
         <address class="vcard author">
@@ -273,20 +168,20 @@ shell pipelines for watching how much data passes through the&nbsp;pipe.</p>
 <p><a class="reference external" href="https://www.cyberciti.biz/open-source/command-line-hacks/pv-command-examples/">This page</a>
 has a few simple examples, and there are more I&#8217;m sure with some googling&nbsp;around.</p>
 
-                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/28/pv/">read more</a>
+                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/30/pv/">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="https://til.grayvines.com/posts/2020/05/28/socat/" rel="bookmark"
+                    <h1><a href="https://til.grayvines.com/posts/2020/05/30/socat/" rel="bookmark"
                            title="Permalink to socat"><tt class="docutils literal">socat</tt></a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2020-05-28T02:47:29.340957-04:00">
-                Published: Thu 28 May 2020
+        <abbr class="published" title="2020-05-30T13:09:39.996166-04:00">
+                Published: Sat 30 May 2020
         </abbr>
 
         <address class="vcard author">
@@ -299,20 +194,20 @@ syntax (and does many more kinds of ports and configurable connectivity that
 come with&nbsp;them).</p>
 <p>Tons of examples <a class="reference external" href="http://www.dest-unreach.org/socat/doc/socat.html#EXAMPLES">here</a>.</p>
 
-                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/28/socat/">read more</a>
+                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/30/socat/">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="https://til.grayvines.com/posts/2020/05/28/u2f-and-openssh/" rel="bookmark"
+                    <h1><a href="https://til.grayvines.com/posts/2020/05/30/u2f-and-openssh/" rel="bookmark"
                            title="Permalink to U2F and OpenSSH"><span class="caps">U2F</span> and&nbsp;OpenSSH</a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2020-05-28T02:47:29.340957-04:00">
-                Published: Thu 28 May 2020
+        <abbr class="published" title="2020-05-30T13:09:39.996166-04:00">
+                Published: Sat 30 May 2020
         </abbr>
 
         <address class="vcard author">
@@ -326,20 +221,20 @@ now supports <span class="caps">U2F</span> for&nbsp;authentication.</p>
 <span class="caps">ED25519</span> host keys with a second factor; here, the <span class="caps">U2F</span> (e.g. Yubikey)
 <em>is</em> / <em>has</em> the key on&nbsp;it.</p>
 <p>To use it though, both sides (server and client) have …</p>
-                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/28/u2f-and-openssh/">read more</a>
+                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/30/u2f-and-openssh/">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="https://til.grayvines.com/posts/2020/05/28/x-headers/" rel="bookmark"
+                    <h1><a href="https://til.grayvines.com/posts/2020/05/30/x-headers/" rel="bookmark"
                            title="Permalink to X- Headers"><tt class="docutils literal">X-</tt> Headers</a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2020-05-28T02:47:29.340957-04:00">
-                Published: Thu 28 May 2020
+        <abbr class="published" title="2020-05-30T13:09:39.996166-04:00">
+                Published: Sat 30 May 2020
         </abbr>
 
         <address class="vcard author">
@@ -350,20 +245,20 @@ now supports <span class="caps">U2F</span> for&nbsp;authentication.</p>
 </footer><!-- /.post-info -->                <p>Prefixing (custom) <span class="caps">HTTP</span> Headers with <tt class="docutils literal">X-</tt> is actually <a class="reference external" href="https://tools.ietf.org/html/rfc6648">deprecated / no longer
 recommended by the <span class="caps">IETF</span></a>.</p>
 
-                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/28/x-headers/">read more</a>
+                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/30/x-headers/">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="https://til.grayvines.com/posts/2020/05/28/zsh/" rel="bookmark"
+                    <h1><a href="https://til.grayvines.com/posts/2020/05/30/zsh/" rel="bookmark"
                            title="Permalink to zsh">zsh</a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2020-05-28T02:47:29.340957-04:00">
-                Published: Thu 28 May 2020
+        <abbr class="published" title="2020-05-30T13:09:39.996166-04:00">
+                Published: Sat 30 May 2020
         </abbr>
 
         <address class="vcard author">
@@ -385,7 +280,92 @@ $ date &gt;foo &gt;bar
 </pre>
 <p>will output <tt class="docutils literal">date</tt> to both <tt class="docutils literal">foo</tt> and <tt class="docutils literal">bar</tt>. (Piping it will also work
 since …</p></div>
-                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/28/zsh/">read more</a>
+                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/30/zsh/">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://til.grayvines.com/posts/2020/05/30/bpf/" rel="bookmark"
+                           title="Permalink to BPF"><span class="caps">BPF</span></a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2020-05-30T13:09:39.992167-04:00">
+                Published: Sat 30 May 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://til.grayvines.com/authors/julian-berman/">Julian Berman</a>
+        </address>
+<p>In <a href="https://til.grayvines.com/categories/programming/">programming</a>.</p>
+
+</footer><!-- /.post-info -->                <div class="section" id="jit">
+<h2><span class="caps">JIT</span></h2>
+<p>A restricted subset of C is compiled via <tt class="docutils literal">clang</tt> to eBPF bytecode, and the
+Linux kernel contains a <span class="caps">JIT</span> (and of course a <span class="caps">VM</span>) to execute&nbsp;it.</p>
+</div>
+<div class="section" id="bcc">
+<h2><tt class="docutils literal">bcc</tt></h2>
+<p><a class="reference external" href="https://github.com/iovisor/bcc">bcc</a> is a higher level toolkit for
+interacting with eBPF (including via Python). For&nbsp;example:</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bcc</span> <span class="kn">import</span> <span class="n">BPF</span>
+
+<span class="n">BPF</span><span class="p">(</span>
+    <span class="n">text …</span></pre></div></div>
+                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/30/bpf/">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://til.grayvines.com/posts/2020/05/30/coreutils/" rel="bookmark"
+                           title="Permalink to coreutils">coreutils</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2020-05-30T13:09:39.992167-04:00">
+                Published: Sat 30 May 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://til.grayvines.com/authors/julian-berman/">Julian Berman</a>
+        </address>
+<p>In <a href="https://til.grayvines.com/categories/programming/">programming</a>.</p>
+
+</footer><!-- /.post-info -->                <p><tt class="docutils literal">mkdir <span class="pre">-p</span></tt> will create a directory with its parents. But <tt class="docutils literal">cp</tt> takes a
+parents option as&nbsp;well.</p>
+<p><tt class="docutils literal">cp <span class="pre">--parents</span> foo/bar/baz/quux.txt some/directory</tt> will create
+<tt class="docutils literal">some/directory/foo/bar/baz/quux.txt</tt> without any of the other
+directory structure from the original&nbsp;location.</p>
+
+                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/30/coreutils/">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://til.grayvines.com/posts/2020/05/30/dstat/" rel="bookmark"
+                           title="Permalink to dstat">dstat</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2020-05-30T13:09:39.992167-04:00">
+                Published: Sat 30 May 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://til.grayvines.com/authors/julian-berman/">Julian Berman</a>
+        </address>
+<p>In <a href="https://til.grayvines.com/categories/programming/">programming</a>.</p>
+
+</footer><!-- /.post-info -->                <p><a class="reference external" href="http://dag.wiee.rs/home-made/dstat/">dstat</a> can replace a bunch of other
+statistical performance counting things (I/O, <span class="caps">CPU</span>, Disk, Network, Syscalls,&nbsp;etc.).</p>
+
+                <a class="readmore" href="https://til.grayvines.com/posts/2020/05/30/dstat/">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
                 </ol><!-- /#posts-list -->
