@@ -15,8 +15,9 @@ PLUGINS = ["filetime_from_git"]
 GITHUB_URL = "https://github.com/Julian"
 TWITTER_USERNAME = "JulianWasTaken"
 SOCIAL = [
-    ("@JulianWasTaken", "https://twitter.com/" + TWITTER_USERNAME),
-    ("@julianberman", "https://instagram.com/julianberman"),
+    ("github", GITHUB_URL),
+    ("twitter", "https://twitter.com/" + TWITTER_USERNAME),
+    ("instagram", "https://instagram.com/julianberman"),
 ]
 
 ARTICLE_URL = "posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/"
