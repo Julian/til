@@ -7,6 +7,8 @@ SITESUBTITLE = "Today I Learned"
 TIMEZONE = "America/New_York"
 DEFAULT_DATE = "fs"
 
+PATH = "entries"
+
 GITHUB_URL = "https://github.com/Julian"
 TWITTER_USERNAME = "JulianWasTaken"
 SOCIAL = [
