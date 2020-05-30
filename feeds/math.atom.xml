@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL - math</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/math.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-05-30T15:35:09-04:00</updated><subtitle>Today I Learned</subtitle><entry><title>Forecasting S-Curves</title><link href="https://til.grayvines.com/posts/2020/05/30/forecasting-s-curves/" rel="alternate"></link><published>2020-05-30T15:35:09-04:00</published><updated>2020-05-30T15:35:09-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-30:/posts/2020/05/30/forecasting-s-curves/</id><content type="html">&lt;p&gt;Forecasting s-curves (sigmoid, logistic, etc.) is&amp;nbsp;hard.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL - math</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/math.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-05-30T15:21:31-04:00</updated><subtitle>Today I Learned</subtitle><entry><title>Winning the Olympics</title><link href="https://til.grayvines.com/posts/2020/04/24/winning-the-olympics/" rel="alternate"></link><published>2020-04-24T19:44:29-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-24:/posts/2020/04/24/winning-the-olympics/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=5fR__LXDkRg"&gt;This video&lt;/a&gt; has an interesting
+showerthought about how to define who wins the&amp;nbsp;olympics.&lt;/p&gt;
+&lt;p&gt;In short, rather than absolute number of medals (which favors large
+nations) or medals per capita (which favors small nations), a
+probabilistic-y combination of them is proposed (that&amp;#8217;s obviously the
+technical term for it. Essentially …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=5fR__LXDkRg"&gt;This video&lt;/a&gt; has an interesting
+showerthought about how to define who wins the&amp;nbsp;olympics.&lt;/p&gt;
+&lt;p&gt;In short, rather than absolute number of medals (which favors large
+nations) or medals per capita (which favors small nations), a
+probabilistic-y combination of them is proposed (that&amp;#8217;s obviously the
+technical term for it. Essentially it&amp;#8217;s calculating which nations did
+better than expected probabilistically given their&amp;nbsp;size).&lt;/p&gt;
+&lt;p&gt;Absolutely imperfect, but fun to think&amp;nbsp;about.&lt;/p&gt;
+</content><category term="math"></category></entry><entry><title>SIR Models</title><link href="https://til.grayvines.com/posts/2020/04/24/sir-models/" rel="alternate"></link><published>2020-04-24T18:06:33-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-24:/posts/2020/04/24/sir-models/</id><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://threadreaderapp.com/thread/1236324650315059200.html"&gt;This rolled up Twitter thread&lt;/a&gt; has a
+nice explanation of &lt;span class="caps"&gt;SIR&lt;/span&gt; (&amp;#8220;suceptible&amp;#8221;, &amp;#8220;infected&amp;#8221;, &amp;#8220;recovered&amp;#8221;) models
+of disease /&amp;nbsp;processes.&lt;/p&gt;
+</content><category term="math"></category></entry><entry><title>Forecasting S-Curves</title><link href="https://til.grayvines.com/posts/2020/04/24/forecasting-s-curves/" rel="alternate"></link><published>2020-04-24T18:05:03-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-24:/posts/2020/04/24/forecasting-s-curves/</id><content type="html">&lt;p&gt;Forecasting s-curves (sigmoid, logistic, etc.) is&amp;nbsp;hard.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://constancecrozier.com/2020/04/16/forecasting-s-curves-is-hard/"&gt;This article&lt;/a&gt;
 has an easy explanation of why, and a conclusion that often predicting
 the specific s-curve given data is hard even up until one is already at
 the &amp;#8220;flattening&amp;#8221; portion of the&amp;nbsp;curve.&lt;/p&gt;
-</content><category term="math"></category></entry><entry><title>“New” Objects in Problems</title><link href="https://til.grayvines.com/posts/2020/05/30/new-objects-in-problems/" rel="alternate"></link><published>2020-05-30T15:35:09-04:00</published><updated>2020-05-30T15:35:09-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-30:/posts/2020/05/30/new-objects-in-problems/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=OkmNXy7er84"&gt;This 3b1b video&lt;/a&gt; points out a
+</content><category term="math"></category></entry><entry><title>“New” Objects in Problems</title><link href="https://til.grayvines.com/posts/2020/04/24/new-objects-in-problems/" rel="alternate"></link><published>2020-04-24T15:30:57-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-24:/posts/2020/04/24/new-objects-in-problems/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=OkmNXy7er84"&gt;This 3b1b video&lt;/a&gt; points out a
 nice heuristic for how to find solutions to a general&amp;nbsp;problem.&lt;/p&gt;
 &lt;p&gt;The &amp;#8220;source&amp;#8221; problem there is about randomly choosing points on a sphere and
 asking what the probability is that the induced tetrahedron contains the center
@@ -30,20 +46,4 @@ points, and therefore to the answer of 1/4&amp;nbsp;probability)&lt;/li&gt;
 &lt;p&gt;In short: simplify, then notice whether a new object is used, then recast the
 problem in terms of the new object, then re-generalize the recasted&amp;nbsp;problem.&lt;/p&gt;
 &lt;p&gt;Also &amp;#8212; combinatorics is&amp;nbsp;great.&lt;/p&gt;
-</content><category term="math"></category></entry><entry><title>SIR Models</title><link href="https://til.grayvines.com/posts/2020/05/30/sir-models/" rel="alternate"></link><published>2020-05-30T15:35:09-04:00</published><updated>2020-05-30T15:35:09-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-30:/posts/2020/05/30/sir-models/</id><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://threadreaderapp.com/thread/1236324650315059200.html"&gt;This rolled up Twitter thread&lt;/a&gt; has a
-nice explanation of &lt;span class="caps"&gt;SIR&lt;/span&gt; (&amp;#8220;suceptible&amp;#8221;, &amp;#8220;infected&amp;#8221;, &amp;#8220;recovered&amp;#8221;) models
-of disease /&amp;nbsp;processes.&lt;/p&gt;
-</content><category term="math"></category></entry><entry><title>Winning the Olympics</title><link href="https://til.grayvines.com/posts/2020/05/30/winning-the-olympics/" rel="alternate"></link><published>2020-05-30T15:35:09-04:00</published><updated>2020-05-30T15:35:09-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-30:/posts/2020/05/30/winning-the-olympics/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=5fR__LXDkRg"&gt;This video&lt;/a&gt; has an interesting
-showerthought about how to define who wins the&amp;nbsp;olympics.&lt;/p&gt;
-&lt;p&gt;In short, rather than absolute number of medals (which favors large
-nations) or medals per capita (which favors small nations), a
-probabilistic-y combination of them is proposed (that&amp;#8217;s obviously the
-technical term for it. Essentially …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=5fR__LXDkRg"&gt;This video&lt;/a&gt; has an interesting
-showerthought about how to define who wins the&amp;nbsp;olympics.&lt;/p&gt;
-&lt;p&gt;In short, rather than absolute number of medals (which favors large
-nations) or medals per capita (which favors small nations), a
-probabilistic-y combination of them is proposed (that&amp;#8217;s obviously the
-technical term for it. Essentially it&amp;#8217;s calculating which nations did
-better than expected probabilistically given their&amp;nbsp;size).&lt;/p&gt;
-&lt;p&gt;Absolutely imperfect, but fun to think&amp;nbsp;about.&lt;/p&gt;
 </content><category term="math"></category></entry></feed>

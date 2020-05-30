@@ -1,5 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL - programming</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/programming.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-05-30T15:35:09-04:00</updated><subtitle>Today I Learned</subtitle><entry><title>BPF</title><link href="https://til.grayvines.com/posts/2020/05/30/bpf/" rel="alternate"></link><published>2020-05-30T15:35:09-04:00</published><updated>2020-05-30T15:35:09-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-30:/posts/2020/05/30/bpf/</id><summary type="html">&lt;div class="section" id="jit"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL - programming</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/programming.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-05-30T15:21:31-04:00</updated><subtitle>Today I Learned</subtitle><entry><title>X- Headers</title><link href="https://til.grayvines.com/posts/2020/05/28/x-headers/" rel="alternate"></link><published>2020-05-28T02:47:02-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-28:/posts/2020/05/28/x-headers/</id><content type="html">&lt;p&gt;Prefixing (custom) &lt;span class="caps"&gt;HTTP&lt;/span&gt; Headers with &lt;tt class="docutils literal"&gt;X-&lt;/tt&gt; is actually &lt;a class="reference external" href="https://tools.ietf.org/html/rfc6648"&gt;deprecated / no longer
+recommended by the &lt;span class="caps"&gt;IETF&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+</content><category term="programming"></category></entry><entry><title>U2F and OpenSSH</title><link href="https://til.grayvines.com/posts/2020/05/21/u2f-and-openssh/" rel="alternate"></link><published>2020-05-21T15:16:49-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-21:/posts/2020/05/21/u2f-and-openssh/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://www.openssh.com/txt/release-8.2"&gt;As of OpenSSH 8.2&lt;/a&gt;, OpenSSH
+now supports &lt;span class="caps"&gt;U2F&lt;/span&gt; for&amp;nbsp;authentication.&lt;/p&gt;
+&lt;p&gt;This is a totally separate authentication mechanism entirely from say,
+&lt;span class="caps"&gt;ED25519&lt;/span&gt; host keys with a second factor; here, the &lt;span class="caps"&gt;U2F&lt;/span&gt; (e.g. Yubikey)
+&lt;em&gt;is&lt;/em&gt; / &lt;em&gt;has&lt;/em&gt; the key on&amp;nbsp;it.&lt;/p&gt;
+&lt;p&gt;To use it though, both sides (server and client) have …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="http://www.openssh.com/txt/release-8.2"&gt;As of OpenSSH 8.2&lt;/a&gt;, OpenSSH
+now supports &lt;span class="caps"&gt;U2F&lt;/span&gt; for&amp;nbsp;authentication.&lt;/p&gt;
+&lt;p&gt;This is a totally separate authentication mechanism entirely from say,
+&lt;span class="caps"&gt;ED25519&lt;/span&gt; host keys with a second factor; here, the &lt;span class="caps"&gt;U2F&lt;/span&gt; (e.g. Yubikey)
+&lt;em&gt;is&lt;/em&gt; / &lt;em&gt;has&lt;/em&gt; the key on&amp;nbsp;it.&lt;/p&gt;
+&lt;p&gt;To use it though, both sides (server and client) have to be recent
+enough to support this form of&amp;nbsp;login.&lt;/p&gt;
+</content><category term="programming"></category></entry><entry><title>namei</title><link href="https://til.grayvines.com/posts/2020/04/28/namei/" rel="alternate"></link><published>2020-04-28T13:42:40-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-28:/posts/2020/04/28/namei/</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;namei(1)&lt;/tt&gt; (provided by &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;util-linux&lt;/span&gt;&lt;/tt&gt; on macOS) is a nifty utility for fully
+resolving symbolic&amp;nbsp;links.&lt;/p&gt;
+&lt;p&gt;Given a chain of links, it will show&amp;nbsp;e.g.:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="go"&gt;⊙  namei =python                                                                                                                                                                                julian@Air ●&lt;/span&gt;
+&lt;span class="go"&gt;f: /Users/julian/.local/bin/python&lt;/span&gt;
+&lt;span class="go"&gt;d /&lt;/span&gt;
+&lt;span class="go"&gt;d Users&lt;/span&gt;
+&lt;span class="go"&gt;d julian&lt;/span&gt;
+&lt;span class="go"&gt;l .local -&amp;gt; /Users/julian/.dotfiles/.local&lt;/span&gt;
+&lt;span class="go"&gt;d /&lt;/span&gt;
+&lt;span class="go"&gt;d Users …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;namei(1)&lt;/tt&gt; (provided by &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;util-linux&lt;/span&gt;&lt;/tt&gt; on macOS) is a nifty utility for fully
+resolving symbolic&amp;nbsp;links.&lt;/p&gt;
+&lt;p&gt;Given a chain of links, it will show&amp;nbsp;e.g.:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="go"&gt;⊙  namei =python                                                                                                                                                                                julian@Air ●&lt;/span&gt;
+&lt;span class="go"&gt;f: /Users/julian/.local/bin/python&lt;/span&gt;
+&lt;span class="go"&gt;d /&lt;/span&gt;
+&lt;span class="go"&gt;d Users&lt;/span&gt;
+&lt;span class="go"&gt;d julian&lt;/span&gt;
+&lt;span class="go"&gt;l .local -&amp;gt; /Users/julian/.dotfiles/.local&lt;/span&gt;
+&lt;span class="go"&gt;d /&lt;/span&gt;
+&lt;span class="go"&gt;d Users&lt;/span&gt;
+&lt;span class="go"&gt;d julian&lt;/span&gt;
+&lt;span class="go"&gt;d .dotfiles&lt;/span&gt;
+&lt;span class="go"&gt;d .local&lt;/span&gt;
+&lt;span class="go"&gt;d bin&lt;/span&gt;
+&lt;span class="go"&gt;l python -&amp;gt; /Users/julian/.local/share/virtualenvs/dev/bin/python&lt;/span&gt;
+&lt;span class="go"&gt;d /&lt;/span&gt;
+&lt;span class="go"&gt;d Users&lt;/span&gt;
+&lt;span class="go"&gt;d julian&lt;/span&gt;
+&lt;span class="go"&gt;l .local -&amp;gt; /Users/julian/.dotfiles/.local&lt;/span&gt;
+&lt;span class="go"&gt;    d /&lt;/span&gt;
+&lt;span class="go"&gt;    d Users&lt;/span&gt;
+&lt;span class="go"&gt;    d julian&lt;/span&gt;
+&lt;span class="go"&gt;    d .dotfiles&lt;/span&gt;
+&lt;span class="go"&gt;    d .local&lt;/span&gt;
+&lt;span class="go"&gt;d share&lt;/span&gt;
+&lt;span class="go"&gt;d virtualenvs&lt;/span&gt;
+&lt;span class="go"&gt;d dev&lt;/span&gt;
+&lt;span class="go"&gt;d bin&lt;/span&gt;
+&lt;span class="go"&gt;l python -&amp;gt; pypy&lt;/span&gt;
+&lt;span class="go"&gt;    - pypy&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;which fully walks the chain and shows its&amp;nbsp;nodes.&lt;/p&gt;
+</content><category term="programming"></category></entry><entry><title>Firefox</title><link href="https://til.grayvines.com/posts/2020/04/26/firefox/" rel="alternate"></link><published>2020-04-26T22:28:34-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-26:/posts/2020/04/26/firefox/</id><summary type="html">&lt;p&gt;The Firefox Dev Tools console defines a &lt;tt class="docutils literal"&gt;copy()&lt;/tt&gt; function which will copy
+text to the&amp;nbsp;clipboard.&lt;/p&gt;
+&lt;p&gt;For some reason, using &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;navigator.clipboard.writeText(&amp;quot;asdf&amp;quot;)&lt;/span&gt;&lt;/tt&gt;, which &lt;a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText"&gt;seems
+to be the normal way to do this&lt;/a&gt; fires
+a rejected promise. Probably something to do with the console environment being
+different and weird …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The Firefox Dev Tools console defines a &lt;tt class="docutils literal"&gt;copy()&lt;/tt&gt; function which will copy
+text to the&amp;nbsp;clipboard.&lt;/p&gt;
+&lt;p&gt;For some reason, using &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;navigator.clipboard.writeText(&amp;quot;asdf&amp;quot;)&lt;/span&gt;&lt;/tt&gt;, which &lt;a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText"&gt;seems
+to be the normal way to do this&lt;/a&gt; fires
+a rejected promise. Probably something to do with the console environment being
+different and weird, or me not understanding the &lt;a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Permissions_API/Using_the_Permissions_API"&gt;permissions &lt;span class="caps"&gt;API&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+</content><category term="programming"></category></entry><entry><title>BPF</title><link href="https://til.grayvines.com/posts/2020/04/24/bpf/" rel="alternate"></link><published>2020-04-24T00:51:27-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-24:/posts/2020/04/24/bpf/</id><summary type="html">&lt;div class="section" id="jit"&gt;
 &lt;h2&gt;&lt;span class="caps"&gt;JIT&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;A restricted subset of C is compiled via &lt;tt class="docutils literal"&gt;clang&lt;/tt&gt; to eBPF bytecode, and the
 Linux kernel contains a &lt;span class="caps"&gt;JIT&lt;/span&gt; (and of course a &lt;span class="caps"&gt;VM&lt;/span&gt;) to execute&amp;nbsp;it.&lt;/p&gt;
@@ -44,25 +112,94 @@ tools, and which part of the stack they&amp;nbsp;trace.&lt;/p&gt;
 &lt;p&gt;Julia Evans&amp;#8217;s &lt;a class="reference external" href="https://jvns.ca/blog/2017/07/05/linux-tracing-systems/"&gt;Linux tracing systems &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; how they fit together&lt;/a&gt; is pretty great
 reading &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; reference for context beyond just &lt;span class="caps"&gt;BPF&lt;/span&gt;.&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="programming"></category></entry><entry><title>coreutils</title><link href="https://til.grayvines.com/posts/2020/05/30/coreutils/" rel="alternate"></link><published>2020-05-30T15:35:09-04:00</published><updated>2020-05-30T15:35:09-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-30:/posts/2020/05/30/coreutils/</id><content type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;mkdir &lt;span class="pre"&gt;-p&lt;/span&gt;&lt;/tt&gt; will create a directory with its parents. But &lt;tt class="docutils literal"&gt;cp&lt;/tt&gt; takes a
+</content><category term="programming"></category></entry><entry><title>less</title><link href="https://til.grayvines.com/posts/2020/04/22/less/" rel="alternate"></link><published>2020-04-22T02:51:39-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-22:/posts/2020/04/22/less/</id><summary type="html">&lt;div class="section" id="less-s"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;less &lt;span class="pre"&gt;-S&lt;/span&gt;&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;-S&lt;/span&gt;&lt;/tt&gt; will disable soft line breaks within &lt;tt class="docutils literal"&gt;less&lt;/tt&gt;, allowing horizontal&amp;nbsp;scrolling.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tailing-files"&gt;
+&lt;h2&gt;Tailing&amp;nbsp;Files&lt;/h2&gt;
+&lt;p&gt;Use &lt;tt class="docutils literal"&gt;less +F&lt;/tt&gt; instead of &lt;tt class="docutils literal"&gt;tail &lt;span class="pre"&gt;-f&lt;/span&gt;&lt;/tt&gt;. It works the same, but supports
+interrupting the stream with &lt;tt class="docutils literal"&gt;&lt;span class="caps"&gt;SIGINT&lt;/span&gt;&lt;/tt&gt; to e.g. search around, and then can
+resume tailing by hitting &lt;tt class="docutils literal"&gt;F&lt;/tt&gt; again.&lt;/p&gt;
+&lt;p&gt;Doing so will …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="less-s"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;less &lt;span class="pre"&gt;-S&lt;/span&gt;&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;-S&lt;/span&gt;&lt;/tt&gt; will disable soft line breaks within &lt;tt class="docutils literal"&gt;less&lt;/tt&gt;, allowing horizontal&amp;nbsp;scrolling.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tailing-files"&gt;
+&lt;h2&gt;Tailing&amp;nbsp;Files&lt;/h2&gt;
+&lt;p&gt;Use &lt;tt class="docutils literal"&gt;less +F&lt;/tt&gt; instead of &lt;tt class="docutils literal"&gt;tail &lt;span class="pre"&gt;-f&lt;/span&gt;&lt;/tt&gt;. It works the same, but supports
+interrupting the stream with &lt;tt class="docutils literal"&gt;&lt;span class="caps"&gt;SIGINT&lt;/span&gt;&lt;/tt&gt; to e.g. search around, and then can
+resume tailing by hitting &lt;tt class="docutils literal"&gt;F&lt;/tt&gt; again.&lt;/p&gt;
+&lt;p&gt;Doing so will even then highlight the search pattern in the future&amp;nbsp;text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="less-command"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;less +command&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;Passing &lt;tt class="docutils literal"&gt;+command&lt;/tt&gt; will run the given command each time a new file is opened
+by &lt;tt class="docutils literal"&gt;less&lt;/tt&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="filtering-lines"&gt;
+&lt;h2&gt;Filtering&amp;nbsp;Lines&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;&amp;amp;pattern&lt;/tt&gt; will filter lines only matching the given&amp;nbsp;pattern.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="opening-editor"&gt;
+&lt;h2&gt;Opening &lt;span class="caps"&gt;EDITOR&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;Hitting &lt;tt class="docutils literal"&gt;v&lt;/tt&gt; will open the file in an&amp;nbsp;editor.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="programming"></category></entry><entry><title>zsh</title><link href="https://til.grayvines.com/posts/2020/04/22/zsh/" rel="alternate"></link><published>2020-04-22T02:51:39-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-22:/posts/2020/04/22/zsh/</id><summary type="html">&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;&amp;amp;|&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;Piping using &lt;tt class="docutils literal"&gt;foo &amp;amp;| bar&lt;/tt&gt; will pipe both stdout &lt;em&gt;and&lt;/em&gt; stderr to &lt;tt class="docutils literal"&gt;bar&lt;/tt&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="multios"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;&lt;span class="caps"&gt;MULTIOS&lt;/span&gt;&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;With &lt;tt class="docutils literal"&gt;&lt;span class="caps"&gt;MULTIOS&lt;/span&gt;&lt;/tt&gt; enabled, multiple outputs to the same file descriptor can be
+provided, similar to using &lt;tt class="docutils literal"&gt;tee&lt;/tt&gt;.&lt;/p&gt;
+&lt;p&gt;In other&amp;nbsp;words:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ date &amp;gt;foo &amp;gt;bar
+&lt;/pre&gt;
+&lt;p&gt;will output &lt;tt class="docutils literal"&gt;date&lt;/tt&gt; to both &lt;tt class="docutils literal"&gt;foo&lt;/tt&gt; and &lt;tt class="docutils literal"&gt;bar&lt;/tt&gt;. (Piping it will also work
+since …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;&amp;amp;|&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;Piping using &lt;tt class="docutils literal"&gt;foo &amp;amp;| bar&lt;/tt&gt; will pipe both stdout &lt;em&gt;and&lt;/em&gt; stderr to &lt;tt class="docutils literal"&gt;bar&lt;/tt&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="multios"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;&lt;span class="caps"&gt;MULTIOS&lt;/span&gt;&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;With &lt;tt class="docutils literal"&gt;&lt;span class="caps"&gt;MULTIOS&lt;/span&gt;&lt;/tt&gt; enabled, multiple outputs to the same file descriptor can be
+provided, similar to using &lt;tt class="docutils literal"&gt;tee&lt;/tt&gt;.&lt;/p&gt;
+&lt;p&gt;In other&amp;nbsp;words:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ date &amp;gt;foo &amp;gt;bar
+&lt;/pre&gt;
+&lt;p&gt;will output &lt;tt class="docutils literal"&gt;date&lt;/tt&gt; to both &lt;tt class="docutils literal"&gt;foo&lt;/tt&gt; and &lt;tt class="docutils literal"&gt;bar&lt;/tt&gt;. (Piping it will also work
+since it implicitly is like&amp;nbsp;redirecting).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="cd-old-new"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;cd old new&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;cd old new&lt;/tt&gt; will substitute &lt;tt class="docutils literal"&gt;new&lt;/tt&gt; into &lt;tt class="docutils literal"&gt;old&lt;/tt&gt;.&lt;/p&gt;
+&lt;p&gt;I.e. &lt;tt class="docutils literal"&gt;cd foo bar&lt;/tt&gt; in a working directory like &lt;tt class="docutils literal"&gt;/a/b/foo/c&lt;/tt&gt; will change to
+&lt;tt class="docutils literal"&gt;/a/b/bar/c&lt;/tt&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="vared"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;vared&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;vared SOME_ENVIRONMENT_VARIABLE&lt;/tt&gt; will load the environment variable into a
+line editor, with the output saved back to the environment&amp;nbsp;variable.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="mailpath"&gt;
+&lt;h2&gt;&lt;tt class="docutils literal"&gt;mailpath&lt;/tt&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;mailpath&lt;/tt&gt; specifies the set of paths to look at for new&amp;nbsp;mail.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="programming"></category></entry><entry><title>coreutils</title><link href="https://til.grayvines.com/posts/2020/04/22/coreutils/" rel="alternate"></link><published>2020-04-22T00:57:12-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-22:/posts/2020/04/22/coreutils/</id><content type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;mkdir &lt;span class="pre"&gt;-p&lt;/span&gt;&lt;/tt&gt; will create a directory with its parents. But &lt;tt class="docutils literal"&gt;cp&lt;/tt&gt; takes a
 parents option as&amp;nbsp;well.&lt;/p&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;cp &lt;span class="pre"&gt;--parents&lt;/span&gt; foo/bar/baz/quux.txt some/directory&lt;/tt&gt; will create
 &lt;tt class="docutils literal"&gt;some/directory/foo/bar/baz/quux.txt&lt;/tt&gt; without any of the other
 directory structure from the original&amp;nbsp;location.&lt;/p&gt;
-</content><category term="programming"></category></entry><entry><title>dstat</title><link href="https://til.grayvines.com/posts/2020/05/30/dstat/" rel="alternate"></link><published>2020-05-30T15:35:09-04:00</published><updated>2020-05-30T15:35:09-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-30:/posts/2020/05/30/dstat/</id><content type="html">&lt;p&gt;&lt;a class="reference external" href="http://dag.wiee.rs/home-made/dstat/"&gt;dstat&lt;/a&gt; can replace a bunch of other
+</content><category term="programming"></category></entry><entry><title>dstat</title><link href="https://til.grayvines.com/posts/2020/04/22/dstat/" rel="alternate"></link><published>2020-04-22T00:57:12-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-22:/posts/2020/04/22/dstat/</id><content type="html">&lt;p&gt;&lt;a class="reference external" href="http://dag.wiee.rs/home-made/dstat/"&gt;dstat&lt;/a&gt; can replace a bunch of other
 statistical performance counting things (I/O, &lt;span class="caps"&gt;CPU&lt;/span&gt;, Disk, Network, Syscalls,&amp;nbsp;etc.).&lt;/p&gt;
-</content><category term="programming"></category></entry><entry><title>Firefox</title><link href="https://til.grayvines.com/posts/2020/05/30/firefox/" rel="alternate"></link><published>2020-05-30T15:35:09-04:00</published><updated>2020-05-30T15:35:09-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-30:/posts/2020/05/30/firefox/</id><summary type="html">&lt;p&gt;The Firefox Dev Tools console defines a &lt;tt class="docutils literal"&gt;copy()&lt;/tt&gt; function which will copy
-text to the&amp;nbsp;clipboard.&lt;/p&gt;
-&lt;p&gt;For some reason, using &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;navigator.clipboard.writeText(&amp;quot;asdf&amp;quot;)&lt;/span&gt;&lt;/tt&gt;, which &lt;a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText"&gt;seems
-to be the normal way to do this&lt;/a&gt; fires
-a rejected promise. Probably something to do with the console environment being
-different and weird …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The Firefox Dev Tools console defines a &lt;tt class="docutils literal"&gt;copy()&lt;/tt&gt; function which will copy
-text to the&amp;nbsp;clipboard.&lt;/p&gt;
-&lt;p&gt;For some reason, using &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;navigator.clipboard.writeText(&amp;quot;asdf&amp;quot;)&lt;/span&gt;&lt;/tt&gt;, which &lt;a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText"&gt;seems
-to be the normal way to do this&lt;/a&gt; fires
-a rejected promise. Probably something to do with the console environment being
-different and weird, or me not understanding the &lt;a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Permissions_API/Using_the_Permissions_API"&gt;permissions &lt;span class="caps"&gt;API&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-</content><category term="programming"></category></entry><entry><title>Git</title><link href="https://til.grayvines.com/posts/2020/05/30/git/" rel="alternate"></link><published>2020-05-30T15:35:09-04:00</published><updated>2020-05-30T15:35:09-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-30:/posts/2020/05/30/git/</id><summary type="html">&lt;p&gt;&lt;em&gt;git you magnificent&amp;nbsp;beast&amp;#8230;&lt;/em&gt;&lt;/p&gt;
+</content><category term="programming"></category></entry><entry><title>socat</title><link href="https://til.grayvines.com/posts/2020/04/22/socat/" rel="alternate"></link><published>2020-04-22T00:57:12-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-22:/posts/2020/04/22/socat/</id><content type="html">&lt;p&gt;Use &lt;tt class="docutils literal"&gt;socat&lt;/tt&gt; instead of &lt;tt class="docutils literal"&gt;netcat&lt;/tt&gt;. It takes something more like endpoint
+syntax (and does many more kinds of ports and configurable connectivity that
+come with&amp;nbsp;them).&lt;/p&gt;
+&lt;p&gt;Tons of examples &lt;a class="reference external" href="http://www.dest-unreach.org/socat/doc/socat.html#EXAMPLES"&gt;here&lt;/a&gt;.&lt;/p&gt;
+</content><category term="programming"></category></entry><entry><title>Git</title><link href="https://til.grayvines.com/posts/2020/04/21/git/" rel="alternate"></link><published>2020-04-21T16:14:15-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-21:/posts/2020/04/21/git/</id><summary type="html">&lt;p&gt;&lt;em&gt;git you magnificent&amp;nbsp;beast&amp;#8230;&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="finding-the-history-of-a-function-or-object"&gt;
 &lt;h2&gt;Finding the History of a Function or&amp;nbsp;Object&lt;/h2&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;log &lt;span class="pre"&gt;-L&lt;/span&gt; :foo&lt;/tt&gt; will show you the history of the function/object called
@@ -123,145 +260,8 @@ $ g tag -l v*
 &lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;format-patch&lt;/span&gt;&lt;/tt&gt; turns commits into patches as a file, and formatted for
 sending via email or applying with &lt;tt class="docutils literal"&gt;git am&lt;/tt&gt;.&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="programming"></category></entry><entry><title>less</title><link href="https://til.grayvines.com/posts/2020/05/30/less/" rel="alternate"></link><published>2020-05-30T15:35:09-04:00</published><updated>2020-05-30T15:35:09-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-30:/posts/2020/05/30/less/</id><summary type="html">&lt;div class="section" id="less-s"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;less &lt;span class="pre"&gt;-S&lt;/span&gt;&lt;/tt&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;-S&lt;/span&gt;&lt;/tt&gt; will disable soft line breaks within &lt;tt class="docutils literal"&gt;less&lt;/tt&gt;, allowing horizontal&amp;nbsp;scrolling.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="tailing-files"&gt;
-&lt;h2&gt;Tailing&amp;nbsp;Files&lt;/h2&gt;
-&lt;p&gt;Use &lt;tt class="docutils literal"&gt;less +F&lt;/tt&gt; instead of &lt;tt class="docutils literal"&gt;tail &lt;span class="pre"&gt;-f&lt;/span&gt;&lt;/tt&gt;. It works the same, but supports
-interrupting the stream with &lt;tt class="docutils literal"&gt;&lt;span class="caps"&gt;SIGINT&lt;/span&gt;&lt;/tt&gt; to e.g. search around, and then can
-resume tailing by hitting &lt;tt class="docutils literal"&gt;F&lt;/tt&gt; again.&lt;/p&gt;
-&lt;p&gt;Doing so will …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="less-s"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;less &lt;span class="pre"&gt;-S&lt;/span&gt;&lt;/tt&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;-S&lt;/span&gt;&lt;/tt&gt; will disable soft line breaks within &lt;tt class="docutils literal"&gt;less&lt;/tt&gt;, allowing horizontal&amp;nbsp;scrolling.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="tailing-files"&gt;
-&lt;h2&gt;Tailing&amp;nbsp;Files&lt;/h2&gt;
-&lt;p&gt;Use &lt;tt class="docutils literal"&gt;less +F&lt;/tt&gt; instead of &lt;tt class="docutils literal"&gt;tail &lt;span class="pre"&gt;-f&lt;/span&gt;&lt;/tt&gt;. It works the same, but supports
-interrupting the stream with &lt;tt class="docutils literal"&gt;&lt;span class="caps"&gt;SIGINT&lt;/span&gt;&lt;/tt&gt; to e.g. search around, and then can
-resume tailing by hitting &lt;tt class="docutils literal"&gt;F&lt;/tt&gt; again.&lt;/p&gt;
-&lt;p&gt;Doing so will even then highlight the search pattern in the future&amp;nbsp;text.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="less-command"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;less +command&lt;/tt&gt;&lt;/h2&gt;
-&lt;p&gt;Passing &lt;tt class="docutils literal"&gt;+command&lt;/tt&gt; will run the given command each time a new file is opened
-by &lt;tt class="docutils literal"&gt;less&lt;/tt&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="filtering-lines"&gt;
-&lt;h2&gt;Filtering&amp;nbsp;Lines&lt;/h2&gt;
-&lt;p&gt;&lt;tt class="docutils literal"&gt;&amp;amp;pattern&lt;/tt&gt; will filter lines only matching the given&amp;nbsp;pattern.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="opening-editor"&gt;
-&lt;h2&gt;Opening &lt;span class="caps"&gt;EDITOR&lt;/span&gt;&lt;/h2&gt;
-&lt;p&gt;Hitting &lt;tt class="docutils literal"&gt;v&lt;/tt&gt; will open the file in an&amp;nbsp;editor.&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="programming"></category></entry><entry><title>namei</title><link href="https://til.grayvines.com/posts/2020/05/30/namei/" rel="alternate"></link><published>2020-05-30T15:35:09-04:00</published><updated>2020-05-30T15:35:09-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-30:/posts/2020/05/30/namei/</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;namei(1)&lt;/tt&gt; (provided by &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;util-linux&lt;/span&gt;&lt;/tt&gt; on macOS) is a nifty utility for fully
-resolving symbolic&amp;nbsp;links.&lt;/p&gt;
-&lt;p&gt;Given a chain of links, it will show&amp;nbsp;e.g.:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="go"&gt;⊙  namei =python                                                                                                                                                                                julian@Air ●&lt;/span&gt;
-&lt;span class="go"&gt;f: /Users/julian/.local/bin/python&lt;/span&gt;
-&lt;span class="go"&gt;d /&lt;/span&gt;
-&lt;span class="go"&gt;d Users&lt;/span&gt;
-&lt;span class="go"&gt;d julian&lt;/span&gt;
-&lt;span class="go"&gt;l .local -&amp;gt; /Users/julian/.dotfiles/.local&lt;/span&gt;
-&lt;span class="go"&gt;d /&lt;/span&gt;
-&lt;span class="go"&gt;d Users …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;namei(1)&lt;/tt&gt; (provided by &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;util-linux&lt;/span&gt;&lt;/tt&gt; on macOS) is a nifty utility for fully
-resolving symbolic&amp;nbsp;links.&lt;/p&gt;
-&lt;p&gt;Given a chain of links, it will show&amp;nbsp;e.g.:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="go"&gt;⊙  namei =python                                                                                                                                                                                julian@Air ●&lt;/span&gt;
-&lt;span class="go"&gt;f: /Users/julian/.local/bin/python&lt;/span&gt;
-&lt;span class="go"&gt;d /&lt;/span&gt;
-&lt;span class="go"&gt;d Users&lt;/span&gt;
-&lt;span class="go"&gt;d julian&lt;/span&gt;
-&lt;span class="go"&gt;l .local -&amp;gt; /Users/julian/.dotfiles/.local&lt;/span&gt;
-&lt;span class="go"&gt;d /&lt;/span&gt;
-&lt;span class="go"&gt;d Users&lt;/span&gt;
-&lt;span class="go"&gt;d julian&lt;/span&gt;
-&lt;span class="go"&gt;d .dotfiles&lt;/span&gt;
-&lt;span class="go"&gt;d .local&lt;/span&gt;
-&lt;span class="go"&gt;d bin&lt;/span&gt;
-&lt;span class="go"&gt;l python -&amp;gt; /Users/julian/.local/share/virtualenvs/dev/bin/python&lt;/span&gt;
-&lt;span class="go"&gt;d /&lt;/span&gt;
-&lt;span class="go"&gt;d Users&lt;/span&gt;
-&lt;span class="go"&gt;d julian&lt;/span&gt;
-&lt;span class="go"&gt;l .local -&amp;gt; /Users/julian/.dotfiles/.local&lt;/span&gt;
-&lt;span class="go"&gt;    d /&lt;/span&gt;
-&lt;span class="go"&gt;    d Users&lt;/span&gt;
-&lt;span class="go"&gt;    d julian&lt;/span&gt;
-&lt;span class="go"&gt;    d .dotfiles&lt;/span&gt;
-&lt;span class="go"&gt;    d .local&lt;/span&gt;
-&lt;span class="go"&gt;d share&lt;/span&gt;
-&lt;span class="go"&gt;d virtualenvs&lt;/span&gt;
-&lt;span class="go"&gt;d dev&lt;/span&gt;
-&lt;span class="go"&gt;d bin&lt;/span&gt;
-&lt;span class="go"&gt;l python -&amp;gt; pypy&lt;/span&gt;
-&lt;span class="go"&gt;    - pypy&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;which fully walks the chain and shows its&amp;nbsp;nodes.&lt;/p&gt;
-</content><category term="programming"></category></entry><entry><title>pv</title><link href="https://til.grayvines.com/posts/2020/05/30/pv/" rel="alternate"></link><published>2020-05-30T15:35:09-04:00</published><updated>2020-05-30T15:35:09-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-30:/posts/2020/05/30/pv/</id><content type="html">&lt;p&gt;&lt;a class="reference external" href="http://ivarch.com/programs/pv.shtml"&gt;pv&lt;/a&gt; is a useful utility to insert in
+</content><category term="programming"></category></entry><entry><title>pv</title><link href="https://til.grayvines.com/posts/2020/04/21/pv/" rel="alternate"></link><published>2020-04-21T16:14:15-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-21:/posts/2020/04/21/pv/</id><content type="html">&lt;p&gt;&lt;a class="reference external" href="http://ivarch.com/programs/pv.shtml"&gt;pv&lt;/a&gt; is a useful utility to insert in
 shell pipelines for watching how much data passes through the&amp;nbsp;pipe.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://www.cyberciti.biz/open-source/command-line-hacks/pv-command-examples/"&gt;This page&lt;/a&gt;
 has a few simple examples, and there are more I&amp;#8217;m sure with some googling&amp;nbsp;around.&lt;/p&gt;
-</content><category term="programming"></category></entry><entry><title>socat</title><link href="https://til.grayvines.com/posts/2020/05/30/socat/" rel="alternate"></link><published>2020-05-30T15:35:09-04:00</published><updated>2020-05-30T15:35:09-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-30:/posts/2020/05/30/socat/</id><content type="html">&lt;p&gt;Use &lt;tt class="docutils literal"&gt;socat&lt;/tt&gt; instead of &lt;tt class="docutils literal"&gt;netcat&lt;/tt&gt;. It takes something more like endpoint
-syntax (and does many more kinds of ports and configurable connectivity that
-come with&amp;nbsp;them).&lt;/p&gt;
-&lt;p&gt;Tons of examples &lt;a class="reference external" href="http://www.dest-unreach.org/socat/doc/socat.html#EXAMPLES"&gt;here&lt;/a&gt;.&lt;/p&gt;
-</content><category term="programming"></category></entry><entry><title>U2F and OpenSSH</title><link href="https://til.grayvines.com/posts/2020/05/30/u2f-and-openssh/" rel="alternate"></link><published>2020-05-30T15:35:09-04:00</published><updated>2020-05-30T15:35:09-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-30:/posts/2020/05/30/u2f-and-openssh/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://www.openssh.com/txt/release-8.2"&gt;As of OpenSSH 8.2&lt;/a&gt;, OpenSSH
-now supports &lt;span class="caps"&gt;U2F&lt;/span&gt; for&amp;nbsp;authentication.&lt;/p&gt;
-&lt;p&gt;This is a totally separate authentication mechanism entirely from say,
-&lt;span class="caps"&gt;ED25519&lt;/span&gt; host keys with a second factor; here, the &lt;span class="caps"&gt;U2F&lt;/span&gt; (e.g. Yubikey)
-&lt;em&gt;is&lt;/em&gt; / &lt;em&gt;has&lt;/em&gt; the key on&amp;nbsp;it.&lt;/p&gt;
-&lt;p&gt;To use it though, both sides (server and client) have …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="http://www.openssh.com/txt/release-8.2"&gt;As of OpenSSH 8.2&lt;/a&gt;, OpenSSH
-now supports &lt;span class="caps"&gt;U2F&lt;/span&gt; for&amp;nbsp;authentication.&lt;/p&gt;
-&lt;p&gt;This is a totally separate authentication mechanism entirely from say,
-&lt;span class="caps"&gt;ED25519&lt;/span&gt; host keys with a second factor; here, the &lt;span class="caps"&gt;U2F&lt;/span&gt; (e.g. Yubikey)
-&lt;em&gt;is&lt;/em&gt; / &lt;em&gt;has&lt;/em&gt; the key on&amp;nbsp;it.&lt;/p&gt;
-&lt;p&gt;To use it though, both sides (server and client) have to be recent
-enough to support this form of&amp;nbsp;login.&lt;/p&gt;
-</content><category term="programming"></category></entry><entry><title>X- Headers</title><link href="https://til.grayvines.com/posts/2020/05/30/x-headers/" rel="alternate"></link><published>2020-05-30T15:35:09-04:00</published><updated>2020-05-30T15:35:09-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-30:/posts/2020/05/30/x-headers/</id><content type="html">&lt;p&gt;Prefixing (custom) &lt;span class="caps"&gt;HTTP&lt;/span&gt; Headers with &lt;tt class="docutils literal"&gt;X-&lt;/tt&gt; is actually &lt;a class="reference external" href="https://tools.ietf.org/html/rfc6648"&gt;deprecated / no longer
-recommended by the &lt;span class="caps"&gt;IETF&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-</content><category term="programming"></category></entry><entry><title>zsh</title><link href="https://til.grayvines.com/posts/2020/05/30/zsh/" rel="alternate"></link><published>2020-05-30T15:35:09-04:00</published><updated>2020-05-30T15:35:09-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-30:/posts/2020/05/30/zsh/</id><summary type="html">&lt;div class="section" id="id1"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;&amp;amp;|&lt;/tt&gt;&lt;/h2&gt;
-&lt;p&gt;Piping using &lt;tt class="docutils literal"&gt;foo &amp;amp;| bar&lt;/tt&gt; will pipe both stdout &lt;em&gt;and&lt;/em&gt; stderr to &lt;tt class="docutils literal"&gt;bar&lt;/tt&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="multios"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;&lt;span class="caps"&gt;MULTIOS&lt;/span&gt;&lt;/tt&gt;&lt;/h2&gt;
-&lt;p&gt;With &lt;tt class="docutils literal"&gt;&lt;span class="caps"&gt;MULTIOS&lt;/span&gt;&lt;/tt&gt; enabled, multiple outputs to the same file descriptor can be
-provided, similar to using &lt;tt class="docutils literal"&gt;tee&lt;/tt&gt;.&lt;/p&gt;
-&lt;p&gt;In other&amp;nbsp;words:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-$ date &amp;gt;foo &amp;gt;bar
-&lt;/pre&gt;
-&lt;p&gt;will output &lt;tt class="docutils literal"&gt;date&lt;/tt&gt; to both &lt;tt class="docutils literal"&gt;foo&lt;/tt&gt; and &lt;tt class="docutils literal"&gt;bar&lt;/tt&gt;. (Piping it will also work
-since …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="id1"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;&amp;amp;|&lt;/tt&gt;&lt;/h2&gt;
-&lt;p&gt;Piping using &lt;tt class="docutils literal"&gt;foo &amp;amp;| bar&lt;/tt&gt; will pipe both stdout &lt;em&gt;and&lt;/em&gt; stderr to &lt;tt class="docutils literal"&gt;bar&lt;/tt&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="multios"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;&lt;span class="caps"&gt;MULTIOS&lt;/span&gt;&lt;/tt&gt;&lt;/h2&gt;
-&lt;p&gt;With &lt;tt class="docutils literal"&gt;&lt;span class="caps"&gt;MULTIOS&lt;/span&gt;&lt;/tt&gt; enabled, multiple outputs to the same file descriptor can be
-provided, similar to using &lt;tt class="docutils literal"&gt;tee&lt;/tt&gt;.&lt;/p&gt;
-&lt;p&gt;In other&amp;nbsp;words:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-$ date &amp;gt;foo &amp;gt;bar
-&lt;/pre&gt;
-&lt;p&gt;will output &lt;tt class="docutils literal"&gt;date&lt;/tt&gt; to both &lt;tt class="docutils literal"&gt;foo&lt;/tt&gt; and &lt;tt class="docutils literal"&gt;bar&lt;/tt&gt;. (Piping it will also work
-since it implicitly is like&amp;nbsp;redirecting).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="cd-old-new"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;cd old new&lt;/tt&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;tt class="docutils literal"&gt;cd old new&lt;/tt&gt; will substitute &lt;tt class="docutils literal"&gt;new&lt;/tt&gt; into &lt;tt class="docutils literal"&gt;old&lt;/tt&gt;.&lt;/p&gt;
-&lt;p&gt;I.e. &lt;tt class="docutils literal"&gt;cd foo bar&lt;/tt&gt; in a working directory like &lt;tt class="docutils literal"&gt;/a/b/foo/c&lt;/tt&gt; will change to
-&lt;tt class="docutils literal"&gt;/a/b/bar/c&lt;/tt&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="vared"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;vared&lt;/tt&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;tt class="docutils literal"&gt;vared SOME_ENVIRONMENT_VARIABLE&lt;/tt&gt; will load the environment variable into a
-line editor, with the output saved back to the environment&amp;nbsp;variable.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="mailpath"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;mailpath&lt;/tt&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;tt class="docutils literal"&gt;mailpath&lt;/tt&gt; specifies the set of paths to look at for new&amp;nbsp;mail.&lt;/p&gt;
-&lt;/div&gt;
 </content><category term="programming"></category></entry></feed>
