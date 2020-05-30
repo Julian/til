@@ -1,17 +1,18 @@
 AUTHOR = "Julian Berman"
 
 SITENAME = "TIL"
+SITESUBTITLE = "Today I Learned"
 SITEURL = "https://til.grayvines.com"
 
 TIMEZONE = "America/New_York"
 DEFAULT_DATE = "fs"
 
-SOCIAL = [
-    ("@JulianWasTaken", "https://twitter.com/JulianWasTaken"),
-    ("@julianberman", "https://instagram.com/julianberman"),
-]
 GITHUB_URL = "https://github.com/Julian"
 TWITTER_USERNAME = "JulianWasTaken"
+SOCIAL = [
+    ("@JulianWasTaken", "https://twitter.com/" + TWITTER_USERNAME),
+    ("@julianberman", "https://instagram.com/julianberman"),
+]
 
 ARTICLE_URL = "posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/"
 ARTICLE_SAVE_AS = "posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html"
