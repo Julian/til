@@ -7,6 +7,8 @@
 blinker==1.4              # via pelican
 docutils==0.16            # via pelican
 feedgenerator==1.9.1      # via pelican
+gitdb==4.0.5              # via gitpython
+gitpython==3.1.2          # via -r pelican-plugins/filetime_from_git/requirements.txt
 jinja2==2.11.2            # via pelican
 markupsafe==1.1.1         # via jinja2
 pelican==4.2.0            # via -r requirements.in
@@ -15,5 +17,6 @@ python-dateutil==2.8.1    # via pelican
 pytz==2020.1              # via feedgenerator, pelican
 six==1.15.0               # via feedgenerator, pelican, python-dateutil
 smartypants==2.0.1        # via typogrify
+smmap==3.0.4              # via gitdb
 typogrify==2.0.7          # via -r requirements.in
 unidecode==1.1.1          # via pelican

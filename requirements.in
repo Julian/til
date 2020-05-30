@@ -1,2 +1,3 @@
 pelican
 typogrify
+-r pelican-plugins/filetime_from_git/requirements.txt

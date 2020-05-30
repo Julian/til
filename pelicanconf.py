@@ -9,6 +9,9 @@ DEFAULT_DATE = "fs"
 
 PATH = "entries"
 
+PLUGIN_PATHS = ["pelican-plugins"]
+PLUGINS = ["filetime_from_git"]
+
 GITHUB_URL = "https://github.com/Julian"
 TWITTER_USERNAME = "JulianWasTaken"
 SOCIAL = [
