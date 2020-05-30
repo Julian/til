@@ -1,8 +1,8 @@
 AUTHOR = "Julian Berman"
 
+SITEURL = ""
 SITENAME = "TIL"
 SITESUBTITLE = "Today I Learned"
-SITEURL = "https://til.grayvines.com"
 
 TIMEZONE = "America/New_York"
 DEFAULT_DATE = "fs"
@@ -34,5 +34,11 @@ PAGE_SAVE_AS = "{slug}/index.html"
 TAG_URL = "tags/{slug}/"
 TAG_SAVE_AS = "tags/{slug}/index.html"
 TAGS_SAVE_AS = "tags/index.html"
+
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
 TYPOGRIFY = True
