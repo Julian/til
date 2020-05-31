@@ -883,12 +883,12 @@ hr {
     .pagination {
       margin: 4em 0 6em 0 !important; } }
 
-.entry-content a, #site-footer a {
-  color: #333333;
+.entry-content a, .entry-excerpt a, #site-footer a {
+  color: #00c6cf;
   text-decoration: none;
   font-weight: bold; }
-.entry-content a:hover, #site-footer a:hover {
-  color: #e6e6e6;
+.entry-content a:hover, .entry-excerpt a:hover, #site-footer a:hover {
+  color: #00c896;
   border-bottom: 1px solid; }
 
 .m-logo {
@@ -950,9 +950,6 @@ hr {
   @media (max-width: 550px) {
     #comments {
       margin-top: 1em; } }
-
-.m-page a {
-  color: #333333 !important; }
 
 #site-footer {
   text-align: center;
