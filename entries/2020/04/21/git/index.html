@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TIL - Git</title>
+
+  <link rel="stylesheet" href="https://til.grayvines.com/theme/css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <meta charset="utf-8" />
+  <link href="https://til.grayvines.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="TIL Full Atom Feed" />
+  <link href="https://til.grayvines.com/feeds/programming.atom.xml" type="application/atom+xml" rel="alternate" title="TIL Categories Atom Feed" />
+
+
+
+
+
+
+</head>
+
+<body>
+
+  <header id="site-header">
+    <div class="container">
+      <a href="https://til.grayvines.com/"><h1 class="blog-title">TIL</h1></a>
+      <p class="blog-description">Today I Learned</p>
+    </div>
+
+<nav id="menu"><ul>
+
+
+      <li><a href="https://til.grayvines.com/categories/design/">design</a></li>
+      <li><a href="https://til.grayvines.com/categories/food/">food</a></li>
+      <li><a href="https://til.grayvines.com/categories/health/">health</a></li>
+      <li><a href="https://til.grayvines.com/categories/history/">history</a></li>
+      <li><a href="https://til.grayvines.com/categories/language/">language</a></li>
+      <li><a href="https://til.grayvines.com/categories/math/">math</a></li>
+      <li><a href="https://til.grayvines.com/categories/misc/">misc</a></li>
+      <li><a href="https://til.grayvines.com/categories/music/">music</a></li>
+      <li><a href="https://til.grayvines.com/categories/physics/">physics</a></li>
+      <li class="active"><a href="https://til.grayvines.com/categories/programming/">programming</a></li>
+      <li><a href="https://til.grayvines.com/categories/python/">python</a></li>
+      <li><a href="https://til.grayvines.com/categories/sports/">sports</a></li>
+      <li><a href="https://til.grayvines.com/categories/theorems/">theorems</a></li>
+      <li><a href="https://til.grayvines.com/categories/travel/">travel</a></li>
+</ul></nav><!-- /#menu -->  </header><!-- /#site-header -->
+
+
+<main class="content" role="main">
+  <div class="container">
+    <article class="entry">
+      <header class="entry-header">
+        <h3 class="p-entry-title">
+          <a href="https://til.grayvines.com/entries/2020/04/21/git/" rel="bookmark" title="Permalink to Git">
+            Git
+          </a>
+        </h3>
+
+        <p class="entry-time">
+          <time class="published" datetime="2020-04-21T16:14:15-04:00">
+            April 21, 2020
+          </time>
+        </p>
+    
+      </header>
+
+      <section class="entry-content">
+        <p><em>git you magnificent&nbsp;beast&#8230;</em></p>
+<div class="section" id="finding-the-history-of-a-function-or-object">
+<h2>Finding the History of a Function or&nbsp;Object</h2>
+<p><tt class="docutils literal">log <span class="pre">-L</span> :foo</tt> will show you the history of the function/object called
+<tt class="docutils literal">foo</tt>. This is a smarter version of normal <tt class="docutils literal">log <span class="pre">-L</span></tt> which just knows about&nbsp;lines.</p>
+<p>But because I&#8217;m lazy to even type this out, I made <a class="reference external" href="https://github.com/Julian/dotfiles/blob/master/bin/git-pylog">git pylog</a> to just
+be able to type <tt class="docutils literal">g pylog foo.bar.baz</tt> and find the history of the <span class="caps">FQON</span>&nbsp;there.</p>
+</div>
+<div class="section" id="finding-commits-by-message">
+<h2>Finding Commits by&nbsp;Message</h2>
+<p><tt class="docutils literal">git show :/foo</tt> will find the last commit whose message contains <tt class="docutils literal">foo</tt>.
+It accepts a&nbsp;regex.</p>
+<p>Specifically, <tt class="docutils literal">git show :^Merge</tt> should generally find the last merge&nbsp;commit.</p>
+</div>
+<div class="section" id="showing-various-parts-of-a-merge-conflict">
+<h2>Showing Various Parts of a Merge&nbsp;Conflict</h2>
+<p><tt class="docutils literal">git show :N:foo.txt</tt> will show foo.txt from &#8220;stage&#8221; number N, which is
+useful during conflict&nbsp;resoluton.</p>
+</div>
+<div class="section" id="git-name-rev">
+<h2><tt class="docutils literal">git <span class="pre">name-rev</span></tt></h2>
+<p><tt class="docutils literal"><span class="pre">name-rev</span></tt> can append info about the position of a commit relative to&nbsp;tags.</p>
+<p>It can do this even interspersed in other prose&nbsp;text.</p>
+<p>E.g., given say a comment&nbsp;saying:</p>
+<blockquote>
+I think this bug was caused by dc9061e8ffb5002e33688ae97d0d953818e89bae
+and fixed in d099d7e84d1ce3cf9737e9785be339c917f4a3e3.</blockquote>
+<p>piping that to <tt class="docutils literal">git <span class="pre">name-rev</span> <span class="pre">--stdin</span></tt> will&nbsp;output:</p>
+<blockquote>
+I think this bug was caused by dc9061e8ffb5002e33688ae97d0d953818e89bae
+(v1.0.0~2) and fixed in d099d7e84d1ce3cf9737e9785be339c917f4a3e3 (v1.0.1).</blockquote>
+<p>See its man page for more&nbsp;stuff.</p>
+</div>
+<div class="section" id="tags-matching-a-pattern">
+<h2>Tags Matching a&nbsp;Pattern</h2>
+<p><tt class="docutils literal">git tag <span class="pre">-l</span></tt> doesn&#8217;t just list all tags, it can take a pattern and show only
+matching ones,&nbsp;e.g.:</p>
+<pre class="literal-block">
+$ g tag -l v*
+</pre>
+<p>for showing version&nbsp;tags.</p>
+</div>
+<div class="section" id="git-shortlog">
+<h2><tt class="docutils literal">git shortlog</tt></h2>
+<p><tt class="docutils literal">shortlog</tt> gives a nice summarized version of the log, e.g. for release&nbsp;notes.</p>
+</div>
+<div class="section" id="listing-or-looping-over-revisions">
+<h2>Listing or Looping Over&nbsp;Revisions</h2>
+<p><tt class="docutils literal">git <span class="pre">for-each-ref</span></tt> will loop over given&nbsp;revisions.</p>
+<p><tt class="docutils literal">git <span class="pre">rev-list</span></tt> will simply list them (in reverse&nbsp;order).</p>
+</div>
+<div class="section" id="sending-patches-over-email">
+<h2>Sending Patches Over&nbsp;Email</h2>
+<p><tt class="docutils literal"><span class="pre">format-patch</span></tt> turns commits into patches as a file, and formatted for
+sending via email or applying with <tt class="docutils literal">git am</tt>.</p>
+</div>
+
+      </section><!-- /.entry-content -->
+
+      <hr>
+
+      <footer class="entry-footer">
+        <section class="f-1">
+          <section class="f-entry-time">
+              <time class="published" datetime="2020-04-21T16:14:15-04:00">
+                April 21, 2020
+              </time>
+          </section>
+          <p class="f-entry-time">
+            <time class="modified" datetime="2020-05-30T15:21:31-04:00">
+              Modified on May 30, 2020
+            </time>
+          </p>
+        </section>
+
+        <section class="f-2">
+          <div class="category">
+              Category: <a href="https://til.grayvines.com/categories/programming/">programming</a>
+          </div>
+        </section>
+      </footer><!-- /.entry-info -->
+    </article>
+  </div>
+</main>
+
+<footer id="site-footer" class="body">
+  <div class="container">
+    <a href="https://www.instagram.com/julianberman/" title="Instagram" target="_blank">
+      <span class="tooltip"><i class="fab fa-instagram"></i></span>
+    </a>
+    <a href="https://www.twitter.com/JulianWasTaken" title="Twitter" target="_blank">
+      <span class="tooltip"><i class="fab fa-twitter"></i></span>
+    </a>
+    <a href="https://www.github.com/Julian" title="GitHub" target="_blank">
+      <span class="tooltip"><i class="fab fa-github"></i></span>
+    </a>
+
+
+    <section>&copy; <a href="https://github.com/Julian">Julian Berman</a> 2020</section>
+    <section>Theme modified from <a href="http://www.jrdnbwmn.com">Detox by Jordan Bowman</a>. Generated with <a href="https://getpelican.com">Pelican</a>.</section>
+  </div>
+</footer><!-- /#contentinfo -->
+</body>
+</html>

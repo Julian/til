@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TIL - zsh</title>
+
+  <link rel="stylesheet" href="https://til.grayvines.com/theme/css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <meta charset="utf-8" />
+  <link href="https://til.grayvines.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="TIL Full Atom Feed" />
+  <link href="https://til.grayvines.com/feeds/programming.atom.xml" type="application/atom+xml" rel="alternate" title="TIL Categories Atom Feed" />
+
+
+
+
+
+
+</head>
+
+<body>
+
+  <header id="site-header">
+    <div class="container">
+      <a href="https://til.grayvines.com/"><h1 class="blog-title">TIL</h1></a>
+      <p class="blog-description">Today I Learned</p>
+    </div>
+
+<nav id="menu"><ul>
+
+
+      <li><a href="https://til.grayvines.com/categories/design/">design</a></li>
+      <li><a href="https://til.grayvines.com/categories/food/">food</a></li>
+      <li><a href="https://til.grayvines.com/categories/health/">health</a></li>
+      <li><a href="https://til.grayvines.com/categories/history/">history</a></li>
+      <li><a href="https://til.grayvines.com/categories/language/">language</a></li>
+      <li><a href="https://til.grayvines.com/categories/math/">math</a></li>
+      <li><a href="https://til.grayvines.com/categories/misc/">misc</a></li>
+      <li><a href="https://til.grayvines.com/categories/music/">music</a></li>
+      <li><a href="https://til.grayvines.com/categories/physics/">physics</a></li>
+      <li class="active"><a href="https://til.grayvines.com/categories/programming/">programming</a></li>
+      <li><a href="https://til.grayvines.com/categories/python/">python</a></li>
+      <li><a href="https://til.grayvines.com/categories/sports/">sports</a></li>
+      <li><a href="https://til.grayvines.com/categories/theorems/">theorems</a></li>
+      <li><a href="https://til.grayvines.com/categories/travel/">travel</a></li>
+</ul></nav><!-- /#menu -->  </header><!-- /#site-header -->
+
+
+<main class="content" role="main">
+  <div class="container">
+    <article class="entry">
+      <header class="entry-header">
+        <h3 class="p-entry-title">
+          <a href="https://til.grayvines.com/entries/2020/04/22/zsh/" rel="bookmark" title="Permalink to zsh">
+            zsh
+          </a>
+        </h3>
+
+        <p class="entry-time">
+          <time class="published" datetime="2020-04-22T02:51:39-04:00">
+            April 22, 2020
+          </time>
+        </p>
+    
+      </header>
+
+      <section class="entry-content">
+        <div class="section" id="id1">
+<h2><tt class="docutils literal">&amp;|</tt></h2>
+<p>Piping using <tt class="docutils literal">foo &amp;| bar</tt> will pipe both stdout <em>and</em> stderr to <tt class="docutils literal">bar</tt>.</p>
+</div>
+<div class="section" id="multios">
+<h2><tt class="docutils literal"><span class="caps">MULTIOS</span></tt></h2>
+<p>With <tt class="docutils literal"><span class="caps">MULTIOS</span></tt> enabled, multiple outputs to the same file descriptor can be
+provided, similar to using <tt class="docutils literal">tee</tt>.</p>
+<p>In other&nbsp;words:</p>
+<pre class="literal-block">
+$ date &gt;foo &gt;bar
+</pre>
+<p>will output <tt class="docutils literal">date</tt> to both <tt class="docutils literal">foo</tt> and <tt class="docutils literal">bar</tt>. (Piping it will also work
+since it implicitly is like&nbsp;redirecting).</p>
+</div>
+<div class="section" id="cd-old-new">
+<h2><tt class="docutils literal">cd old new</tt></h2>
+<p><tt class="docutils literal">cd old new</tt> will substitute <tt class="docutils literal">new</tt> into <tt class="docutils literal">old</tt>.</p>
+<p>I.e. <tt class="docutils literal">cd foo bar</tt> in a working directory like <tt class="docutils literal">/a/b/foo/c</tt> will change to
+<tt class="docutils literal">/a/b/bar/c</tt>.</p>
+</div>
+<div class="section" id="vared">
+<h2><tt class="docutils literal">vared</tt></h2>
+<p><tt class="docutils literal">vared SOME_ENVIRONMENT_VARIABLE</tt> will load the environment variable into a
+line editor, with the output saved back to the environment&nbsp;variable.</p>
+</div>
+<div class="section" id="mailpath">
+<h2><tt class="docutils literal">mailpath</tt></h2>
+<p><tt class="docutils literal">mailpath</tt> specifies the set of paths to look at for new&nbsp;mail.</p>
+</div>
+
+      </section><!-- /.entry-content -->
+
+      <hr>
+
+      <footer class="entry-footer">
+        <section class="f-1">
+          <section class="f-entry-time">
+              <time class="published" datetime="2020-04-22T02:51:39-04:00">
+                April 22, 2020
+              </time>
+          </section>
+          <p class="f-entry-time">
+            <time class="modified" datetime="2020-05-30T15:21:31-04:00">
+              Modified on May 30, 2020
+            </time>
+          </p>
+        </section>
+
+        <section class="f-2">
+          <div class="category">
+              Category: <a href="https://til.grayvines.com/categories/programming/">programming</a>
+          </div>
+        </section>
+      </footer><!-- /.entry-info -->
+    </article>
+  </div>
+</main>
+
+<footer id="site-footer" class="body">
+  <div class="container">
+    <a href="https://www.instagram.com/julianberman/" title="Instagram" target="_blank">
+      <span class="tooltip"><i class="fab fa-instagram"></i></span>
+    </a>
+    <a href="https://www.twitter.com/JulianWasTaken" title="Twitter" target="_blank">
+      <span class="tooltip"><i class="fab fa-twitter"></i></span>
+    </a>
+    <a href="https://www.github.com/Julian" title="GitHub" target="_blank">
+      <span class="tooltip"><i class="fab fa-github"></i></span>
+    </a>
+
+
+    <section>&copy; <a href="https://github.com/Julian">Julian Berman</a> 2020</section>
+    <section>Theme modified from <a href="http://www.jrdnbwmn.com">Detox by Jordan Bowman</a>. Generated with <a href="https://getpelican.com">Pelican</a>.</section>
+  </div>
+</footer><!-- /#contentinfo -->
+</body>
+</html>
