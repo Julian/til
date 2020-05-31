@@ -39,6 +39,8 @@ jobs:
         run: python3 -m pip install -r ./requirements.txt
 
       - run: pelican --settings pelican/publishconf.py
+        env:
+          PYTHONPATH: pelican/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
