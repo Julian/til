@@ -1,0 +1,22 @@
+<footer id="site-footer" class="body">
+  <div class="container">
+    <a href="https://www.instagram.com/julianberman/" title="Instagram" target="_blank">
+      <span class="tooltip"><i class="fab fa-instagram"></i></span>
+    </a>
+    <a href="https://www.twitter.com/JulianWasTaken" title="Twitter" target="_blank">
+      <span class="tooltip"><i class="fab fa-twitter"></i></span>
+    </a>
+    <a href="https://www.github.com/Julian" title="GitHub" target="_blank">
+      <span class="tooltip"><i class="fab fa-github"></i></span>
+    </a>
+
+    {% if FEED_ALL_RSS %}
+      <a href="{{ FEED_DOMAIN }}/{% if FEED_ALL_RSS_URL %}{{ FEED_ALL_RSS_URL }}{% else %}{{ FEED_ALL_RSS }}{% endif %}" title="{{ SITENAME }} RSS Feed">
+        <span class="tooltip"><i class="fas fa-rss"></i></span>
+      </a>
+    {% endif %}
+
+    <section>&copy; <a href="{{ GITHUB_URL }}">{{ AUTHOR }}</a> 2020</section>
+    <section>Theme modified from <a href="http://www.jrdnbwmn.com">Detox by Jordan Bowman</a>. Generated with <a href="https://getpelican.com">Pelican</a>.</section>
+  </div>
+</footer><!-- /#contentinfo -->

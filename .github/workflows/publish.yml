@@ -38,7 +38,7 @@ jobs:
       - name: Install dependencies
         run: python3 -m pip install -r ./requirements.txt
 
-      - run: pelican --settings publishconf.py
+      - run: pelican --settings pelican/publishconf.py
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

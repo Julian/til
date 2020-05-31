@@ -1,3 +1,8 @@
+from pathlib import Path
+
+HERE = Path(__file__).parent.resolve()
+PATH = HERE.parent / "entries"
+
 AUTHOR = "Julian Berman"
 
 SITEURL = ""
@@ -8,9 +13,9 @@ TIMEZONE = "America/New_York"
 DEFAULT_DATE = "fs"
 DEFAULT_DATE_FORMAT = "%B %d, %Y"
 
-PATH = "entries"
+THEME = HERE / "theme"
 
-PLUGIN_PATHS = ["pelican-plugins"]
+PLUGIN_PATHS = [HERE / "plugins", "plugins"]
 PLUGINS = ["filetime_from_git"]
 
 GITHUB_URL = "https://github.com/Julian"

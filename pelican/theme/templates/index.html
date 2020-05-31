@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<main class="content" role="main">
+  <div class="container">
+  {% for article in articles_page.object_list %}
+    <article class="li entry">
+      <header class="entry-header">
+        <h3 class="entry-title">
+          <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+            {{ article.title }}
+          </a>
+        </h3>
+
+        <p class="entry-time">
+          <time class="published" datetime="{{ article.date.isoformat() }}">
+            {{ article.locale_date }}
+          </time>
+        </p>
+      </header>
+
+      <section class="entry-excerpt">
+        {{ article.summary }}
+      </section><!-- /.entry-excerpt -->
+
+      <footer class="entry-info">
+        {% if article.tags %}
+        <span class="f-entry-tags">
+          <i class="fa fa-tag"></i>
+          {% for tag in article.tags %}
+              <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+          {% endfor %}
+        </span>
+        {% endif %}
+      </footer><!-- /.entry-info -->
+    </article>
+  {% endfor %}
+
+  {% if articles_page.has_other_pages() %}
+      {% include 'pagination.html' %}
+  {% endif %}
+  </div>
+</main>
+{% endblock content %}
