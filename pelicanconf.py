@@ -6,6 +6,7 @@ SITESUBTITLE = "Today I Learned"
 
 TIMEZONE = "America/New_York"
 DEFAULT_DATE = "fs"
+DEFAULT_DATE_FORMAT = "%B %d, %Y"
 
 PATH = "entries"
 
