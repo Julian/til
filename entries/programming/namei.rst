@@ -10,7 +10,7 @@ Given a chain of links, it will show e.g.:
 .. code-block:: console
 
 
-    ⊙  namei =python                                                                                                                                                                                julian@Air ●
+    ⊙  namei =python                                     julian@Air ●
     f: /Users/julian/.local/bin/python
     d /
     d Users
