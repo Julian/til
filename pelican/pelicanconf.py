@@ -26,8 +26,8 @@ SOCIAL = [
     ("instagram", "https://instagram.com/julianberman"),
 ]
 
-ARTICLE_URL = "posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/"
-ARTICLE_SAVE_AS = "posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html"
+ARTICLE_URL = "entries/{date:%Y}/{date:%m}/{date:%d}/{slug}/"
+ARTICLE_SAVE_AS = "entries/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html"
 
 DRAFT_URL = "drafts/{date:%Y}/{date:%m}/{date:%d}/{slug}/"
 DRAFT_SAVE_AS = "drafts/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html"
