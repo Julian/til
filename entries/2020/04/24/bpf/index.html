@@ -66,12 +66,12 @@
 
       <section class="entry-content">
         <div class="section" id="jit">
-<h2><span class="caps">JIT</span></h2>
+<h4><span class="caps">JIT</span></h4>
 <p>A restricted subset of C is compiled via <tt class="docutils literal">clang</tt> to eBPF bytecode, and the
 Linux kernel contains a <span class="caps">JIT</span> (and of course a <span class="caps">VM</span>) to execute&nbsp;it.</p>
 </div>
 <div class="section" id="bcc">
-<h2><tt class="docutils literal">bcc</tt></h2>
+<h4><tt class="docutils literal">bcc</tt></h4>
 <p><a class="reference external" href="https://github.com/iovisor/bcc">bcc</a> is a higher level toolkit for
 interacting with eBPF (including via Python). For&nbsp;example:</p>
 <div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bcc</span> <span class="kn">import</span> <span class="n">BPF</span>
@@ -89,12 +89,12 @@ interacting with eBPF (including via Python). For&nbsp;example:</p>
 <tt class="docutils literal">clone(2)</tt>).</p>
 </div>
 <div class="section" id="bpf-based-tools">
-<h2><span class="caps">BPF</span>-based&nbsp;tools</h2>
+<h4><span class="caps">BPF</span>-based&nbsp;tools</h4>
 <p>Brendan Gregg has a great <a class="reference external" href="http://www.brendangregg.com/ebpf.html">diagram and post</a> of the various <span class="caps">BPF</span>-using
 tools, and which part of the stack they&nbsp;trace.</p>
 </div>
 <div class="section" id="more-tracing">
-<h2>More&nbsp;Tracing</h2>
+<h4>More&nbsp;Tracing</h4>
 <p>Julia Evans&#8217;s <a class="reference external" href="https://jvns.ca/blog/2017/07/05/linux-tracing-systems/">Linux tracing systems <span class="amp">&amp;</span> how they fit together</a> is pretty great
 reading <span class="amp">&amp;</span> reference for context beyond just <span class="caps">BPF</span>.</p>
 </div>

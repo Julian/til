@@ -68,24 +68,24 @@ to be the normal way to do this&lt;/a&gt; fires
 a rejected promise. Probably something to do with the console environment being
 different and weird, or me not understanding the &lt;a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Permissions_API/Using_the_Permissions_API"&gt;permissions &lt;span class="caps"&gt;API&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 </content><category term="programming"></category></entry><entry><title>BPF</title><link href="https://til.grayvines.com/entries/2020/04/24/bpf/" rel="alternate"></link><published>2020-04-24T00:51:27-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-24:/entries/2020/04/24/bpf/</id><summary type="html">&lt;div class="section" id="jit"&gt;
-&lt;h2&gt;&lt;span class="caps"&gt;JIT&lt;/span&gt;&lt;/h2&gt;
+&lt;h4&gt;&lt;span class="caps"&gt;JIT&lt;/span&gt;&lt;/h4&gt;
 &lt;p&gt;A restricted subset of C is compiled via &lt;tt class="docutils literal"&gt;clang&lt;/tt&gt; to eBPF bytecode, and the
 Linux kernel contains a &lt;span class="caps"&gt;JIT&lt;/span&gt; (and of course a &lt;span class="caps"&gt;VM&lt;/span&gt;) to execute&amp;nbsp;it.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="bcc"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;bcc&lt;/tt&gt;&lt;/h2&gt;
+&lt;h4&gt;&lt;tt class="docutils literal"&gt;bcc&lt;/tt&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://github.com/iovisor/bcc"&gt;bcc&lt;/a&gt; is a higher level toolkit for
 interacting with eBPF (including via Python). For&amp;nbsp;example:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;bcc&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;BPF&lt;/span&gt;
 
 &lt;span class="n"&gt;BPF&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
     &lt;span class="n"&gt;text …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="jit"&gt;
-&lt;h2&gt;&lt;span class="caps"&gt;JIT&lt;/span&gt;&lt;/h2&gt;
+&lt;h4&gt;&lt;span class="caps"&gt;JIT&lt;/span&gt;&lt;/h4&gt;
 &lt;p&gt;A restricted subset of C is compiled via &lt;tt class="docutils literal"&gt;clang&lt;/tt&gt; to eBPF bytecode, and the
 Linux kernel contains a &lt;span class="caps"&gt;JIT&lt;/span&gt; (and of course a &lt;span class="caps"&gt;VM&lt;/span&gt;) to execute&amp;nbsp;it.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="bcc"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;bcc&lt;/tt&gt;&lt;/h2&gt;
+&lt;h4&gt;&lt;tt class="docutils literal"&gt;bcc&lt;/tt&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://github.com/iovisor/bcc"&gt;bcc&lt;/a&gt; is a higher level toolkit for
 interacting with eBPF (including via Python). For&amp;nbsp;example:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;bcc&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;BPF&lt;/span&gt;
@@ -103,54 +103,54 @@ interacting with eBPF (including via Python). For&amp;nbsp;example:&lt;/p&gt;
 &lt;tt class="docutils literal"&gt;clone(2)&lt;/tt&gt;).&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="bpf-based-tools"&gt;
-&lt;h2&gt;&lt;span class="caps"&gt;BPF&lt;/span&gt;-based&amp;nbsp;tools&lt;/h2&gt;
+&lt;h4&gt;&lt;span class="caps"&gt;BPF&lt;/span&gt;-based&amp;nbsp;tools&lt;/h4&gt;
 &lt;p&gt;Brendan Gregg has a great &lt;a class="reference external" href="http://www.brendangregg.com/ebpf.html"&gt;diagram and post&lt;/a&gt; of the various &lt;span class="caps"&gt;BPF&lt;/span&gt;-using
 tools, and which part of the stack they&amp;nbsp;trace.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="more-tracing"&gt;
-&lt;h2&gt;More&amp;nbsp;Tracing&lt;/h2&gt;
+&lt;h4&gt;More&amp;nbsp;Tracing&lt;/h4&gt;
 &lt;p&gt;Julia Evans&amp;#8217;s &lt;a class="reference external" href="https://jvns.ca/blog/2017/07/05/linux-tracing-systems/"&gt;Linux tracing systems &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; how they fit together&lt;/a&gt; is pretty great
 reading &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; reference for context beyond just &lt;span class="caps"&gt;BPF&lt;/span&gt;.&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="programming"></category></entry><entry><title>less</title><link href="https://til.grayvines.com/entries/2020/04/22/less/" rel="alternate"></link><published>2020-04-22T02:51:39-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-22:/entries/2020/04/22/less/</id><summary type="html">&lt;div class="section" id="less-s"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;less &lt;span class="pre"&gt;-S&lt;/span&gt;&lt;/tt&gt;&lt;/h2&gt;
+&lt;h4&gt;&lt;tt class="docutils literal"&gt;less &lt;span class="pre"&gt;-S&lt;/span&gt;&lt;/tt&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;-S&lt;/span&gt;&lt;/tt&gt; will disable soft line breaks within &lt;tt class="docutils literal"&gt;less&lt;/tt&gt;, allowing horizontal&amp;nbsp;scrolling.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="tailing-files"&gt;
-&lt;h2&gt;Tailing&amp;nbsp;Files&lt;/h2&gt;
+&lt;h4&gt;Tailing&amp;nbsp;Files&lt;/h4&gt;
 &lt;p&gt;Use &lt;tt class="docutils literal"&gt;less +F&lt;/tt&gt; instead of &lt;tt class="docutils literal"&gt;tail &lt;span class="pre"&gt;-f&lt;/span&gt;&lt;/tt&gt;. It works the same, but supports
 interrupting the stream with &lt;tt class="docutils literal"&gt;&lt;span class="caps"&gt;SIGINT&lt;/span&gt;&lt;/tt&gt; to e.g. search around, and then can
 resume tailing by hitting &lt;tt class="docutils literal"&gt;F&lt;/tt&gt; again.&lt;/p&gt;
 &lt;p&gt;Doing so will …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="less-s"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;less &lt;span class="pre"&gt;-S&lt;/span&gt;&lt;/tt&gt;&lt;/h2&gt;
+&lt;h4&gt;&lt;tt class="docutils literal"&gt;less &lt;span class="pre"&gt;-S&lt;/span&gt;&lt;/tt&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;-S&lt;/span&gt;&lt;/tt&gt; will disable soft line breaks within &lt;tt class="docutils literal"&gt;less&lt;/tt&gt;, allowing horizontal&amp;nbsp;scrolling.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="tailing-files"&gt;
-&lt;h2&gt;Tailing&amp;nbsp;Files&lt;/h2&gt;
+&lt;h4&gt;Tailing&amp;nbsp;Files&lt;/h4&gt;
 &lt;p&gt;Use &lt;tt class="docutils literal"&gt;less +F&lt;/tt&gt; instead of &lt;tt class="docutils literal"&gt;tail &lt;span class="pre"&gt;-f&lt;/span&gt;&lt;/tt&gt;. It works the same, but supports
 interrupting the stream with &lt;tt class="docutils literal"&gt;&lt;span class="caps"&gt;SIGINT&lt;/span&gt;&lt;/tt&gt; to e.g. search around, and then can
 resume tailing by hitting &lt;tt class="docutils literal"&gt;F&lt;/tt&gt; again.&lt;/p&gt;
 &lt;p&gt;Doing so will even then highlight the search pattern in the future&amp;nbsp;text.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="less-command"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;less +command&lt;/tt&gt;&lt;/h2&gt;
+&lt;h4&gt;&lt;tt class="docutils literal"&gt;less +command&lt;/tt&gt;&lt;/h4&gt;
 &lt;p&gt;Passing &lt;tt class="docutils literal"&gt;+command&lt;/tt&gt; will run the given command each time a new file is opened
 by &lt;tt class="docutils literal"&gt;less&lt;/tt&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="filtering-lines"&gt;
-&lt;h2&gt;Filtering&amp;nbsp;Lines&lt;/h2&gt;
+&lt;h4&gt;Filtering&amp;nbsp;Lines&lt;/h4&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;&amp;amp;pattern&lt;/tt&gt; will filter lines only matching the given&amp;nbsp;pattern.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="opening-editor"&gt;
-&lt;h2&gt;Opening &lt;span class="caps"&gt;EDITOR&lt;/span&gt;&lt;/h2&gt;
+&lt;h4&gt;Opening &lt;span class="caps"&gt;EDITOR&lt;/span&gt;&lt;/h4&gt;
 &lt;p&gt;Hitting &lt;tt class="docutils literal"&gt;v&lt;/tt&gt; will open the file in an&amp;nbsp;editor.&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="programming"></category></entry><entry><title>zsh</title><link href="https://til.grayvines.com/entries/2020/04/22/zsh/" rel="alternate"></link><published>2020-04-22T02:51:39-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-22:/entries/2020/04/22/zsh/</id><summary type="html">&lt;div class="section" id="id1"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;&amp;amp;|&lt;/tt&gt;&lt;/h2&gt;
+&lt;h4&gt;&lt;tt class="docutils literal"&gt;&amp;amp;|&lt;/tt&gt;&lt;/h4&gt;
 &lt;p&gt;Piping using &lt;tt class="docutils literal"&gt;foo &amp;amp;| bar&lt;/tt&gt; will pipe both stdout &lt;em&gt;and&lt;/em&gt; stderr to &lt;tt class="docutils literal"&gt;bar&lt;/tt&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="multios"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;&lt;span class="caps"&gt;MULTIOS&lt;/span&gt;&lt;/tt&gt;&lt;/h2&gt;
+&lt;h4&gt;&lt;tt class="docutils literal"&gt;&lt;span class="caps"&gt;MULTIOS&lt;/span&gt;&lt;/tt&gt;&lt;/h4&gt;
 &lt;p&gt;With &lt;tt class="docutils literal"&gt;&lt;span class="caps"&gt;MULTIOS&lt;/span&gt;&lt;/tt&gt; enabled, multiple outputs to the same file descriptor can be
 provided, similar to using &lt;tt class="docutils literal"&gt;tee&lt;/tt&gt;.&lt;/p&gt;
 &lt;p&gt;In other&amp;nbsp;words:&lt;/p&gt;
@@ -159,11 +159,11 @@ $ date &amp;gt;foo &amp;gt;bar
 &lt;/pre&gt;
 &lt;p&gt;will output &lt;tt class="docutils literal"&gt;date&lt;/tt&gt; to both &lt;tt class="docutils literal"&gt;foo&lt;/tt&gt; and &lt;tt class="docutils literal"&gt;bar&lt;/tt&gt;. (Piping it will also work
 since …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="id1"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;&amp;amp;|&lt;/tt&gt;&lt;/h2&gt;
+&lt;h4&gt;&lt;tt class="docutils literal"&gt;&amp;amp;|&lt;/tt&gt;&lt;/h4&gt;
 &lt;p&gt;Piping using &lt;tt class="docutils literal"&gt;foo &amp;amp;| bar&lt;/tt&gt; will pipe both stdout &lt;em&gt;and&lt;/em&gt; stderr to &lt;tt class="docutils literal"&gt;bar&lt;/tt&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="multios"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;&lt;span class="caps"&gt;MULTIOS&lt;/span&gt;&lt;/tt&gt;&lt;/h2&gt;
+&lt;h4&gt;&lt;tt class="docutils literal"&gt;&lt;span class="caps"&gt;MULTIOS&lt;/span&gt;&lt;/tt&gt;&lt;/h4&gt;
 &lt;p&gt;With &lt;tt class="docutils literal"&gt;&lt;span class="caps"&gt;MULTIOS&lt;/span&gt;&lt;/tt&gt; enabled, multiple outputs to the same file descriptor can be
 provided, similar to using &lt;tt class="docutils literal"&gt;tee&lt;/tt&gt;.&lt;/p&gt;
 &lt;p&gt;In other&amp;nbsp;words:&lt;/p&gt;
@@ -174,18 +174,18 @@ $ date &amp;gt;foo &amp;gt;bar
 since it implicitly is like&amp;nbsp;redirecting).&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="cd-old-new"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;cd old new&lt;/tt&gt;&lt;/h2&gt;
+&lt;h4&gt;&lt;tt class="docutils literal"&gt;cd old new&lt;/tt&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;cd old new&lt;/tt&gt; will substitute &lt;tt class="docutils literal"&gt;new&lt;/tt&gt; into &lt;tt class="docutils literal"&gt;old&lt;/tt&gt;.&lt;/p&gt;
 &lt;p&gt;I.e. &lt;tt class="docutils literal"&gt;cd foo bar&lt;/tt&gt; in a working directory like &lt;tt class="docutils literal"&gt;/a/b/foo/c&lt;/tt&gt; will change to
 &lt;tt class="docutils literal"&gt;/a/b/bar/c&lt;/tt&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="vared"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;vared&lt;/tt&gt;&lt;/h2&gt;
+&lt;h4&gt;&lt;tt class="docutils literal"&gt;vared&lt;/tt&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;vared SOME_ENVIRONMENT_VARIABLE&lt;/tt&gt; will load the environment variable into a
 line editor, with the output saved back to the environment&amp;nbsp;variable.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="mailpath"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;mailpath&lt;/tt&gt;&lt;/h2&gt;
+&lt;h4&gt;&lt;tt class="docutils literal"&gt;mailpath&lt;/tt&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;mailpath&lt;/tt&gt; specifies the set of paths to look at for new&amp;nbsp;mail.&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="programming"></category></entry><entry><title>coreutils</title><link href="https://til.grayvines.com/entries/2020/04/22/coreutils/" rel="alternate"></link><published>2020-04-22T00:57:12-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-22:/entries/2020/04/22/coreutils/</id><content type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;mkdir &lt;span class="pre"&gt;-p&lt;/span&gt;&lt;/tt&gt; will create a directory with its parents. But &lt;tt class="docutils literal"&gt;cp&lt;/tt&gt; takes a
@@ -201,30 +201,30 @@ come with&amp;nbsp;them).&lt;/p&gt;
 &lt;p&gt;Tons of examples &lt;a class="reference external" href="http://www.dest-unreach.org/socat/doc/socat.html#EXAMPLES"&gt;here&lt;/a&gt;.&lt;/p&gt;
 </content><category term="programming"></category></entry><entry><title>Git</title><link href="https://til.grayvines.com/entries/2020/04/21/git/" rel="alternate"></link><published>2020-04-21T16:14:15-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-21:/entries/2020/04/21/git/</id><summary type="html">&lt;p&gt;&lt;em&gt;git you magnificent&amp;nbsp;beast&amp;#8230;&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="finding-the-history-of-a-function-or-object"&gt;
-&lt;h2&gt;Finding the History of a Function or&amp;nbsp;Object&lt;/h2&gt;
+&lt;h4&gt;Finding the History of a Function or&amp;nbsp;Object&lt;/h4&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;log &lt;span class="pre"&gt;-L&lt;/span&gt; :foo&lt;/tt&gt; will show you the history of the function/object called
 &lt;tt class="docutils literal"&gt;foo&lt;/tt&gt;. This is a smarter version of normal &lt;tt class="docutils literal"&gt;log &lt;span class="pre"&gt;-L&lt;/span&gt;&lt;/tt&gt; which just knows about&amp;nbsp;lines.&lt;/p&gt;
 &lt;p&gt;But because I&amp;#8217;m lazy to even type this out …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;git you magnificent&amp;nbsp;beast&amp;#8230;&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="finding-the-history-of-a-function-or-object"&gt;
-&lt;h2&gt;Finding the History of a Function or&amp;nbsp;Object&lt;/h2&gt;
+&lt;h4&gt;Finding the History of a Function or&amp;nbsp;Object&lt;/h4&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;log &lt;span class="pre"&gt;-L&lt;/span&gt; :foo&lt;/tt&gt; will show you the history of the function/object called
 &lt;tt class="docutils literal"&gt;foo&lt;/tt&gt;. This is a smarter version of normal &lt;tt class="docutils literal"&gt;log &lt;span class="pre"&gt;-L&lt;/span&gt;&lt;/tt&gt; which just knows about&amp;nbsp;lines.&lt;/p&gt;
 &lt;p&gt;But because I&amp;#8217;m lazy to even type this out, I made &lt;a class="reference external" href="https://github.com/Julian/dotfiles/blob/master/bin/git-pylog"&gt;git pylog&lt;/a&gt; to just
 be able to type &lt;tt class="docutils literal"&gt;g pylog foo.bar.baz&lt;/tt&gt; and find the history of the &lt;span class="caps"&gt;FQON&lt;/span&gt;&amp;nbsp;there.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="finding-commits-by-message"&gt;
-&lt;h2&gt;Finding Commits by&amp;nbsp;Message&lt;/h2&gt;
+&lt;h4&gt;Finding Commits by&amp;nbsp;Message&lt;/h4&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;git show :/foo&lt;/tt&gt; will find the last commit whose message contains &lt;tt class="docutils literal"&gt;foo&lt;/tt&gt;.
 It accepts a&amp;nbsp;regex.&lt;/p&gt;
 &lt;p&gt;Specifically, &lt;tt class="docutils literal"&gt;git show :^Merge&lt;/tt&gt; should generally find the last merge&amp;nbsp;commit.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="showing-various-parts-of-a-merge-conflict"&gt;
-&lt;h2&gt;Showing Various Parts of a Merge&amp;nbsp;Conflict&lt;/h2&gt;
+&lt;h4&gt;Showing Various Parts of a Merge&amp;nbsp;Conflict&lt;/h4&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;git show :N:foo.txt&lt;/tt&gt; will show foo.txt from &amp;#8220;stage&amp;#8221; number N, which is
 useful during conflict&amp;nbsp;resoluton.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="git-name-rev"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;git &lt;span class="pre"&gt;name-rev&lt;/span&gt;&lt;/tt&gt;&lt;/h2&gt;
+&lt;h4&gt;&lt;tt class="docutils literal"&gt;git &lt;span class="pre"&gt;name-rev&lt;/span&gt;&lt;/tt&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;name-rev&lt;/span&gt;&lt;/tt&gt; can append info about the position of a commit relative to&amp;nbsp;tags.&lt;/p&gt;
 &lt;p&gt;It can do this even interspersed in other prose&amp;nbsp;text.&lt;/p&gt;
 &lt;p&gt;E.g., given say a comment&amp;nbsp;saying:&lt;/p&gt;
@@ -238,7 +238,7 @@ I think this bug was caused by dc9061e8ffb5002e33688ae97d0d953818e89bae
 &lt;p&gt;See its man page for more&amp;nbsp;stuff.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="tags-matching-a-pattern"&gt;
-&lt;h2&gt;Tags Matching a&amp;nbsp;Pattern&lt;/h2&gt;
+&lt;h4&gt;Tags Matching a&amp;nbsp;Pattern&lt;/h4&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;git tag &lt;span class="pre"&gt;-l&lt;/span&gt;&lt;/tt&gt; doesn&amp;#8217;t just list all tags, it can take a pattern and show only
 matching ones,&amp;nbsp;e.g.:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -247,16 +247,16 @@ $ g tag -l v*
 &lt;p&gt;for showing version&amp;nbsp;tags.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="git-shortlog"&gt;
-&lt;h2&gt;&lt;tt class="docutils literal"&gt;git shortlog&lt;/tt&gt;&lt;/h2&gt;
+&lt;h4&gt;&lt;tt class="docutils literal"&gt;git shortlog&lt;/tt&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;shortlog&lt;/tt&gt; gives a nice summarized version of the log, e.g. for release&amp;nbsp;notes.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="listing-or-looping-over-revisions"&gt;
-&lt;h2&gt;Listing or Looping Over&amp;nbsp;Revisions&lt;/h2&gt;
+&lt;h4&gt;Listing or Looping Over&amp;nbsp;Revisions&lt;/h4&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;git &lt;span class="pre"&gt;for-each-ref&lt;/span&gt;&lt;/tt&gt; will loop over given&amp;nbsp;revisions.&lt;/p&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;git &lt;span class="pre"&gt;rev-list&lt;/span&gt;&lt;/tt&gt; will simply list them (in reverse&amp;nbsp;order).&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="sending-patches-over-email"&gt;
-&lt;h2&gt;Sending Patches Over&amp;nbsp;Email&lt;/h2&gt;
+&lt;h4&gt;Sending Patches Over&amp;nbsp;Email&lt;/h4&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;format-patch&lt;/span&gt;&lt;/tt&gt; turns commits into patches as a file, and formatted for
 sending via email or applying with &lt;tt class="docutils literal"&gt;git am&lt;/tt&gt;.&lt;/p&gt;
 &lt;/div&gt;

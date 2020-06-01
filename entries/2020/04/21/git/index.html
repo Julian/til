@@ -67,25 +67,25 @@
       <section class="entry-content">
         <p><em>git you magnificent&nbsp;beast&#8230;</em></p>
 <div class="section" id="finding-the-history-of-a-function-or-object">
-<h2>Finding the History of a Function or&nbsp;Object</h2>
+<h4>Finding the History of a Function or&nbsp;Object</h4>
 <p><tt class="docutils literal">log <span class="pre">-L</span> :foo</tt> will show you the history of the function/object called
 <tt class="docutils literal">foo</tt>. This is a smarter version of normal <tt class="docutils literal">log <span class="pre">-L</span></tt> which just knows about&nbsp;lines.</p>
 <p>But because I&#8217;m lazy to even type this out, I made <a class="reference external" href="https://github.com/Julian/dotfiles/blob/master/bin/git-pylog">git pylog</a> to just
 be able to type <tt class="docutils literal">g pylog foo.bar.baz</tt> and find the history of the <span class="caps">FQON</span>&nbsp;there.</p>
 </div>
 <div class="section" id="finding-commits-by-message">
-<h2>Finding Commits by&nbsp;Message</h2>
+<h4>Finding Commits by&nbsp;Message</h4>
 <p><tt class="docutils literal">git show :/foo</tt> will find the last commit whose message contains <tt class="docutils literal">foo</tt>.
 It accepts a&nbsp;regex.</p>
 <p>Specifically, <tt class="docutils literal">git show :^Merge</tt> should generally find the last merge&nbsp;commit.</p>
 </div>
 <div class="section" id="showing-various-parts-of-a-merge-conflict">
-<h2>Showing Various Parts of a Merge&nbsp;Conflict</h2>
+<h4>Showing Various Parts of a Merge&nbsp;Conflict</h4>
 <p><tt class="docutils literal">git show :N:foo.txt</tt> will show foo.txt from &#8220;stage&#8221; number N, which is
 useful during conflict&nbsp;resoluton.</p>
 </div>
 <div class="section" id="git-name-rev">
-<h2><tt class="docutils literal">git <span class="pre">name-rev</span></tt></h2>
+<h4><tt class="docutils literal">git <span class="pre">name-rev</span></tt></h4>
 <p><tt class="docutils literal"><span class="pre">name-rev</span></tt> can append info about the position of a commit relative to&nbsp;tags.</p>
 <p>It can do this even interspersed in other prose&nbsp;text.</p>
 <p>E.g., given say a comment&nbsp;saying:</p>
@@ -99,7 +99,7 @@ I think this bug was caused by dc9061e8ffb5002e33688ae97d0d953818e89bae
 <p>See its man page for more&nbsp;stuff.</p>
 </div>
 <div class="section" id="tags-matching-a-pattern">
-<h2>Tags Matching a&nbsp;Pattern</h2>
+<h4>Tags Matching a&nbsp;Pattern</h4>
 <p><tt class="docutils literal">git tag <span class="pre">-l</span></tt> doesn&#8217;t just list all tags, it can take a pattern and show only
 matching ones,&nbsp;e.g.:</p>
 <pre class="literal-block">
@@ -108,16 +108,16 @@ $ g tag -l v*
 <p>for showing version&nbsp;tags.</p>
 </div>
 <div class="section" id="git-shortlog">
-<h2><tt class="docutils literal">git shortlog</tt></h2>
+<h4><tt class="docutils literal">git shortlog</tt></h4>
 <p><tt class="docutils literal">shortlog</tt> gives a nice summarized version of the log, e.g. for release&nbsp;notes.</p>
 </div>
 <div class="section" id="listing-or-looping-over-revisions">
-<h2>Listing or Looping Over&nbsp;Revisions</h2>
+<h4>Listing or Looping Over&nbsp;Revisions</h4>
 <p><tt class="docutils literal">git <span class="pre">for-each-ref</span></tt> will loop over given&nbsp;revisions.</p>
 <p><tt class="docutils literal">git <span class="pre">rev-list</span></tt> will simply list them (in reverse&nbsp;order).</p>
 </div>
 <div class="section" id="sending-patches-over-email">
-<h2>Sending Patches Over&nbsp;Email</h2>
+<h4>Sending Patches Over&nbsp;Email</h4>
 <p><tt class="docutils literal"><span class="pre">format-patch</span></tt> turns commits into patches as a file, and formatted for
 sending via email or applying with <tt class="docutils literal">git am</tt>.</p>
 </div>

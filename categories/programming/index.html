@@ -170,12 +170,12 @@ different and weird …</p>
 
       <section class="entry-excerpt">
         <div class="section" id="jit">
-<h2><span class="caps">JIT</span></h2>
+<h4><span class="caps">JIT</span></h4>
 <p>A restricted subset of C is compiled via <tt class="docutils literal">clang</tt> to eBPF bytecode, and the
 Linux kernel contains a <span class="caps">JIT</span> (and of course a <span class="caps">VM</span>) to execute&nbsp;it.</p>
 </div>
 <div class="section" id="bcc">
-<h2><tt class="docutils literal">bcc</tt></h2>
+<h4><tt class="docutils literal">bcc</tt></h4>
 <p><a class="reference external" href="https://github.com/iovisor/bcc">bcc</a> is a higher level toolkit for
 interacting with eBPF (including via Python). For&nbsp;example:</p>
 <div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bcc</span> <span class="kn">import</span> <span class="n">BPF</span>
@@ -204,11 +204,11 @@ interacting with eBPF (including via Python). For&nbsp;example:</p>
 
       <section class="entry-excerpt">
         <div class="section" id="less-s">
-<h2><tt class="docutils literal">less <span class="pre">-S</span></tt></h2>
+<h4><tt class="docutils literal">less <span class="pre">-S</span></tt></h4>
 <p><tt class="docutils literal"><span class="pre">-S</span></tt> will disable soft line breaks within <tt class="docutils literal">less</tt>, allowing horizontal&nbsp;scrolling.</p>
 </div>
 <div class="section" id="tailing-files">
-<h2>Tailing&nbsp;Files</h2>
+<h4>Tailing&nbsp;Files</h4>
 <p>Use <tt class="docutils literal">less +F</tt> instead of <tt class="docutils literal">tail <span class="pre">-f</span></tt>. It works the same, but supports
 interrupting the stream with <tt class="docutils literal"><span class="caps">SIGINT</span></tt> to e.g. search around, and then can
 resume tailing by hitting <tt class="docutils literal">F</tt> again.</p>
@@ -235,11 +235,11 @@ resume tailing by hitting <tt class="docutils literal">F</tt> again.</p>
 
       <section class="entry-excerpt">
         <div class="section" id="id1">
-<h2><tt class="docutils literal">&amp;|</tt></h2>
+<h4><tt class="docutils literal">&amp;|</tt></h4>
 <p>Piping using <tt class="docutils literal">foo &amp;| bar</tt> will pipe both stdout <em>and</em> stderr to <tt class="docutils literal">bar</tt>.</p>
 </div>
 <div class="section" id="multios">
-<h2><tt class="docutils literal"><span class="caps">MULTIOS</span></tt></h2>
+<h4><tt class="docutils literal"><span class="caps">MULTIOS</span></tt></h4>
 <p>With <tt class="docutils literal"><span class="caps">MULTIOS</span></tt> enabled, multiple outputs to the same file descriptor can be
 provided, similar to using <tt class="docutils literal">tee</tt>.</p>
 <p>In other&nbsp;words:</p>
@@ -348,7 +348,7 @@ come with&nbsp;them).</p>
       <section class="entry-excerpt">
         <p><em>git you magnificent&nbsp;beast&#8230;</em></p>
 <div class="section" id="finding-the-history-of-a-function-or-object">
-<h2>Finding the History of a Function or&nbsp;Object</h2>
+<h4>Finding the History of a Function or&nbsp;Object</h4>
 <p><tt class="docutils literal">log <span class="pre">-L</span> :foo</tt> will show you the history of the function/object called
 <tt class="docutils literal">foo</tt>. This is a smarter version of normal <tt class="docutils literal">log <span class="pre">-L</span></tt> which just knows about&nbsp;lines.</p>
 <p>But because I&#8217;m lazy to even type this out …</p></div>
