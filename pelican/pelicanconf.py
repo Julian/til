@@ -54,3 +54,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 TYPOGRIFY = True
+
+DOCUTILS_SETTINGS = dict(
+    initial_header_level=4,  # Use h4 since we use h3 for entry titles
+)
