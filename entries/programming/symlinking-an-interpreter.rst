@@ -2,6 +2,8 @@
 Symlinking Python (3) Interpreters
 ==================================
 
+:tags: python, revisit
+
 `PEP 405 <https://www.python.org/dev/peps/pep-0405/#id17>`_ introduced
 a ``pyvenv.cfg`` file, useful for creating lightweight virtual
 environments without the hacks done by ``virtualenv`` historically.
