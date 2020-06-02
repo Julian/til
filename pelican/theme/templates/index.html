@@ -22,16 +22,17 @@
         {{ article.summary }}
       </section><!-- /.entry-excerpt -->
 
-      <footer class="entry-info">
+      <footer class="entry-footer">
         {% if article.tags %}
-        <span class="f-entry-tags">
+        <span>
           <i class="fa fa-tag"></i>
+          {% set comma = joiner(", ") %}
           {% for tag in article.tags %}
-              <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+            {{ comma() }}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
           {% endfor %}
         </span>
         {% endif %}
-      </footer><!-- /.entry-info -->
+      </footer>
     </article>
   {% endfor %}
 
