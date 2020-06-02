@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL - programming</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/programming.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-05-31T17:05:23-04:00</updated><subtitle>Today I Learned</subtitle><entry><title>X- Headers</title><link href="https://til.grayvines.com/entries/2020/05/28/x-headers/" rel="alternate"></link><published>2020-05-28T02:47:02-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-28:/entries/2020/05/28/x-headers/</id><content type="html">&lt;p&gt;Prefixing (custom) &lt;span class="caps"&gt;HTTP&lt;/span&gt; Headers with &lt;tt class="docutils literal"&gt;X-&lt;/tt&gt; is actually &lt;a class="reference external" href="https://tools.ietf.org/html/rfc6648"&gt;deprecated / no longer
+<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL - programming</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/programming.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-06-02T13:24:16-04:00</updated><subtitle>Today I Learned</subtitle><entry><title>X- Headers</title><link href="https://til.grayvines.com/entries/2020/05/28/x-headers/" rel="alternate"></link><published>2020-05-28T02:47:02-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-28:/entries/2020/05/28/x-headers/</id><content type="html">&lt;p&gt;Prefixing (custom) &lt;span class="caps"&gt;HTTP&lt;/span&gt; Headers with &lt;tt class="docutils literal"&gt;X-&lt;/tt&gt; is actually &lt;a class="reference external" href="https://tools.ietf.org/html/rfc6648"&gt;deprecated / no longer
 recommended by the &lt;span class="caps"&gt;IETF&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 </content><category term="programming"></category></entry><entry><title>U2F and OpenSSH</title><link href="https://til.grayvines.com/entries/2020/05/21/u2f-and-openssh/" rel="alternate"></link><published>2020-05-21T15:16:49-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-21:/entries/2020/05/21/u2f-and-openssh/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://www.openssh.com/txt/release-8.2"&gt;As of OpenSSH 8.2&lt;/a&gt;, OpenSSH
 now supports &lt;span class="caps"&gt;U2F&lt;/span&gt; for&amp;nbsp;authentication.&lt;/p&gt;
@@ -13,7 +13,57 @@ now supports &lt;span class="caps"&gt;U2F&lt;/span&gt; for&amp;nbsp;authenticati
 &lt;em&gt;is&lt;/em&gt; / &lt;em&gt;has&lt;/em&gt; the key on&amp;nbsp;it.&lt;/p&gt;
 &lt;p&gt;To use it though, both sides (server and client) have to be recent
 enough to support this form of&amp;nbsp;login.&lt;/p&gt;
-</content><category term="programming"></category></entry><entry><title>namei</title><link href="https://til.grayvines.com/entries/2020/04/28/namei/" rel="alternate"></link><published>2020-04-28T13:42:40-04:00</published><updated>2020-05-31T17:05:23-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-28:/entries/2020/04/28/namei/</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;namei(1)&lt;/tt&gt; (provided by &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;util-linux&lt;/span&gt;&lt;/tt&gt; on macOS) is a nifty utility for fully
+</content><category term="programming"></category></entry><entry><title>Symlinking Python (3) Interpreters</title><link href="https://til.grayvines.com/entries/2020/05/04/symlinking-python-3-interpreters/" rel="alternate"></link><published>2020-05-04T13:39:06-04:00</published><updated>2020-06-02T13:24:16-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-05-04:/entries/2020/05/04/symlinking-python-3-interpreters/</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.python.org/dev/peps/pep-0405/#id17"&gt;&lt;span class="caps"&gt;PEP&lt;/span&gt; 405&lt;/a&gt; introduced
+a &lt;tt class="docutils literal"&gt;pyvenv.cfg&lt;/tt&gt; file, useful for creating lightweight virtual
+environments without the hacks done by &lt;tt class="docutils literal"&gt;virtualenv&lt;/tt&gt; historically.
+Doing so is much, much faster as well, since now creation of a virtual
+environment is essentially just creating 2 files (one file and a&amp;nbsp;symlink).&lt;/p&gt;
+&lt;p&gt;It also though changed …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="https://www.python.org/dev/peps/pep-0405/#id17"&gt;&lt;span class="caps"&gt;PEP&lt;/span&gt; 405&lt;/a&gt; introduced
+a &lt;tt class="docutils literal"&gt;pyvenv.cfg&lt;/tt&gt; file, useful for creating lightweight virtual
+environments without the hacks done by &lt;tt class="docutils literal"&gt;virtualenv&lt;/tt&gt; historically.
+Doing so is much, much faster as well, since now creation of a virtual
+environment is essentially just creating 2 files (one file and a&amp;nbsp;symlink).&lt;/p&gt;
+&lt;p&gt;It also though changed the behavior of symlinking a Python interpreter binary.
+Specifically, if you&amp;nbsp;do:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+ln -s /a/python3 /some/other/directory/
+&lt;/pre&gt;
+&lt;p&gt;then &lt;tt class="docutils literal"&gt;/some/other/directory/python&lt;/tt&gt; is seen as an entirely different virtual
+environment. It will have entirely different &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;site-packages&lt;/span&gt;&lt;/tt&gt; (i.e. will not
+see packages installed to the original&amp;nbsp;interpreter).&lt;/p&gt;
+&lt;p&gt;Full&amp;nbsp;reproducer:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ python3.8 -m venv venv &amp;amp;&amp;amp; \
+  venv/bin/python -m pip install --quiet attrs &amp;amp;&amp;amp; \
+  echo 'in-place' &amp;amp;&amp;amp; \
+  venv/bin/python -c 'import attr' &amp;amp;&amp;amp; \
+  echo 'succeeded' &amp;amp;&amp;amp; \
+  ln -s venv/bin/python ./symlink &amp;amp;&amp;amp; \
+  echo 'symlink:' &amp;amp;&amp;amp; \
+  ./symlink -c 'import attr'; rm -rf venv symlink
+&lt;/pre&gt;
+&lt;p&gt;It&amp;#8217;s unclear to me why this behavior is desireable &amp;#8212; to me, it seems a
+lot more reasonable for the presence of a &lt;tt class="docutils literal"&gt;pyvenv.cfg&lt;/tt&gt; file to
+trigger the virtual environment behavior, not merely creating a symlink.
+I.e., the behavior I would have expected&amp;nbsp;is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;on startup of a Python interpreter, look for a &lt;tt class="docutils literal"&gt;pyvenv.cfg&lt;/tt&gt; next
+to the absolute path of &lt;tt class="docutils literal"&gt;sys.argv[0]&lt;/tt&gt;&lt;/li&gt;
+&lt;li&gt;if you find it, this is a virtual environment, read and process&amp;nbsp;it&lt;/li&gt;
+&lt;li&gt;otherwise, if &lt;tt class="docutils literal"&gt;sys.argv[0]&lt;/tt&gt; is a symlink, &lt;tt class="docutils literal"&gt;readlink&lt;/tt&gt; it and re-check
+for a &lt;tt class="docutils literal"&gt;pyvenv.cfg&lt;/tt&gt; (following the behavior above) or otherwise
+terminating once a non-symlink is reached. But &lt;tt class="docutils literal"&gt;sys.argv[0]&lt;/tt&gt; alone
+being a symlink does not change the isolation or behavior of the linked&amp;nbsp;interpreter.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I&amp;#8217;m not sure I have enough energy to investigate whether the above was
+considered and/or has some critical issue I don&amp;#8217;t see, but the current
+behavior is quite surprising (something I only notice now given that
+&lt;tt class="docutils literal"&gt;virtualenv&lt;/tt&gt; just adopted it as of &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;virtualenv&amp;gt;=20&lt;/span&gt;&lt;/tt&gt;).&lt;/p&gt;
+&lt;p&gt;If you know why the above was chosen, or want to argue it&amp;#8217;s better, let
+me know&amp;nbsp;:)&lt;/p&gt;
+</content><category term="programming"></category><category term="python"></category><category term="revisit"></category></entry><entry><title>namei</title><link href="https://til.grayvines.com/entries/2020/04/28/namei/" rel="alternate"></link><published>2020-04-28T13:42:40-04:00</published><updated>2020-05-31T17:05:23-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-28:/entries/2020/04/28/namei/</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;namei(1)&lt;/tt&gt; (provided by &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;util-linux&lt;/span&gt;&lt;/tt&gt; on macOS) is a nifty utility for fully
 resolving symbolic&amp;nbsp;links.&lt;/p&gt;
 &lt;p&gt;Given a chain of links, it will show&amp;nbsp;e.g.:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="go"&gt;⊙  namei =python                                     julian@Air ●&lt;/span&gt;
