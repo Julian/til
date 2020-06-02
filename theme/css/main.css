@@ -606,6 +606,7 @@ nav ul {
     clear: both; }
   nav li,
   nav li > a {
+    margin: 5px;
     display: inline-block;
     *display: inline;
     zoom: 1; }
