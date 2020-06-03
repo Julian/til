@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL - music</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/music.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-05-30T15:21:31-04:00</updated><subtitle>Today I Learned</subtitle><entry><title>Spreadsheets Are Cool</title><link href="https://til.grayvines.com/entries/2020/04/22/spreadsheets-are-cool/" rel="alternate"></link><published>2020-04-22T22:45:37-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-22:/entries/2020/04/22/spreadsheets-are-cool/</id><summary type="html">&lt;p&gt;Using a spreadsheet is an oddly good low-tech way to write out the layers of a
+<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL - music</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/music.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-06-03T15:48:08-04:00</updated><subtitle>Today I Learned</subtitle><entry><title>Electric Guitar Knobs</title><link href="https://til.grayvines.com/entries/2020/06/03/electric-guitar-knobs/" rel="alternate"></link><published>2020-06-03T15:48:08-04:00</published><updated>2020-06-03T15:48:08-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-06-03:/entries/2020/06/03/electric-guitar-knobs/</id><summary type="html">&lt;p&gt;Don&amp;#8217;t roll knobs immediately up to&amp;nbsp;10.&lt;/p&gt;
+&lt;p&gt;Doing so means that the only on-body adjustments that can be made are
+&lt;em&gt;downward&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Instead, set volume down at least 1 stop, and &lt;em&gt;then&lt;/em&gt; set appropriate amp
+settings (which will require more&amp;nbsp;gain).&lt;/p&gt;
+&lt;p&gt;For tone, setting it half-way will give room in …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Don&amp;#8217;t roll knobs immediately up to&amp;nbsp;10.&lt;/p&gt;
+&lt;p&gt;Doing so means that the only on-body adjustments that can be made are
+&lt;em&gt;downward&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Instead, set volume down at least 1 stop, and &lt;em&gt;then&lt;/em&gt; set appropriate amp
+settings (which will require more&amp;nbsp;gain).&lt;/p&gt;
+&lt;p&gt;For tone, setting it half-way will give room in both&amp;nbsp;directions.&lt;/p&gt;
+&lt;p&gt;Also, rolling the volume knob down and up can be used with high-gain amp
+settings to switch between clean and distorted&amp;nbsp;tones.&lt;/p&gt;
+</content><category term="music"></category></entry><entry><title>Spreadsheets Are Cool</title><link href="https://til.grayvines.com/entries/2020/04/22/spreadsheets-are-cool/" rel="alternate"></link><published>2020-04-22T22:45:37-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-22:/entries/2020/04/22/spreadsheets-are-cool/</id><summary type="html">&lt;p&gt;Using a spreadsheet is an oddly good low-tech way to write out the layers of a
 song (for e.g. covering it / reproducing&amp;nbsp;it).&lt;/p&gt;
 &lt;p&gt;As an example, for Jai Paul&amp;#8217;s &lt;a class="reference external" href="https://open.spotify.com/track/4fo6QymiAvIc2T7SNDWNZq"&gt;All Night&lt;/a&gt;, writing out
 something&amp;nbsp;like:&lt;/p&gt;
