@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/all.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-06-03T15:48:08-04:00</updated><subtitle>Today I Learned</subtitle><entry><title>Electric Guitar Knobs</title><link href="https://til.grayvines.com/entries/2020/06/03/electric-guitar-knobs/" rel="alternate"></link><published>2020-06-03T15:48:08-04:00</published><updated>2020-06-03T15:48:08-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-06-03:/entries/2020/06/03/electric-guitar-knobs/</id><summary type="html">&lt;p&gt;Don&amp;#8217;t roll knobs immediately up to&amp;nbsp;10.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/all.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-06-07T13:37:45-04:00</updated><subtitle>Today I Learned</subtitle><entry><title>Modern Chess Technicalities</title><link href="https://til.grayvines.com/entries/2020/06/07/modern-chess-technicalities/" rel="alternate"></link><published>2020-06-07T13:37:45-04:00</published><updated>2020-06-07T13:37:45-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-06-07:/entries/2020/06/07/modern-chess-technicalities/</id><summary type="html">&lt;p&gt;The modern Chess rules had some unintended technicalities even until the&amp;nbsp;1970&amp;#8217;s.&lt;/p&gt;
+&lt;p&gt;In particular, until the rules were amended, it was possible to read the
+castling rules as allowing a pawn promoted to a rook to then &lt;em&gt;vertically
+castle&lt;/em&gt; with a king on its original square &amp;#8212; i.e. &lt;tt class="docutils literal"&gt;e8 …&lt;/tt&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;The modern Chess rules had some unintended technicalities even until the&amp;nbsp;1970&amp;#8217;s.&lt;/p&gt;
+&lt;p&gt;In particular, until the rules were amended, it was possible to read the
+castling rules as allowing a pawn promoted to a rook to then &lt;em&gt;vertically
+castle&lt;/em&gt; with a king on its original square &amp;#8212; i.e. &lt;tt class="docutils literal"&gt;e8=R ... &lt;span class="pre"&gt;o-O-o&lt;/span&gt;&lt;/tt&gt; where the
+king moves &lt;tt class="docutils literal"&gt;e1&lt;/tt&gt; to &lt;tt class="docutils literal"&gt;e3&lt;/tt&gt; and the new rook moves &lt;tt class="docutils literal"&gt;e8&lt;/tt&gt; to &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;e2?!&lt;/span&gt;&lt;/tt&gt;. This was
+because the rules only specified that the rook must not have moved&amp;nbsp;previously.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://old.reddit.com/r/chess/comments/gy2uwo/before_1972_the_castling_rule_had_a_hole_in_it/"&gt;This Reddit post&lt;/a&gt;
+has a &amp;#8220;puzzle&amp;#8221; where this rule change affects the game&amp;nbsp;result.&lt;/p&gt;
+&lt;p&gt;Wikipedia lists these under &lt;a class="reference external" href="https://en.m.wikipedia.org/wiki/Joke_chess_problem"&gt;joke chess problems&lt;/a&gt; as if they were even
+then already unrealistic to consider outside of in a joke, but still&amp;nbsp;interesting.&lt;/p&gt;
+&lt;p&gt;(There&amp;#8217;s also a second &amp;#8220;funny&amp;#8221; or &amp;#8220;interesting&amp;#8221; puzzle there where the rules
+didn&amp;#8217;t specify that promoted pieces needed to be of the same&amp;nbsp;color.)&lt;/p&gt;
+</content><category term="misc"></category></entry><entry><title>Electric Guitar Knobs</title><link href="https://til.grayvines.com/entries/2020/06/03/electric-guitar-knobs/" rel="alternate"></link><published>2020-06-03T15:48:08-04:00</published><updated>2020-06-03T15:48:08-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-06-03:/entries/2020/06/03/electric-guitar-knobs/</id><summary type="html">&lt;p&gt;Don&amp;#8217;t roll knobs immediately up to&amp;nbsp;10.&lt;/p&gt;
 &lt;p&gt;Doing so means that the only on-body adjustments that can be made are
 &lt;em&gt;downward&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Instead, set volume down at least 1 stop, and &lt;em&gt;then&lt;/em&gt; set appropriate amp
