@@ -2,6 +2,8 @@
 Firefox
 =======
 
+:tags: browsers
+
 Copying to the Clipboard from the Console
 -----------------------------------------
 
