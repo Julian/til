@@ -22,3 +22,13 @@ those fields, do not take my advice on medicine or law!
 
 Inspired by `<https://github.com/jbranchaud/til>`_ and its post on
 Orange Site.
+
+Resources
+---------
+
+A lot of what's in here is indebted to Snoo, or to aforeunmentioned
+Orange Site. We make fun of you, but you're also great. Keep on keeping
+on.
+
+Where possible and prudent, at least a few minutes effort was made to go
+find the best source of the tidbit.
