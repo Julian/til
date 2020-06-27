@@ -4,6 +4,10 @@ TIL
 
 Small tidbits I've learned, with only a touch of order and cleanliness.
 
+The rendered version of these notes is `here <https://til.grayvines.com>`_. The
+notes are also available as an `Anki deck built on each push
+<https://github.com/Julian/til/actions>`_ as an artifact.
+
 I take a small bit of liberty with the TIL concept -- in particular,
 take the dates with a grain of salt. Some things here are "facts I want
 to remember" moreso than commemorating the day I learned them, which may
