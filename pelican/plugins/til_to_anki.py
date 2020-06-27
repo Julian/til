@@ -49,6 +49,8 @@ class AnkiPelicanWriter:
 
     @classmethod
     def connected(cls, pelican):
+        if not pelican.settings.get("ANKITIL"):
+            return
         name = pelican.settings["SITENAME"]
         deck = genanki.Deck(deck_id=DECK_ID, name=name)
         writer = cls(deck=deck)
