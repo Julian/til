@@ -16,7 +16,7 @@ DEFAULT_DATE_FORMAT = "%B %d, %Y"
 THEME = HERE / "theme"
 
 PLUGIN_PATHS = [HERE / "plugins", "plugins"]
-PLUGINS = ["filetime_from_git"]
+PLUGINS = ["filetime_from_git", "til_to_anki"]
 
 GITHUB_URL = "https://github.com/Julian"
 TWITTER_USERNAME = "JulianWasTaken"
