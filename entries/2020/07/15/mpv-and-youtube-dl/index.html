@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>TIL - Authors</title>
+    <title>TIL - <tt class="docutils literal">mpv</tt> and <tt class="docutils literal"><span class="pre">youtube-dl</span></tt></title>
 
   <link rel="stylesheet" href="https://til.grayvines.com/theme/css/main.css" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700" rel="stylesheet" type="text/css">
@@ -9,6 +9,12 @@
 
   <meta charset="utf-8" />
   <link href="https://til.grayvines.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="TIL Full Atom Feed" />
+  <link href="https://til.grayvines.com/feeds/programming.atom.xml" type="application/atom+xml" rel="alternate" title="TIL Categories Atom Feed" />
+
+
+
+
+
 
 </head>
 
@@ -32,16 +38,60 @@
       <li><a href="https://til.grayvines.com/categories/misc/">misc</a></li>
       <li><a href="https://til.grayvines.com/categories/music/">music</a></li>
       <li><a href="https://til.grayvines.com/categories/physics/">physics</a></li>
-      <li><a href="https://til.grayvines.com/categories/programming/">programming</a></li>
+      <li class="active"><a href="https://til.grayvines.com/categories/programming/">programming</a></li>
       <li><a href="https://til.grayvines.com/categories/sports/">sports</a></li>
       <li><a href="https://til.grayvines.com/categories/travel/">travel</a></li>
 </ul></nav><!-- /#menu -->  </header><!-- /#site-header -->
 
 
-    <h1>Authors on TIL</h1>
-    <ul>
-        <li><a href="https://til.grayvines.com/authors/julian-berman/">Julian Berman</a> (42)</li>
-    </ul>
+<main class="content" role="main">
+  <div class="container">
+    <article class="entry">
+      <header class="entry-header">
+        <h3 class="p-entry-title">
+          <a href="https://til.grayvines.com/entries/2020/07/15/mpv-and-youtube-dl/" rel="bookmark" title="Permalink to mpv and youtube-dl">
+            <tt class="docutils literal">mpv</tt> and <tt class="docutils literal"><span class="pre">youtube-dl</span></tt>
+          </a>
+        </h3>
+
+        <p class="entry-time">
+          <time class="published" datetime="2020-07-15T22:48:53-04:00">
+            July 15, 2020
+          </time>
+        </p>
+    
+      </header>
+
+      <section class="entry-content">
+        <p><tt class="docutils literal">mpv</tt> and <tt class="docutils literal"><span class="pre">youtube-dl</span></tt> can talk directly to each&nbsp;other.</p>
+<p>Specificaly:</p>
+<div class="highlight"><pre><span></span>$ mpv --ytdl-format<span class="o">=</span>bestaudio ytdl://ytsearch:<span class="s1">&#39;think about things&#39;</span>
+</pre></div>
+<p>will immediately start <tt class="docutils literal">mpv</tt> off playing the audio results of the
+<tt class="docutils literal"><span class="pre">youtube-dl</span></tt> search.</p>
+
+      </section><!-- /.entry-content -->
+
+      <hr>
+
+      <footer class="entry-footer">
+        <section class="f-1">
+          <section class="f-entry-time">
+              <time class="published" datetime="2020-07-15T22:48:53-04:00">
+                July 15, 2020
+              </time>
+          </section>
+        </section>
+
+        <section class="f-2">
+          <div class="category">
+              Category: <a href="https://til.grayvines.com/categories/programming/">programming</a>
+          </div>
+        </section>
+      </footer><!-- /.entry-info -->
+    </article>
+  </div>
+</main>
 
 <footer id="site-footer" class="body">
   <div class="container">
