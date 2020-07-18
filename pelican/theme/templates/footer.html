@@ -1,7 +1,7 @@
 <footer id="site-footer" class="body">
   <div class="container">
     {% for social, url in SOCIAL|sort %}
-    <a href="{{ url }}" title="{{ social }}" target="_blank">
+    <a href="{{ url }}" target="_blank">
       <span class="tooltip"><i class="fab fa-{{ social }}"></i></span>
     </a>
     {% endfor %}
