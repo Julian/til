@@ -6,7 +6,6 @@ from pelican import signals
 import attr
 import genanki
 
-
 # Hard coded random IDs hooray
 DECK_ID = 2496816039
 MODEL_ID = 1410818441

@@ -18,5 +18,5 @@ later with other examples).
 not a for-profit prison.)
 
 Other questionably-banned book categories are discussed briefly `here
-<https://www.salon.com/2019/06/15/why-are-books-banned-in-prison-sex-drugs-and-a-critique-of-systematic-oppression/>`__ 
+<https://www.salon.com/2019/06/15/why-are-books-banned-in-prison-sex-drugs-and-a-critique-of-systematic-oppression/>`__
 and `here <https://www.newsweek.com/kansas-prisoners-banned-reading-game-thrones-along-thousands-other-books-1440556>`__.
