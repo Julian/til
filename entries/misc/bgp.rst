@@ -2,6 +2,8 @@
 BGP
 ===
 
+:tags: networking
+
 The `Border Gateway Protocol (BGP)
 <https://en.wikipedia.org/wiki/Border_Gateway_Protocol>`_ is a
 fundamental routing protocol of the internet which allows big networks
