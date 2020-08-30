@@ -39,11 +39,6 @@ Specifically, `CenturyLink/Level3
 <https://en.wikipedia.org/wiki/CenturyLink>`_ routes an inordinately
 large amount of internet traffic relative to other autonomous systems.
 
-.. note::
-
-   Where can questions like "most used paths" or "fraction of total
-   traffic" be answered globally for the internet?
-
 
 Looking Glasses
 ---------------
@@ -60,3 +55,14 @@ which paths the corresponding router would recommend or take.
 .. [#] When used between external systems, it is known more explicitly as
    external BGP (eBGP), as it can also be used within an individual network
    (autonomous system) itself as a way to define how nodes reach each other.
+
+
+Other Resources
+---------------
+
+There are a number of resources which rank autonomous systems via one means or
+another relative to others in the global BGP infrastructure:
+
+    * `ASRank <https://asrank.caida.org/>`_
+
+    * `CIDR Report <https://www.cidr-report.org/as2.0/>`_
