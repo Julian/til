@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL - misc</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/misc.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-08-30T14:59:22-04:00</updated><subtitle>Today I Learned</subtitle><entry><title>Connectivity Outages</title><link href="https://til.grayvines.com/entries/2020/08/30/connectivity-outages/" rel="alternate"></link><published>2020-08-30T14:59:22-04:00</published><updated>2020-08-30T14:59:22-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-08-30:/entries/2020/08/30/connectivity-outages/</id><content type="html">&lt;p&gt;There is a mailing list &lt;a class="reference external" href="https://puck.nether.net/mailman/listinfo/outages"&gt;hosted here&lt;/a&gt; which tries to
+<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL - misc</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/misc.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2020-08-30T16:20:08-04:00</updated><subtitle>Today I Learned</subtitle><entry><title>BGP</title><link href="https://til.grayvines.com/entries/2020/08/30/bgp/" rel="alternate"></link><published>2020-08-30T16:20:08-04:00</published><updated>2020-08-30T16:20:08-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-08-30:/entries/2020/08/30/bgp/</id><summary type="html">&lt;p&gt;The &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Border_Gateway_Protocol"&gt;Border Gateway Protocol (&lt;span class="caps"&gt;BGP&lt;/span&gt;)&lt;/a&gt; is a
+fundamental routing protocol of the internet which allows big networks
+(&amp;#8220;autonomous systems&amp;#8221;) to decide which paths to use to route traffic
+between each other &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Specifically, given some autonomous systems which connect to others, &lt;span class="caps"&gt;BGP&lt;/span&gt;
+allows systems within an autonomous system to reach …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Border_Gateway_Protocol"&gt;Border Gateway Protocol (&lt;span class="caps"&gt;BGP&lt;/span&gt;)&lt;/a&gt; is a
+fundamental routing protocol of the internet which allows big networks
+(&amp;#8220;autonomous systems&amp;#8221;) to decide which paths to use to route traffic
+between each other &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Specifically, given some autonomous systems which connect to others, &lt;span class="caps"&gt;BGP&lt;/span&gt;
+allows systems within an autonomous system to reach systems within any
+other autonomous system, even ones that are not directly connected, via
+&amp;#8220;optimal&amp;#8221;&amp;nbsp;paths.&lt;/p&gt;
+&lt;div class="section" id="what-is-best"&gt;
+&lt;h4&gt;What is&amp;nbsp;Best?&lt;/h4&gt;
+&lt;p&gt;Each given router speaking &lt;span class="caps"&gt;BGP&lt;/span&gt; may implement its own prioritization
+algorithm for deciding on a specific path to take to a non-peered
+autonomous&amp;nbsp;system.&lt;/p&gt;
+&lt;p&gt;As an example, &lt;a class="reference external" href="https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/13753-25.html#anc2"&gt;Cisco&amp;#8217;s best path algorithm is described here&lt;/a&gt;
+and cascades through a number of rule sets to choose a&amp;nbsp;path.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="centrality"&gt;
+&lt;h4&gt;Centrality&lt;/h4&gt;
+&lt;p&gt;&lt;span class="caps"&gt;BGP&lt;/span&gt; relies on some autonomous systems being directly connected and
+additional non-directly connected systems then being able to forward
+traffic along this path if it is considered shortest or most&amp;nbsp;optimal.&lt;/p&gt;
+&lt;p&gt;The &amp;#8220;size&amp;#8221; or &amp;#8220;importance&amp;#8221; of autonomous systems is not uniform (i.e. some
+systems route more traffic than&amp;nbsp;others).&lt;/p&gt;
+&lt;p&gt;Specifically, &lt;a class="reference external" href="https://en.wikipedia.org/wiki/CenturyLink"&gt;CenturyLink/Level3&lt;/a&gt; routes an inordinately
+large amount of internet traffic relative to other autonomous&amp;nbsp;systems.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;Where can questions like &amp;#8220;most used paths&amp;#8221; or &amp;#8220;fraction of total
+traffic&amp;#8221; be answered globally for the&amp;nbsp;internet?&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="looking-glasses"&gt;
+&lt;h4&gt;Looking&amp;nbsp;Glasses&lt;/h4&gt;
+&lt;p&gt;A &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Looking_Glass_server"&gt;looking glass server&lt;/a&gt; is a
+server (run by the operator of an autonomous system) which
+allows introspecting the state of the &lt;span class="caps"&gt;BGP&lt;/span&gt; routing table
+for that autonomous system.  E.g., &lt;a class="reference external" href="https://www.cogentco.com/en/network/looking-glass"&gt;Cogent&amp;#8217;s Looking Glass&lt;/a&gt; would indicate
+which paths the corresponding router would recommend or&amp;nbsp;take.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;When used between external systems, it is known more explicitly as
+external &lt;span class="caps"&gt;BGP&lt;/span&gt; (eBGP), as it can also be used within an individual network
+(autonomous system) itself as a way to define how nodes reach each other.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</content><category term="misc"></category></entry><entry><title>Connectivity Outages</title><link href="https://til.grayvines.com/entries/2020/08/30/connectivity-outages/" rel="alternate"></link><published>2020-08-30T14:59:22-04:00</published><updated>2020-08-30T14:59:22-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-08-30:/entries/2020/08/30/connectivity-outages/</id><content type="html">&lt;p&gt;There is a mailing list &lt;a class="reference external" href="https://puck.nether.net/mailman/listinfo/outages"&gt;hosted here&lt;/a&gt; which tries to
 centralize reporting of outages across communications infrastructure&amp;nbsp;(networks).&lt;/p&gt;
 </content><category term="misc"></category></entry><entry><title>Prisons Banning Books</title><link href="https://til.grayvines.com/entries/2020/07/25/prisons-banning-books/" rel="alternate"></link><published>2020-07-25T17:08:07-04:00</published><updated>2020-08-23T16:11:29-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-07-25:/entries/2020/07/25/prisons-banning-books/</id><summary type="html">&lt;p&gt;The state of Oregon&amp;#8217;s prisons have &lt;a class="reference external" href="https://www.salemreporter.com/posts/891/oregon-prisons-ban-dozens-of-technology-and-programming-books-over-security-concerns"&gt;banned a large number of innocuous books
 which teach programming-related topics&lt;/a&gt;,
