@@ -68,3 +68,6 @@ another relative to others in the global BGP infrastructure:
     * `ASRank <https://asrank.caida.org/>`_
 
     * `CIDR Report <https://www.cidr-report.org/as2.0/>`_
+
+    * `The List of Tier 1 Networks
+      <https://en.wikipedia.org/wiki/Tier_1_network#List_of_Tier_1_networks>`_
