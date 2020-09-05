@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>TIL - Categories</title>
+    <title>TIL - Units of Measure</title>
 
   <link rel="stylesheet" href="https://til.grayvines.com/theme/css/main.css" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700" rel="stylesheet" type="text/css">
@@ -9,6 +9,12 @@
 
   <meta charset="utf-8" />
   <link href="https://til.grayvines.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="TIL Full Atom Feed" />
+  <link href="https://til.grayvines.com/feeds/programming.atom.xml" type="application/atom+xml" rel="alternate" title="TIL Categories Atom Feed" />
+
+
+
+
+
 
 </head>
 
@@ -32,27 +38,61 @@
       <li><a href="https://til.grayvines.com/categories/misc/">misc</a></li>
       <li><a href="https://til.grayvines.com/categories/music/">music</a></li>
       <li><a href="https://til.grayvines.com/categories/physics/">physics</a></li>
-      <li><a href="https://til.grayvines.com/categories/programming/">programming</a></li>
+      <li class="active"><a href="https://til.grayvines.com/categories/programming/">programming</a></li>
       <li><a href="https://til.grayvines.com/categories/sports/">sports</a></li>
       <li><a href="https://til.grayvines.com/categories/travel/">travel</a></li>
 </ul></nav><!-- /#menu -->  </header><!-- /#site-header -->
 
 
-    <h1>Categories on TIL</h1>
-    <ul>
-        <li><a href="https://til.grayvines.com/categories/design/">design</a> (2)</li>
-        <li><a href="https://til.grayvines.com/categories/food/">food</a> (5)</li>
-        <li><a href="https://til.grayvines.com/categories/health/">health</a> (1)</li>
-        <li><a href="https://til.grayvines.com/categories/history/">history</a> (2)</li>
-        <li><a href="https://til.grayvines.com/categories/language/">language</a> (1)</li>
-        <li><a href="https://til.grayvines.com/categories/math/">math</a> (7)</li>
-        <li><a href="https://til.grayvines.com/categories/misc/">misc</a> (9)</li>
-        <li><a href="https://til.grayvines.com/categories/music/">music</a> (2)</li>
-        <li><a href="https://til.grayvines.com/categories/physics/">physics</a> (1)</li>
-        <li><a href="https://til.grayvines.com/categories/programming/">programming</a> (16)</li>
-        <li><a href="https://til.grayvines.com/categories/sports/">sports</a> (1)</li>
-        <li><a href="https://til.grayvines.com/categories/travel/">travel</a> (2)</li>
-    </ul>
+<main class="content" role="main">
+  <div class="container">
+    <article class="entry">
+      <header class="entry-header">
+        <h3 class="p-entry-title">
+          <a href="https://til.grayvines.com/entries/2020/09/05/units-of-measure/" rel="bookmark" title="Permalink to Units of Measure">
+            Units of&nbsp;Measure
+          </a>
+        </h3>
+
+        <p class="entry-time">
+          <time class="published" datetime="2020-09-05T00:28:48-04:00">
+            September 05, 2020
+          </time>
+        </p>
+    
+      </header>
+
+      <section class="entry-content">
+        <p>The F# language has built in support for <a class="reference external" href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/units-of-measure">annotating numeric values with units</a>,
+and for such values it appears will do some <a class="reference external" href="https://en.wikipedia.org/wiki/Dimensional_analysis">dimensional analysis</a> and statically complain
+if units are&nbsp;incorrect.</p>
+<p>It&#8217;s unclear if there&#8217;s a large benefit in having this functionality in
+the core language rather than a library, which is more common across
+other languages, but anecdotally in those other languages (e.g. Python)
+it certainly isn&#8217;t common to use these libraries in arbitrary&nbsp;code.</p>
+
+      </section><!-- /.entry-content -->
+
+      <hr>
+
+      <footer class="entry-footer">
+        <section class="f-1">
+          <section class="f-entry-time">
+              <time class="published" datetime="2020-09-05T00:28:48-04:00">
+                September 05, 2020
+              </time>
+          </section>
+        </section>
+
+        <section class="f-2">
+          <div class="category">
+              Category: <a href="https://til.grayvines.com/categories/programming/">programming</a>
+          </div>
+        </section>
+      </footer><!-- /.entry-info -->
+    </article>
+  </div>
+</main>
 
 <footer id="site-footer" class="body">
   <div class="container">
