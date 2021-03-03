@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/all.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2021-01-02T00:46:44-05:00</updated><subtitle>Today I Learned</subtitle><entry><title>Capitals</title><link href="https://til.grayvines.com/entries/2021/01/02/capitals/" rel="alternate"></link><published>2021-01-02T00:46:44-05:00</published><updated>2021-01-02T00:46:44-05:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2021-01-02:/entries/2021/01/02/capitals/</id><content type="html">&lt;p&gt;There are two countries with no official capital, though they have de facto
+<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/all.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2021-03-03T21:53:24-05:00</updated><subtitle>Today I Learned</subtitle><entry><title>Embalming</title><link href="https://til.grayvines.com/entries/2021/03/03/embalming/" rel="alternate"></link><published>2021-03-03T21:53:24-05:00</published><updated>2021-03-03T21:53:24-05:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2021-03-03:/entries/2021/03/03/embalming/</id><summary type="html">&lt;p&gt;Embalming became more common in the United States &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Embalming#Modern_methods"&gt;during the Civil War&lt;/a&gt;, as a service
+provided by a new profession of &amp;#8220;embalmers&amp;#8221; who could assist in body
+retrieval given that fallen soldiers were far away from their&amp;nbsp;relatives.&lt;/p&gt;
+&lt;p&gt;After the war, the embalmers continued offering their services as a
+persisted …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Embalming became more common in the United States &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Embalming#Modern_methods"&gt;during the Civil War&lt;/a&gt;, as a service
+provided by a new profession of &amp;#8220;embalmers&amp;#8221; who could assist in body
+retrieval given that fallen soldiers were far away from their&amp;nbsp;relatives.&lt;/p&gt;
+&lt;p&gt;After the war, the embalmers continued offering their services as a
+persisted part of post-mortem&amp;nbsp;activities.&lt;/p&gt;
+&lt;p&gt;More on embalming (and death in general) can be found
+in &lt;a class="reference external" href="https://freakonomics.com/podcast/book-club-caitlin-doughty/"&gt;this Freakonomics episode with Caitlin Doughty&lt;/a&gt;.&lt;/p&gt;
+</content><category term="history"></category></entry><entry><title>Capitals</title><link href="https://til.grayvines.com/entries/2021/01/02/capitals/" rel="alternate"></link><published>2021-01-02T00:46:44-05:00</published><updated>2021-01-02T00:46:44-05:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2021-01-02:/entries/2021/01/02/capitals/</id><content type="html">&lt;p&gt;There are two countries with no official capital, though they have de facto
 capitals &amp;#8212; &lt;a class="reference external" href="https://www.google.com/maps/place/Switzerland/"&gt;Switzerland&lt;/a&gt;
 (de facto capital being Bern) and &lt;a class="reference external" href="https://www.google.com/maps/place/Nauru/"&gt;Nauru&lt;/a&gt;
 (de facto capital being&amp;nbsp;Yaren).&lt;/p&gt;
