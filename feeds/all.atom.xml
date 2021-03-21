@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/all.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2021-03-03T21:53:24-05:00</updated><subtitle>Today I Learned</subtitle><entry><title>Embalming</title><link href="https://til.grayvines.com/entries/2021/03/03/embalming/" rel="alternate"></link><published>2021-03-03T21:53:24-05:00</published><updated>2021-03-03T21:53:24-05:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2021-03-03:/entries/2021/03/03/embalming/</id><summary type="html">&lt;p&gt;Embalming became more common in the United States &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Embalming#Modern_methods"&gt;during the Civil War&lt;/a&gt;, as a service
+<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/all.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2021-03-21T21:00:08-04:00</updated><subtitle>Today I Learned</subtitle><entry><title>Embalming</title><link href="https://til.grayvines.com/entries/2021/03/03/embalming/" rel="alternate"></link><published>2021-03-03T21:53:24-05:00</published><updated>2021-03-03T21:53:24-05:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2021-03-03:/entries/2021/03/03/embalming/</id><summary type="html">&lt;p&gt;Embalming became more common in the United States &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Embalming#Modern_methods"&gt;during the Civil War&lt;/a&gt;, as a service
 provided by a new profession of &amp;#8220;embalmers&amp;#8221; who could assist in body
 retrieval given that fallen soldiers were far away from their&amp;nbsp;relatives.&lt;/p&gt;
 &lt;p&gt;After the war, the embalmers continued offering their services as a
@@ -749,7 +749,7 @@ of (physical) guidelines and warning signs and everything relate to whose
 &amp;#8220;fault&amp;#8221; it is that this bridge is an outlier when it comes to&amp;nbsp;crashes.&lt;/p&gt;
 &lt;p&gt;Its clearance is abnormal for modern underpasses, which very clearly&amp;nbsp;contributes.&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="design"></category></entry><entry><title>Git</title><link href="https://til.grayvines.com/entries/2020/04/21/git/" rel="alternate"></link><published>2020-04-21T16:14:15-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-21:/entries/2020/04/21/git/</id><summary type="html">&lt;p&gt;&lt;em&gt;git you magnificent&amp;nbsp;beast&amp;#8230;&lt;/em&gt;&lt;/p&gt;
+</content><category term="design"></category></entry><entry><title>Git</title><link href="https://til.grayvines.com/entries/2020/04/21/git/" rel="alternate"></link><published>2020-04-21T16:14:15-04:00</published><updated>2021-03-21T21:00:08-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-21:/entries/2020/04/21/git/</id><summary type="html">&lt;p&gt;&lt;em&gt;git you magnificent&amp;nbsp;beast&amp;#8230;&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="finding-the-history-of-a-function-or-object"&gt;
 &lt;h4&gt;Finding the History of a Function or&amp;nbsp;Object&lt;/h4&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;log &lt;span class="pre"&gt;-L&lt;/span&gt; :foo&lt;/tt&gt; will show you the history of the function/object called
@@ -772,6 +772,18 @@ It accepts a&amp;nbsp;regex.&lt;/p&gt;
 &lt;h4&gt;Showing Various Parts of a Merge&amp;nbsp;Conflict&lt;/h4&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;git show :N:foo.txt&lt;/tt&gt; will show foo.txt from &amp;#8220;stage&amp;#8221; number N, which is
 useful during conflict&amp;nbsp;resoluton.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="custom-bisect-terms"&gt;
+&lt;h4&gt;Custom Bisect&amp;nbsp;Terms&lt;/h4&gt;
+&lt;p&gt;Using &lt;tt class="docutils literal"&gt;git bisect good&lt;/tt&gt; sometimes hurts my brain if &amp;#8220;good&amp;#8221; isn&amp;#8217;t the
+right term for the commit being marked. &lt;tt class="docutils literal"&gt;git bisect&lt;/tt&gt; however has
+&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;--term-old&lt;/span&gt;&lt;/tt&gt; and &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;--term-new&lt;/span&gt;&lt;/tt&gt; arguments for changing &lt;tt class="docutils literal"&gt;good&lt;/tt&gt; and
+&lt;tt class="docutils literal"&gt;bad&lt;/tt&gt; to whatever you want, so&amp;nbsp;e.g.:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git bisect start --term-old fast --term-new slow
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;will allow using &lt;tt class="docutils literal"&gt;git bisect fast&lt;/tt&gt; and &lt;tt class="docutils literal"&gt;git bisect slow&lt;/tt&gt; instead
+for the current bisection (e.g. for finding commits which introduced
+performance&amp;nbsp;issues).&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="git-name-rev"&gt;
 &lt;h4&gt;&lt;tt class="docutils literal"&gt;git &lt;span class="pre"&gt;name-rev&lt;/span&gt;&lt;/tt&gt;&lt;/h4&gt;

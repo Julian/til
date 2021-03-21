@@ -82,6 +82,18 @@ It accepts a&nbsp;regex.</p>
 <p><tt class="docutils literal">git show :N:foo.txt</tt> will show foo.txt from &#8220;stage&#8221; number N, which is
 useful during conflict&nbsp;resoluton.</p>
 </div>
+<div class="section" id="custom-bisect-terms">
+<h4>Custom Bisect&nbsp;Terms</h4>
+<p>Using <tt class="docutils literal">git bisect good</tt> sometimes hurts my brain if &#8220;good&#8221; isn&#8217;t the
+right term for the commit being marked. <tt class="docutils literal">git bisect</tt> however has
+<tt class="docutils literal"><span class="pre">--term-old</span></tt> and <tt class="docutils literal"><span class="pre">--term-new</span></tt> arguments for changing <tt class="docutils literal">good</tt> and
+<tt class="docutils literal">bad</tt> to whatever you want, so&nbsp;e.g.:</p>
+<div class="highlight"><pre><span></span>$ git bisect start --term-old fast --term-new slow
+</pre></div>
+<p>will allow using <tt class="docutils literal">git bisect fast</tt> and <tt class="docutils literal">git bisect slow</tt> instead
+for the current bisection (e.g. for finding commits which introduced
+performance&nbsp;issues).</p>
+</div>
 <div class="section" id="git-name-rev">
 <h4><tt class="docutils literal">git <span class="pre">name-rev</span></tt></h4>
 <p><tt class="docutils literal"><span class="pre">name-rev</span></tt> can append info about the position of a commit relative to&nbsp;tags.</p>
@@ -132,8 +144,8 @@ sending via email or applying with <tt class="docutils literal">git am</tt>.</p>
               </time>
           </section>
           <p class="f-entry-time">
-            <time class="modified" datetime="2020-05-30T15:21:31-04:00">
-              Modified on May 30, 2020
+            <time class="modified" datetime="2021-03-21T21:00:08-04:00">
+              Modified on March 21, 2021
             </time>
           </p>
         </section>
