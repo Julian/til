@@ -34,6 +34,23 @@ Showing Various Parts of a Merge Conflict
 useful during conflict resoluton.
 
 
+Custom Bisect Terms
+-------------------
+
+Using ``git bisect good`` sometimes hurts my brain if "good" isn't the
+right term for the commit being marked. ``git bisect`` however has
+``--term-old`` and ``--term-new`` arguments for changing ``good`` and
+``bad`` to whatever you want, so e.g.:
+
+.. code-block:: sh
+
+    $ git bisect start --term-old fast --term-new slow
+
+will allow using ``git bisect fast`` and ``git bisect slow`` instead
+for the current bisection (e.g. for finding commits which introduced
+performance issues).
+
+
 ``git name-rev``
 ----------------
 
