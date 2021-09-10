@@ -2,7 +2,7 @@ exclude: pelican/plugins/filetime_from_git/
 
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.2.0
+    rev: v4.0.1
     hooks:
     -   id: check-json
     -   id: check-toml
@@ -11,16 +11,16 @@ repos:
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
 -   repo: https://github.com/timothycrosley/isort
-    rev: 5.4.2
+    rev: 5.9.3
     hooks:
     -   id: isort
         args:
-          - "--from-first=yes"
+          - "--from-first"
           - "--multi-line=VERTICAL_HANGING_INDENT"
           - "--trailing-comma"
           - "--thirdparty=pelican"
 - repo: https://github.com/myint/docformatter
-  rev: v1.3.1
+  rev: v1.4
   hooks:
     - id: docformatter
       args:
