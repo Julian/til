@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL - programming</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/programming.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2021-03-21T21:00:08-04:00</updated><subtitle>Today I Learned</subtitle><entry><title>Units of Measure</title><link href="https://til.grayvines.com/entries/2020/09/05/units-of-measure/" rel="alternate"></link><published>2020-09-05T00:28:48-04:00</published><updated>2020-09-05T00:28:48-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-09-05:/entries/2020/09/05/units-of-measure/</id><summary type="html">&lt;p&gt;The F# language has built in support for &lt;a class="reference external" href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/units-of-measure"&gt;annotating numeric values with units&lt;/a&gt;,
+<feed xmlns="http://www.w3.org/2005/Atom"><title>TIL - programming</title><link href="https://til.grayvines.com/" rel="alternate"></link><link href="https://til.grayvines.com/feeds/programming.atom.xml" rel="self"></link><id>https://til.grayvines.com/</id><updated>2021-09-10T00:12:50-04:00</updated><subtitle>Today I Learned</subtitle><entry><title>Units of Measure</title><link href="https://til.grayvines.com/entries/2020/09/05/units-of-measure/" rel="alternate"></link><published>2020-09-05T00:28:48-04:00</published><updated>2020-09-05T00:28:48-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-09-05:/entries/2020/09/05/units-of-measure/</id><summary type="html">&lt;p&gt;The F# language has built in support for &lt;a class="reference external" href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/units-of-measure"&gt;annotating numeric values with units&lt;/a&gt;,
 and for such values it appears will do some &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Dimensional_analysis"&gt;dimensional analysis&lt;/a&gt; and statically complain
 if units are&amp;nbsp;incorrect.&lt;/p&gt;
 &lt;p&gt;It&amp;#8217;s unclear if there&amp;#8217;s a large benefit in having this functionality in
@@ -272,7 +272,7 @@ statistical performance counting things (I/O, &lt;span class="caps"&gt;CPU&lt;/s
 syntax (and does many more kinds of ports and configurable connectivity that
 come with&amp;nbsp;them).&lt;/p&gt;
 &lt;p&gt;Tons of examples &lt;a class="reference external" href="http://www.dest-unreach.org/socat/doc/socat.html#EXAMPLES"&gt;here&lt;/a&gt;.&lt;/p&gt;
-</content><category term="programming"></category></entry><entry><title>Git</title><link href="https://til.grayvines.com/entries/2020/04/21/git/" rel="alternate"></link><published>2020-04-21T16:14:15-04:00</published><updated>2021-03-21T21:00:08-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-21:/entries/2020/04/21/git/</id><summary type="html">&lt;p&gt;&lt;em&gt;git you magnificent&amp;nbsp;beast&amp;#8230;&lt;/em&gt;&lt;/p&gt;
+</content><category term="programming"></category></entry><entry><title>Git</title><link href="https://til.grayvines.com/entries/2020/04/21/git/" rel="alternate"></link><published>2020-04-21T16:14:15-04:00</published><updated>2021-09-10T00:12:50-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-21:/entries/2020/04/21/git/</id><summary type="html">&lt;p&gt;&lt;em&gt;git you magnificent&amp;nbsp;beast&amp;#8230;&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="finding-the-history-of-a-function-or-object"&gt;
 &lt;h4&gt;Finding the History of a Function or&amp;nbsp;Object&lt;/h4&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;log &lt;span class="pre"&gt;-L&lt;/span&gt; :foo&lt;/tt&gt; will show you the history of the function/object called
@@ -344,6 +344,11 @@ $ g tag -l v*
 &lt;h4&gt;Sending Patches Over&amp;nbsp;Email&lt;/h4&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;format-patch&lt;/span&gt;&lt;/tt&gt; turns commits into patches as a file, and formatted for
 sending via email or applying with &lt;tt class="docutils literal"&gt;git am&lt;/tt&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="rebasing-all-the-way"&gt;
+&lt;h4&gt;Rebasing&amp;#8230; All the&amp;nbsp;Way&lt;/h4&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;rebase &lt;span class="pre"&gt;-i&lt;/span&gt; &lt;span class="pre"&gt;--root&lt;/span&gt;&lt;/tt&gt; will rebase all the way to the empty tree (e.g.
+will allow &lt;tt class="docutils literal"&gt;fixup&lt;/tt&gt;ing something onto the very first commit in a&amp;nbsp;repo).&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="programming"></category></entry><entry><title>pv</title><link href="https://til.grayvines.com/entries/2020/04/21/pv/" rel="alternate"></link><published>2020-04-21T16:14:15-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-21:/entries/2020/04/21/pv/</id><content type="html">&lt;p&gt;&lt;a class="reference external" href="http://ivarch.com/programs/pv.shtml"&gt;pv&lt;/a&gt; is a useful utility to insert in
 shell pipelines for watching how much data passes through the&amp;nbsp;pipe.&lt;/p&gt;
