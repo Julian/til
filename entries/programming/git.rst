@@ -108,5 +108,5 @@ Rebasing... All the Way
 -----------------------
 
 ``rebase -i --root`` will rebase all the way to the empty tree (e.g.
-will allow ``fixup``ing something onto the very first commit in a
+will allow ``fixup``\ ing something onto the very first commit in a
 repo).
