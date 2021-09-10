@@ -102,3 +102,11 @@ Sending Patches Over Email
 
 ``format-patch`` turns commits into patches as a file, and formatted for
 sending via email or applying with ``git am``.
+
+
+Rebasing... All the Way
+-----------------------
+
+``rebase -i --root`` will rebase all the way to the empty tree (e.g.
+will allow ``fixup``ing something onto the very first commit in a
+repo).
