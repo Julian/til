@@ -218,7 +218,7 @@ by &lt;tt class="docutils literal"&gt;less&lt;/tt&gt;.&lt;/p&gt;
 &lt;h4&gt;Opening &lt;span class="caps"&gt;EDITOR&lt;/span&gt;&lt;/h4&gt;
 &lt;p&gt;Hitting &lt;tt class="docutils literal"&gt;v&lt;/tt&gt; will open the file in an&amp;nbsp;editor.&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="programming"></category></entry><entry><title>zsh</title><link href="https://til.grayvines.com/entries/2020/04/22/zsh/" rel="alternate"></link><published>2020-04-22T02:51:39-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-22:/entries/2020/04/22/zsh/</id><summary type="html">&lt;div class="section" id="id1"&gt;
+</content><category term="programming"></category></entry><entry><title>zsh</title><link href="https://til.grayvines.com/entries/2020/04/22/zsh/" rel="alternate"></link><published>2020-04-22T02:51:39-04:00</published><updated>2020-05-30T15:21:31-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-04-22:/entries/2020/04/22/zsh/</id><summary type="html">&lt;div class="section" id="section-1"&gt;
 &lt;h4&gt;&lt;tt class="docutils literal"&gt;&amp;amp;|&lt;/tt&gt;&lt;/h4&gt;
 &lt;p&gt;Piping using &lt;tt class="docutils literal"&gt;foo &amp;amp;| bar&lt;/tt&gt; will pipe both stdout &lt;em&gt;and&lt;/em&gt; stderr to &lt;tt class="docutils literal"&gt;bar&lt;/tt&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -231,7 +231,7 @@ provided, similar to using &lt;tt class="docutils literal"&gt;tee&lt;/tt&gt;.&lt
 $ date &amp;gt;foo &amp;gt;bar
 &lt;/pre&gt;
 &lt;p&gt;will output &lt;tt class="docutils literal"&gt;date&lt;/tt&gt; to both &lt;tt class="docutils literal"&gt;foo&lt;/tt&gt; and &lt;tt class="docutils literal"&gt;bar&lt;/tt&gt;. (Piping it will also work
-since …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="id1"&gt;
+since …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="section-1"&gt;
 &lt;h4&gt;&lt;tt class="docutils literal"&gt;&amp;amp;|&lt;/tt&gt;&lt;/h4&gt;
 &lt;p&gt;Piping using &lt;tt class="docutils literal"&gt;foo &amp;amp;| bar&lt;/tt&gt; will pipe both stdout &lt;em&gt;and&lt;/em&gt; stderr to &lt;tt class="docutils literal"&gt;bar&lt;/tt&gt;.&lt;/p&gt;
 &lt;/div&gt;
