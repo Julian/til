@@ -28,7 +28,7 @@ repos:
         - --pre-summary-newline
         - --make-summary-multi-line
 -   repo: https://github.com/myint/rstcheck
-    rev: 'v5.0.0'
+    rev: 'v6.0.0.post1'
     hooks:
     -   id: rstcheck
         args: [--report=warning]
