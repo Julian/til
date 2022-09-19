@@ -19,16 +19,16 @@ repos:
           - "--multi-line=VERTICAL_HANGING_INDENT"
           - "--trailing-comma"
           - "--thirdparty=pelican"
-- repo: https://github.com/myint/docformatter
-  rev: v1.4
+- repo: https://github.com/PyCQA/docformatter
+  rev: v1.5.0
   hooks:
     - id: docformatter
       args:
         - --in-place
         - --pre-summary-newline
         - --make-summary-multi-line
--   repo: https://github.com/myint/rstcheck
-    rev: 'v6.0.0.post1'
+-   repo: https://github.com/rstcheck/rstcheck
+    rev: 'v6.1.0'
     hooks:
     -   id: rstcheck
         args: [--report-level=warning]
