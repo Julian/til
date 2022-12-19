@@ -29,7 +29,6 @@ til = genanki.Model(
 
 @attr.s
 class AnkiPelicanWriter:
-
     _deck = attr.ib()
 
     def _add_article(self, _, content):
