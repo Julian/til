@@ -19,10 +19,10 @@ PLUGIN_PATHS = [HERE / "plugins", "plugins"]
 PLUGINS = ["filetime_from_git", "til_to_anki"]
 
 GITHUB_URL = "https://github.com/Julian"
-TWITTER_USERNAME = "JulianWasTaken"
 SOCIAL = [
     ("github", GITHUB_URL),
-    ("twitter", "https://twitter.com/" + TWITTER_USERNAME),
+    ("mastodon", "https://mastodon.social/@JulianWasTaken"),
+    ("photos", "https://photos.grayvines.com/"),
     ("instagram", "https://instagram.com/julianberman"),
 ]
 
