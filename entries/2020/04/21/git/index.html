@@ -88,7 +88,7 @@ useful during conflict&nbsp;resoluton.</p>
 right term for the commit being marked. <tt class="docutils literal">git bisect</tt> however has
 <tt class="docutils literal"><span class="pre">--term-old</span></tt> and <tt class="docutils literal"><span class="pre">--term-new</span></tt> arguments for changing <tt class="docutils literal">good</tt> and
 <tt class="docutils literal">bad</tt> to whatever you want, so&nbsp;e.g.:</p>
-<div class="highlight"><pre><span></span>$ git bisect start --term-old fast --term-new slow
+<div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>bisect<span class="w"> </span>start<span class="w"> </span>--term-old<span class="w"> </span>fast<span class="w"> </span>--term-new<span class="w"> </span>slow
 </pre></div>
 <p>will allow using <tt class="docutils literal">git bisect fast</tt> and <tt class="docutils literal">git bisect slow</tt> instead
 for the current bisection (e.g. for finding commits which introduced

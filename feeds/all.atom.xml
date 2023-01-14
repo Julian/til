@@ -205,7 +205,7 @@ not a for-profit&amp;nbsp;prison.)&lt;/p&gt;
 and &lt;a class="reference external" href="https://www.newsweek.com/kansas-prisoners-banned-reading-game-thrones-along-thousands-other-books-1440556"&gt;here&lt;/a&gt;.&lt;/p&gt;
 </content><category term="misc"></category></entry><entry><title>mpv and youtube-dl</title><link href="https://til.grayvines.com/entries/2020/07/15/mpv-and-youtube-dl/" rel="alternate"></link><published>2020-07-15T22:48:53-04:00</published><updated>2020-07-15T22:48:53-04:00</updated><author><name>Julian Berman</name></author><id>tag:til.grayvines.com,2020-07-15:/entries/2020/07/15/mpv-and-youtube-dl/</id><content type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;mpv&lt;/tt&gt; and &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;youtube-dl&lt;/span&gt;&lt;/tt&gt; can talk directly to each&amp;nbsp;other.&lt;/p&gt;
 &lt;p&gt;Specificaly:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ mpv --ytdl-format&lt;span class="o"&gt;=&lt;/span&gt;bestaudio ytdl://ytsearch:&lt;span class="s1"&gt;&amp;#39;think about things&amp;#39;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$&lt;span class="w"&gt; &lt;/span&gt;mpv&lt;span class="w"&gt; &lt;/span&gt;--ytdl-format&lt;span class="o"&gt;=&lt;/span&gt;bestaudio&lt;span class="w"&gt; &lt;/span&gt;ytdl://ytsearch:&lt;span class="s1"&gt;&amp;#39;think about things&amp;#39;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;will immediately start &lt;tt class="docutils literal"&gt;mpv&lt;/tt&gt; off playing the audio results of the
 &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;youtube-dl&lt;/span&gt;&lt;/tt&gt; search.&lt;/p&gt;
@@ -820,7 +820,7 @@ useful during conflict&amp;nbsp;resoluton.&lt;/p&gt;
 right term for the commit being marked. &lt;tt class="docutils literal"&gt;git bisect&lt;/tt&gt; however has
 &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;--term-old&lt;/span&gt;&lt;/tt&gt; and &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;--term-new&lt;/span&gt;&lt;/tt&gt; arguments for changing &lt;tt class="docutils literal"&gt;good&lt;/tt&gt; and
 &lt;tt class="docutils literal"&gt;bad&lt;/tt&gt; to whatever you want, so&amp;nbsp;e.g.:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git bisect start --term-old fast --term-new slow
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;bisect&lt;span class="w"&gt; &lt;/span&gt;start&lt;span class="w"&gt; &lt;/span&gt;--term-old&lt;span class="w"&gt; &lt;/span&gt;fast&lt;span class="w"&gt; &lt;/span&gt;--term-new&lt;span class="w"&gt; &lt;/span&gt;slow
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;will allow using &lt;tt class="docutils literal"&gt;git bisect fast&lt;/tt&gt; and &lt;tt class="docutils literal"&gt;git bisect slow&lt;/tt&gt; instead
 for the current bisection (e.g. for finding commits which introduced
