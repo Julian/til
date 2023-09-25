@@ -22,7 +22,7 @@ genanki==0.13.0
     # via -r requirements.in
 gitdb==4.0.10
     # via gitpython
-gitpython==3.1.36
+gitpython==3.1.37
     # via -r pelican/plugins/filetime_from_git/requirements.txt
 jinja2==3.1.2
     # via pelican
