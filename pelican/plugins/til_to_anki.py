@@ -44,7 +44,6 @@ class AnkiPelicanWriter:
         assert HOORAY_GLOBAL_STATE, HOORAY_GLOBAL_STATE
         HOORAY_GLOBAL_STATE.clear()
 
-
     @classmethod
     def connected(cls, pelican):
         if not pelican.settings.get("ANKITIL"):
